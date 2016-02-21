@@ -7,7 +7,6 @@ rss: /atom.xml
 
 # Content
 excerpt_link: Read More
-fancybox: false
 
 # Sidebar
 widgets:
