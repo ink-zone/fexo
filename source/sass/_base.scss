@@ -1,0 +1,26 @@
+html, body {
+  font-family: "Roboto", Verdana, sans-serif;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+}
+* {
+  // box-sizing:border-box;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8em;
+}
+
+.text-center {
+  text-align: center;
+}

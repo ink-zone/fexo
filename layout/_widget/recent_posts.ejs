@@ -1,0 +1,12 @@
+<% if (site.posts.length){ %>
+  <div class="sidebar-module">
+    <h4>Recents</h4>
+    <ul class="sidebar-module-list">
+      <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+        <li>
+          <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
+<% } %>

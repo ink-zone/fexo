@@ -1,0 +1,44 @@
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    <%- partial('post/title', {class_name: 'article-title'}) %>
+  </header>
+
+  <div class="article-meta">
+    <%= date(post.date, null) %>
+
+    <span> | </span>
+
+    <% if (config.author){ %><span class="article-author"><%= config.author %></span><% } %>
+
+    <%- partial('post/category') %>
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+        <% if (theme.excerpt_link){ %>
+          <p class="article-more-link">
+            <a class="btn btn-primary" href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+          </p>
+        <% } %>
+      <% } else { %>
+        <%- post.content %>
+      <% } %>
+    </div>
+
+    <% if (!(post.excerpt && index)){ %>
+      <%- partial('post/gallery') %>
+    <% } %>
+
+  </div>
+</article>
+
+<% if (!index && post.comments && config.disqus_shortname){ %>
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+<% } %>

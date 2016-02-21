@@ -1,0 +1,47 @@
+<div class="archive-header">
+  <a class="home-entry" href="/">首页</a>
+  <a class="avatar" href="/">
+    <img src="/img/default_avatar.jpg" alt="" />
+    <div class="blog-info">
+      <h3 class="name">forsigner</h3>
+      <div class="slogan">Find the bug of the world</div>
+    </div>
+  </a>
+</div>
+<div class="box-year">
+
+  <% if (pagination == 2){ %>
+    <% page.posts.each(function(post){ %>
+      <%- partial('article', {post: post, index: true}) %>
+    <% }) %>
+  <% } else { %>
+    <% var last; %>
+    <% page.posts.each(function(post, i){ %>
+      <% var year = post.date.year(); %>
+      <% if (last != year){ %>
+        <% if (last != null){ %>
+          </div></section>
+        <% } %>
+        <% last = year; %>
+        <section class="archives-wrap">
+          <div class="archive-year-wrap">
+            <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
+          </div>
+          <div class="archives">
+      <% } %>
+      <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
+    <% }) %>
+    <% if (page.posts.length){ %>
+      </div></section>
+    <% } %>
+  <% } %>
+  <% if (page.total > 1){ %>
+    <div id="page-nav">
+      <%- bs_paginator({
+        prev_text: '<i class="fa fa-chevron-left"></i> Prev',
+        next_text: 'Next <i class="fa fa-chevron-right"></i>'
+      }) %>
+    </div>
+  <% } %>
+
+</div>
