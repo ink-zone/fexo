@@ -1,3 +1,7 @@
+# Blog info
+blog_name: Forsigner
+slogan: Find the bug of the world
+
 # Header
 navbar_brand: false
 menu:
@@ -33,5 +37,3 @@ twitter_id:
 google_plus:
 fb_admins:
 fb_app_id:
-
-slogan: Find the bug of the world
