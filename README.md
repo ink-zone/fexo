@@ -12,6 +12,13 @@ $ git clone git@github.com:forsigner/fexo.git themes/fexo
 
 In file `_config.yml` set `theme: fexo`
 
+### Upgrade
+
+```bash
+$ cd themes/fexo
+$ git pull
+```
+
 ### Configuration
 
 ```yml
