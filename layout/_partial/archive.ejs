@@ -12,7 +12,8 @@
     </div>
   </a>
 </div>
-<div class="box-year">
+
+<div class="archive-body">
 
   <% if (pagination == 2){ %>
     <% page.posts.each(function(post){ %>
@@ -27,18 +28,21 @@
           </div></section>
         <% } %>
         <% last = year; %>
-        <section class="archives-wrap">
-          <div class="archive-year-wrap">
-            <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
+        <section class="box-year">
+          <div class="box-year-title">
+            <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="text-year"><%= year %></a>
           </div>
-          <div class="archives">
+
+          <div class="list-article">
       <% } %>
       <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
     <% }) %>
     <% if (page.posts.length){ %>
-      </div></section>
+        </div>
+      </section>
     <% } %>
   <% } %>
+
   <% if (page.total > 1){ %>
     <div id="page-nav">
       <%- bs_paginator({

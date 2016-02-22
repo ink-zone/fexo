@@ -14,8 +14,9 @@
     }
   }
   .name {
+    font-family: 'calligraffittiregular';
     font-size: 26px;
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
     letter-spacing: -.03em;
     margin: 0 auto 10px;
@@ -45,7 +46,7 @@
         color: #000;
         text-decoration: none;
         &:hover {
-          color: #3e97eb;
+          color: #1ABC9C;
           text-decoration: none;
         }
       }
@@ -54,36 +55,36 @@
           display: none;
         }
       }
-      &:nth-child(5n+1) a {
-        color: #1ABC9C;
-        &:hover {
-          color: darken(#1ABC9C, 8%);
-        }
-      }
-      &:nth-child(5n+2) a {
-        color: #3498DB;
-        &:hover {
-          color: darken(#3498DB, 8%);
-        }
-      }
-      &:nth-child(5n+3) a {
-        color:#E67E22;
-        &:hover {
-          color: darken(#E67E22, 8%);
-        }
-      }
-      &:nth-child(5n+4) a {
-        color: #E74C3C;
-        &:hover {
-          color: darken(#E74C3C, 8%);
-        }
-      }
-      &:nth-child(5n+5) a {
-        color: #9B59B6;
-        &:hover {
-          color: darken(#9B59B6, 8%);
-        }
-      }
+      //&:nth-child(5n+1) a {
+      //  color: #1ABC9C;
+      //  &:hover {
+      //    color: darken(#1ABC9C, 8%);
+      //  }
+      //}
+      //&:nth-child(5n+2) a {
+      //  color: #3498DB;
+      //  &:hover {
+      //    color: darken(#3498DB, 8%);
+      //  }
+      //}
+      //&:nth-child(5n+3) a {
+      //  color:#E67E22;
+      //  &:hover {
+      //    color: darken(#E67E22, 8%);
+      //  }
+      //}
+      //&:nth-child(5n+4) a {
+      //  color: #E74C3C;
+      //  &:hover {
+      //    color: darken(#E74C3C, 8%);
+      //  }
+      //}
+      //&:nth-child(5n+5) a {
+      //  color: #9B59B6;
+      //  &:hover {
+      //    color: darken(#9B59B6, 8%);
+      //  }
+      //}
     }
   }
   @media (max-width: 640px) {
