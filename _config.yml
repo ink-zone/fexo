@@ -2,20 +2,12 @@
 blog_name: Forsigner
 slogan: Find the bug of the world
 
-# Content
-excerpt_link: Read More
-
-# widget behavior
-archive_type: 'monthly'
-show_count: true
-
 # Miscellaneous
 google_analytics:
 baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 favicon:
-twitter_id:
 
-nav:
+home_nav:
   - name: Blog
     url: /archives
 

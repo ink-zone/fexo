@@ -19,6 +19,11 @@ $ cd themes/fexo
 $ git pull
 ```
 
+### Set Avatar
+
+Just replace image `theme/hexo/source/images/avatar.jpg`
+
+
 ### Configuration
 
 ```yml
@@ -26,18 +31,10 @@ $ git pull
 blog_name: Forsigner
 slogan: Find the bug of the world
 
-# Content
-excerpt_link: Read More
-
-# widget behavior
-archive_type: 'monthly'
-show_count: true
-
 # Miscellaneous
 google_analytics:
-baidu_analytics: 57e94d016e201fba3603a8a2b020xxx
+baidu_analytics: 57e94d016e201fba3603a8srewrwxxxxa
 favicon:
-twitter_id:
 
 home_nav:
   - name: Blog
