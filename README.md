@@ -1,6 +1,7 @@
 #Fexo
 
 ![screenshot-1](https://raw.githubusercontent.com/forsigner/forsigner.github.io/master/images/screenshot-1.png)
+![screenshot-2](https://raw.githubusercontent.com/forsigner/forsigner.github.io/master/images/screenshot-2.png)
 
 ### Install
 
