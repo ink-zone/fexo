@@ -28,7 +28,7 @@ show_count: true
 
 # Miscellaneous
 google_analytics:
-baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
+baidu_analytics: 57e94d016e201fba3603a8a2b020xxx
 favicon:
 twitter_id:
 
