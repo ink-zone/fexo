@@ -2,28 +2,8 @@
 blog_name: Forsigner
 slogan: Find the bug of the world
 
-# Header
-navbar_brand: false
-menu:
-  Home: index.html
-  Archives: archives/
-rss: /atom.xml
-
 # Content
 excerpt_link: Read More
-
-# Sidebar
-widgets:
-- about
-- category
-- tag
-- tagcloud
-- archive
-- recent_posts
-about_widget_content: >
-  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod.
-  Cras mattis consectetur purus sit amet fermentum. Aenean
-  lacinia bibendum nulla sed consectetur.</p>
 
 # widget behavior
 archive_type: 'monthly'
@@ -34,9 +14,6 @@ google_analytics:
 baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 favicon:
 twitter_id:
-google_plus:
-fb_admins:
-fb_app_id:
 
 nav:
   - name: Blog
