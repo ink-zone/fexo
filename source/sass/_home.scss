@@ -23,31 +23,68 @@
   .slogan {
     font-weight: 200;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     color: #666;
   }
   hr {
     border: none;
     margin-top: -1px;
     height: 1px;
-    background-color: #c0c8c9;
+    background-color: #bbb;
     max-width: 400px;
-    background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+    background-image: -webkit-linear-gradient(0deg, #fff, #bbb, #fff);
   }
-  .list {
+  .nav {
     color: #bbb;
-  }
-  a.item {
-    margin-top: 10px;
-    display: inline-block;
-    font-size: 14px;
-    text-align: center;
-    color: #000;
-    text-decoration: none;
-  }
-  a.item:hover {
-    color: #3e97eb;
-    text-decoration: none;
+    .item {
+      display: inline-block;
+      a {
+        display: inline-block;
+        font-size: 14px;
+        text-align: center;
+        color: #000;
+        text-decoration: none;
+        &:hover {
+          color: #3e97eb;
+          text-decoration: none;
+        }
+      }
+      &:last-child {
+        span {
+          display: none;
+        }
+      }
+      &:nth-child(5n+1) a {
+        color: #1ABC9C;
+        &:hover {
+          color: darken(#1ABC9C, 8%);
+        }
+      }
+      &:nth-child(5n+2) a {
+        color: #3498DB;
+        &:hover {
+          color: darken(#3498DB, 8%);
+        }
+      }
+      &:nth-child(5n+3) a {
+        color:#E67E22;
+        &:hover {
+          color: darken(#E67E22, 8%);
+        }
+      }
+      &:nth-child(5n+4) a {
+        color: #E74C3C;
+        &:hover {
+          color: darken(#E74C3C, 8%);
+        }
+      }
+      &:nth-child(5n+5) a {
+        color: #9B59B6;
+        &:hover {
+          color: darken(#9B59B6, 8%);
+        }
+      }
+    }
   }
   @media (max-width: 640px) {
     .title {

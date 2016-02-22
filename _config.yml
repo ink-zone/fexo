@@ -14,7 +14,7 @@ excerpt_link: Read More
 
 # Sidebar
 widgets:
-- about         # See also: `about_content`
+- about
 - category
 - tag
 - tagcloud
@@ -37,3 +37,16 @@ twitter_id:
 google_plus:
 fb_admins:
 fb_app_id:
+
+nav:
+  - name: Blog
+    url: /archives
+
+  - name: Github
+    url: https://github.com/forsigner
+
+  - name: Douban
+    url: http://www.douban.com/people/forsigner/
+
+  - name: Twitter
+    url: https://twitter.com/forsigner
