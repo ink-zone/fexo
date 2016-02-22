@@ -39,7 +39,7 @@ baidu_analytics: 57e94d016e201fba3603a8a2b020xxx
 favicon:
 twitter_id:
 
-nav:
+home_nav:
   - name: Blog
     url: /archives
 
@@ -52,3 +52,16 @@ nav:
   - name: Twitter
     url: https://twitter.com/forsigner
 ```
+
+### Browser compatibility
+
+- IE8+
+- Firefox
+- Chrome
+- Safari
+- Opera
+
+
+### License
+
+  [MIT](LICENSE)
