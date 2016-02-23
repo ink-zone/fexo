@@ -14,33 +14,26 @@
 </div>
 
 <div class="archive-body">
-
-  <% if (pagination == 2){ %>
-    <% page.posts.each(function(post){ %>
-      <%- partial('article', {post: post, index: true}) %>
-    <% }) %>
-  <% } else { %>
-    <% var last; %>
-    <% page.posts.each(function(post, i){ %>
-      <% var year = post.date.year(); %>
-      <% if (last != year){ %>
-        <% if (last != null){ %>
-          </div></section>
-        <% } %>
-        <% last = year; %>
-        <section class="box-year">
-          <div class="box-year-title">
-            <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="text-year"><%= year %></a>
-          </div>
-
-          <div class="list-article">
+  <% var last; %>
+  <% page.posts.each(function(post, i){ %>
+    <% var year = post.date.year(); %>
+    <% if (last != year){ %>
+      <% if (last != null){ %>
+        </div></section>
       <% } %>
-      <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
-    <% }) %>
-    <% if (page.posts.length){ %>
+      <% last = year; %>
+      <section class="box-year">
+        <div class="box-year-title">
+          <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="text-year"><%= year %></a>
         </div>
-      </section>
+
+        <div class="list-article">
     <% } %>
+    <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
+  <% }) %>
+  <% if (page.posts.length){ %>
+      </div>
+    </section>
   <% } %>
 
 </div>
