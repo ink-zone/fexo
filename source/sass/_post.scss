@@ -28,13 +28,36 @@
   }
   p {
     font-size: 14px;
-    line-height: 1.8em;
+    line-height: 2em;
     color: #444;
     margin-bottom: 20px;
   }
   img {
     width: 100%;
     height: auto;
+  }
+  ul {
+    li {
+      position: relative;
+      color: #444;
+      padding-left: 14px;
+      font-size: 14px;
+      &:before {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        background: #ddd;
+        border-radius: 50%;
+        left: -2px;
+        margin-left: 2px;
+        margin-top: -3px;
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+  p + ul {
+    margin-top: -15px;
   }
   .article-title {
     text-align: center;
