@@ -1,5 +1,4 @@
 .content-post {
-  width: 760px;
   margin: 90px auto;
   h2,
   h3,
@@ -82,4 +81,32 @@
       vertical-align: middle;
     }
   }
+}
+
+
+@media screen and (min-width: 768px) {
+  .content-post {
+    width: 760px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content-post {
+    width: 100%;
+    .avatar {
+      top: 20px;
+      left: 50%;
+      margin-left: -20px;
+    }
+    .article-inner,
+    .article-title {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    #comments {
+      padding: 10px;
+    }
+  }
+}
+@media screen and (max-device-width: 480px) {
+  // 如果使用者之裝置寬度 <= 480px，將會再載入這裡的 CSS。
 }
