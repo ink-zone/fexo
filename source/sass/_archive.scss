@@ -168,9 +168,10 @@
 }
 @media screen and (max-width: 767px) {
   .content-archive {
-    overflow: hidden;
+    overflow-x: hidden;
     margin-top: 30px;
-    padding: 10px;
+    padding-right: 10px;
+    padding-left: 12px;
     width: 100%;
     .archive-header {
       margin-bottom: 30px;

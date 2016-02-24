@@ -12,6 +12,8 @@ favicon:
 disqus_shortname: forsigner
 # duoshuo_shortname: forsigner
 
+show_count: true
+
 home_nav:
   - name: Blog
     url: /archives
