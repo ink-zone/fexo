@@ -2,6 +2,10 @@
 blog_name: Forsigner
 slogan: Find the bug of the world
 
+# For seo
+keywords: forsigner,前端,设计
+
+
 # Stats
 google_analytics:
 baidu_analytics: 57e94d016e201fba3603a8a2b0263af0

@@ -23,6 +23,12 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+  <% if (page.tags && page.tags.length) { %>
+    <meta name="keywords" content="<% page.tags.forEach(function(tag) { %><%= tag.name %>,<% }); %>" />
+  <% } else { %>
+    <meta name="keywords" content="<%= theme.keywords %>" />
+  <% } %>
+
   <%- open_graph() %>
   
   <% if (theme.rss){ %>
