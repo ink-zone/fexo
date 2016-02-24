@@ -38,20 +38,18 @@ slogan: Find the bug of the world
 # Miscellaneous
 google_analytics:
 baidu_analytics: 57e94d016e201fba3603a8srewrwxxxxa
+
 favicon:
 
+# social
+disqus_shortname: forsigner
+# duoshuo_shortname: forsigner
+
 home_nav:
-  - name: Blog
-    url: /archives
-
-  - name: Github
-    url: https://github.com/forsigner
-
-  - name: Douban
-    url: http://www.douban.com/people/forsigner/
-
-  - name: Twitter
-    url: https://twitter.com/forsigner
+  - Blog: /archives
+  - Github: https://github.com/forsigner
+  - Douban: http://www.douban.com/people/forsigner/
+  - Twitter: https://twitter.com/forsigner
 ```
 
 ### Browser compatibility
