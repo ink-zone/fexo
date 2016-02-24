@@ -7,6 +7,9 @@ google_analytics:
 baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 favicon:
 
+# social
+disqus_shortname: forsigner
+
 home_nav:
   - name: Blog
     url: /archives

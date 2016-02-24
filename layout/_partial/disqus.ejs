@@ -1,6 +1,6 @@
-<% if (config.disqus_shortname){ %>
+<% if (theme.disqus_shortname){ %>
 <script>
-  var disqus_shortname = '<%= config.disqus_shortname %>';
+  var disqus_shortname = '<%= theme.disqus_shortname %>';
   <% if (page.permalink){ %>
   var disqus_url = '<%= page.permalink %>';
   <% } %>
