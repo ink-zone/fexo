@@ -35,10 +35,19 @@
   </div>
 </article>
 
+
 <% if (!index && post.comments && theme.disqus_shortname){ %>
-<section id="comments">
+<section class="disqus-comments">
   <div id="disqus_thread">
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
 </section>
+<% } %>
+
+<% if (!index && post.comments && theme.duoshuo_shortname){ %>
+  <section class="duoshuo-comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="" data-title="<%= post.title %>" data-url="<%= url %>"></div>
+    <!-- 多说评论框 end -->
+  </section>
 <% } %>

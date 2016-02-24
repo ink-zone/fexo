@@ -9,6 +9,7 @@ favicon:
 
 # social
 disqus_shortname: forsigner
+# duoshuo_shortname: forsigner
 
 home_nav:
   - name: Blog
