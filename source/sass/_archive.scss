@@ -3,17 +3,46 @@
   width: 100%;
   .archive-header {
     margin-bottom: 30px;
-    a.home-entry {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      font-size: 13px;
-      text-align: center;
-      line-height: 40px;
-      color: #555;
-      margin-bottom: 20px;
-      background: #f0f0f0;
-      margin-left: -20px;
+    .archive-nav {
+      position: relative;
+      &:hover {
+        .list-entry {
+          display: block;
+        }
+      }
+      .home-entry {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 13px;
+        text-align: center;
+        line-height: 40px;
+        color: #555;
+        margin-bottom: 20px;
+        background: #f0f0f0;
+        margin-left: -20px;
+      }
+      .list-entry {
+        display: none;
+        position: absolute;
+        top: -17px;
+        left: 30px;
+        li {
+          display: inline-block;
+          a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 13px;
+            text-align: center;
+            line-height: 40px;
+            color: #555;
+            margin-bottom: 20px;
+            background: #f0f0f0;
+          }
+        }
+      }
     }
     .avatar {
       display: block;
