@@ -125,13 +125,20 @@
       background: #E74C3C;
     }
   }
+  .item-article:before {
+    left: -2px;
+    margin-left: -4px;
+    margin-top: -4px;
+    width: 8px;
+    height: 8px;
+  }
 }
-.item-article:before {
-  left: -2px;
-  margin-left: -4px;
-  margin-top: -4px;
-  width: 8px;
-  height: 8px;
+.archive-footer {
+  height: 80px;;
+  background: #fff;
+  margin-left: -50px;
+  padding-left: 50px;
+  line-height: 80px;
 }
 @media screen and (min-width: 768px) {
   .content-archive {
