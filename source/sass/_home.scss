@@ -45,9 +45,12 @@
         text-align: center;
         color: #000;
         text-decoration: none;
+        transition-propety: background-color;
+        transition-duration: 0.8s;
         &:hover {
-          color: #1ABC9C;
+          color: $link-hover-color;
           text-decoration: none;
+          transition-duration: 0.8s;
         }
       }
       &:last-child {

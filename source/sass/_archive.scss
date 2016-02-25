@@ -1,13 +1,89 @@
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
 .content-archive {
   margin: 40px auto;
   width: 100%;
   .archive-header {
     margin-bottom: 30px;
+    position: relative;
+    .breadcrumb {
+      position: absolute;
+      color: #dfdfdf;
+      font-size: 16px;
+      top: 6px;
+      left: 26px;
+      i {
+        font-size: 20px;
+      }
+    }
     .archive-nav {
       position: relative;
+      width: 40px;
       &:hover {
         .list-entry {
+          //visibility: visible;
+          //opacity: 1;
+          //transition: visibility 0s, opacity 0.8s linear;
+
           display: block;
+          -webkit-animation: fadeInFromNone 0.5s ease-out;
+          -moz-animation: fadeInFromNone 0.5s ease-out;
+          -o-animation: fadeInFromNone 0.5s ease-out;
+          animation: fadeInFromNone 0.5s ease-out;
         }
       }
       .home-entry {
@@ -23,10 +99,14 @@
         margin-left: -20px;
       }
       .list-entry {
+        //opacity: 0;
+        //visibility: hidden;
+        //transition: visibility 0s, opacity 0.8s linear;
         display: none;
         position: absolute;
         top: -17px;
         left: 30px;
+        width: 500px;
         li {
           display: inline-block;
           a {
@@ -103,8 +183,7 @@
     font-weight: normal;
     color: #333;
     &:hover {
-      //color: darken(#222, 60%);
-      color: #000;
+      color: $link-hover-color;
     }
   }
 }
@@ -163,7 +242,7 @@
   }
 }
 .archive-footer {
-  height: 80px;;
+  height: 80px;
   background: #fff;
   margin-left: -50px;
   padding-left: 50px;
@@ -176,7 +255,7 @@
     .archive-header {
       margin-bottom: 30px;
       a.home-entry {
-        display: block;
+        display: inline-block;
       }
       .avatar {
         display: block;
