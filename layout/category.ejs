@@ -62,6 +62,7 @@ function displayCategoriesAndPosts(category) {
 %>
 
 <div class="content-category">
+  <%- partial('_partial/page-header', {location: '分类'}) %>
   <section class="boxes">
     <% site.categories.sort('name').each(function(category) { %>
       <% if (!category.parent) { %>
