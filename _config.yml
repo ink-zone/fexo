@@ -23,9 +23,10 @@ home_nav:
   - Douban: http://www.douban.com/people/forsigner/
   - Twitter: https://twitter.com/forsigner
 
-
-archive_nav:
-  - Blog: /archives
-  - Github: https://github.com/forsigner
-  - Douban: http://www.douban.com/people/forsigner/
-  - Twitter: https://twitter.com/forsigner
+# config page nav (盒子)
+page_nav:
+  - 首页: /
+  - 分类: /category/
+  - 标签: /tags
+  - 关于: /about
+  - RSS: /atom.xml

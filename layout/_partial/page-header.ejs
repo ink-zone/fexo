@@ -3,21 +3,13 @@
   <div class="archive-nav">
     <div class="home-entry">盒子</div>
     <ul class="list-entry">
-        <li>
-            <a href="/">首页</a>
-        </li>
-        <li>
-            <a href="/">分类</a>
-        </li>
-        <li>
-            <a href="/">标签</a>
-        </li>
-        <li>
-            <a href="/">关于</a>
-        </li>
-        <li>
-            <a href="/">RSS</a>
-        </li>
+      <% theme.page_nav.forEach(function(item, i){ %>
+        <% for(var j in item) { %>
+          <li class="item-entry">
+            <a href="<%= item[j] %>"><%= j %></a>
+          </li>
+        <%} %>
+      <% }) %>
     </ul>
   </div>
   <div class="box-blog-info">
