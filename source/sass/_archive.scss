@@ -24,10 +24,6 @@
       &:hover {
         .list-entry {
           display: block;
-          // -webkit-animation: fadeInFromNone 0.5s ease-out;
-          // -moz-animation: fadeInFromNone 0.5s ease-out;
-          // -o-animation: fadeInFromNone 0.5s ease-out;
-          // animation: fadeInFromNone 0.5s ease-out;
           li {
             a {
               animation-fill-mode: both;
@@ -95,6 +91,12 @@
         margin-bottom: 20px;
         background: #f0f0f0;
         margin-left: -20px;
+        transition-propety: background-color;
+        transition-duration: 0.5s;
+        &:hover {
+          cursor: pointer;
+          background: #dfdfdf;
+        }
       }
       .list-entry {
         display: none;
@@ -115,6 +117,11 @@
             color: #555;
             margin-bottom: 20px;
             background: #f0f0f0;
+            transition-propety: background-color;
+            transition-duration: 0.5s;
+            &:hover {
+              background: #dfdfdf;
+            }
           }
         }
         li:nth-child(1) {
