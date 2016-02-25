@@ -25,7 +25,7 @@ $ git pull
 
 ### Set Avatar
 
-Just replace image `theme/hexo/source/images/avatar.jpg`
+Just replace image `theme/fexo/source/images/avatar.jpg`
 
 
 ### Configuration
