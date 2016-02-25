@@ -124,6 +124,8 @@
     font-size: 16px;
     font-weight: normal;
     color: #333;
+    transition-propety: background-color;
+    transition-duration: 0.5s;
     &:hover {
       color: $link-hover-color;
     }
