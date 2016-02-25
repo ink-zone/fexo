@@ -20,6 +20,7 @@
     font-style: normal;
     letter-spacing: -.03em;
     margin: 0 auto 10px;
+    height: 42px;
   }
   .slogan {
     font-weight: 200;
@@ -49,8 +50,6 @@
         transition-duration: 0.8s;
         &:hover {
           color: $link-hover-color;
-          text-decoration: none;
-          transition-duration: 0.8s;
         }
       }
       &:last-child {

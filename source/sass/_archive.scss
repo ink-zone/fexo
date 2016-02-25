@@ -1,59 +1,3 @@
-@-webkit-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-@keyframes fadeInFromNone {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
 .content-archive {
   margin: 40px auto;
   width: 100%;
@@ -75,10 +19,6 @@
       width: 40px;
       &:hover {
         .list-entry {
-          //visibility: visible;
-          //opacity: 1;
-          //transition: visibility 0s, opacity 0.8s linear;
-
           display: block;
           -webkit-animation: fadeInFromNone 0.5s ease-out;
           -moz-animation: fadeInFromNone 0.5s ease-out;
@@ -99,9 +39,6 @@
         margin-left: -20px;
       }
       .list-entry {
-        //opacity: 0;
-        //visibility: hidden;
-        //transition: visibility 0s, opacity 0.8s linear;
         display: none;
         position: absolute;
         top: -17px;
@@ -120,6 +57,11 @@
             color: #555;
             margin-bottom: 20px;
             background: #f0f0f0;
+          }
+        }
+        li:nth-child(1) {
+          a {
+            background: #000;
           }
         }
       }
