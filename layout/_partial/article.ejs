@@ -5,11 +5,13 @@
   </header>
 
   <div class="article-meta">
-    <%= date(post.date, null) %>
+    <span><%= date(post.date, null) %></span>
 
     <span> | </span>
 
     <% if (config.author){ %><span class="article-author"><%= config.author %></span><% } %>
+
+    <span> | </span>
 
     <%- partial('post/category') %>
   </div>
