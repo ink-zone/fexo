@@ -127,11 +127,10 @@
       }
     }
   }
-  .avatar {
+  .box-blog-info {
     display: block;
-    img,
-    .blog-info {
-      line-height: 1.8em;
+    .avatar,
+    .info {
       display: inline-block;
       vertical-align: middle;
     }
@@ -141,20 +140,21 @@
       border-radius: 50%;
       vertical-align: middle;
     }
-    .name {
-      font-family: 'calligraffittiregular';
-      font-weight: bold;
-      color: #000;
-      font-size: 24px;
-      margin: 0;
-      width: 100px;
-    }
-    .slogan {
-      color: #999;
-      display: inline-block;
+    .info {
+      .name {
+        font-family: 'calligraffittiregular';
+        font-weight: bold;
+        color: #000;
+        font-size: 24px;
+        margin: 0;
+        width: 100px;
+      }
+      .slogan {
+        color: #999;
+        display: inline-block;
+      }
     }
   }
-
 }
 
 
@@ -165,19 +165,9 @@
     .home-entry {
       display: inline-block;
     }
-    .avatar {
-      display: block;
+    .box-blog-info {
       margin-left: -30px;
-      img,
-      .blog-info {
-        line-height: 1.8em;
-        display: inline-block;
-        vertical-align: middle;
-        .slogan {
-          color: #999;
-          display: inline-block;
-        }
-      }
+      display: block;
     }
   }
 }
@@ -185,23 +175,31 @@
   .page-header {
     margin-bottom: 30px;
     text-align: center;
+    .breadcrumb {
+      display: none;
+    }
     .home-entry {
       display: none;
     }
-    .avatar {
-      display: block;
-      .blog-info {
+    .box-blog-info {
+      .avatar {
         display: block;
-        line-height: 1.8em;
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          vertical-align: middle;
+        }
+      }
+      .info {
+        display: inline-block;
         .name {
-          text-align: center;
           display: inline-block;
           margin-top: 10px;
           margin-bottom: 8px;
         }
         .slogan {
           display: block;
-          color: #999;
         }
       }
     }
