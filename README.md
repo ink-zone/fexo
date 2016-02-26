@@ -27,6 +27,24 @@ $ git pull
 
 Just replace image `theme/fexo/source/images/avatar.jpg`
 
+### Enable category page
+
+To enable category page :
+
+1. Run `hexo new page category`. A new folder named category will be created in source/
+2. Replace source/category/index.md content with :
+
+```
+---
+title: "all-categories"
+layout: "all-categories"
+comments: false
+---
+```
+
+New page will be reach at : /all-categories. On this page, users will be able to search and filter categories.
+
+
 
 ### Configuration
 
