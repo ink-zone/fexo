@@ -10,9 +10,7 @@ gulp.task('sass', function() {
   return gulp.src('./source/sass/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(postcss([autoprefixer({
-      browsers: ['last 2 version']
-    })]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./source/css'));
 });

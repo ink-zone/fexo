@@ -1,16 +1,1 @@
-<% if (post.link){ %>
-  <div class="article-title">
-    <a class="<%= class_name %>" href="<%- url_for(post.link) %>"
-       target="_blank" itemprop="url"><%= post.title || '(no title)' %></a>
-  </div>
-<% } else { %>
-  <% if (index){ %>
-    <div class="article-title">
-      <a class="<%= class_name %>" href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
-    </div>
-  <% } else { %>
-    <div class="<%= class_name %> article" >
-      <%= post.title || '(no title)' %>
-    </div>
-  <% } %>
-<% } %>
+<a class="post-title" href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>

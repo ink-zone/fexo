@@ -1,0 +1,33 @@
+.item-post {
+  padding-left: 20px;
+  position: relative;
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    background: #ddd;
+    border-radius: 50%;
+    left: -2px;
+    margin-left: -4px;
+    margin-top: -4px;
+    width: 8px;
+    height: 8px;
+  }
+  .post-date {
+    display: inline-block;
+    font-size: 12px;
+    color: #888;
+  }
+  .post-title {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    transition-propety: background-color;
+    transition-duration: 0.5s;
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+}

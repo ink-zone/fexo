@@ -1,0 +1,45 @@
+.item-year {
+  margin-top: 40px;
+  padding-left: 20px;
+  position: relative;
+  &:before {
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    content: " ";
+    background: #ddd;
+    border-radius: 50%;
+    margin-left: -5px;
+    margin-top: -9px;
+  }
+  a.text-year {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    font-family: 'calligraffittiregular';
+    font-weight: bold;
+  }
+
+}
+
+.item-year-0:before {
+  background: #1ABC9C;
+}
+
+.item-year-1:before {
+  background: #3498DB;
+}
+
+.item-year-2:before {
+  background: #9B59B6;
+}
+
+.item-year-3:before {
+  background: #E67E22;
+}
+
+.item-year-4:before {
+  background: #E74C3C;
+}
