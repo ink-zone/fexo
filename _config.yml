@@ -26,7 +26,8 @@ home_nav:
 # config page nav (盒子)
 page_nav:
   - 首页: /
+  - 博客: /archives/
   - 分类: /category/
-  - 标签: /tags
-  - 关于: /about
+  - 标签: /tags/
+  - 关于: /about/
   - RSS: /atom.xml

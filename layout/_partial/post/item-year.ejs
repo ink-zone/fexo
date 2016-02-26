@@ -1,3 +1,3 @@
-  <li class="item-year item item-year-<%= post.year % 5 %>">
+  <li class="item-year item item-title item-title-<%= post.year % 5 %>">
     <a href="<%- url_for(config.archive_dir + '/' + post.year) %>" class="text-year"><%= post.year %></a>
   </li>

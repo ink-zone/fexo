@@ -1,24 +1,20 @@
-.content-archive {
-  margin: 40px auto;
-  .list-post {
-    line-height: 2.8em;
+.content.content-archive {
+  .archive-footer {
+    height: 80px;
+    background: #fff;
+    margin-left: -50px;
+    padding-left: 50px;
+    line-height: 80px;
   }
 }
-.archive-footer {
-  height: 80px;
-  background: #fff;
-  margin-left: -50px;
-  padding-left: 50px;
-  line-height: 80px;
-}
 @media screen and (min-width: 768px) {
-  .content-archive {
+  .content.content-archive {
     width: 500px;
     border-left: 4px solid #f9f9f9;
   }
 }
 @media screen and (max-width: 767px) {
-  .content-archive {
+  .content.content-archive {
     overflow-x: hidden;
     margin-top: 30px;
     padding-right: 10px;
