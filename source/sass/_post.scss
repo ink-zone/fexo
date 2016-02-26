@@ -1,92 +1,85 @@
 .content-post {
   margin: 90px auto;
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 25px 0 15px;
+  .toolbox .home-entry {
+    margin-left: 0;
   }
-  h1 {
-    font-size: 22px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  h3 {
-    font-size: 16px;
-  }
-  a {
-    color: #02b875;
-    &:hover {
-      color: darken(#02b875, 10%);
+  .article-inner {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 25px 0 15px;
+    }
+    h1 {
+      font-size: 22px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+    a {
+      color: #02b875;
+      &:hover {
+        color: darken(#02b875, 10%);
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 2em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    ul {
+      li {
+        position: relative;
+        color: #333;
+        padding-left: 14px;
+        font-size: 16px;
+        &:before {
+          content: " ";
+          position: absolute;
+          top: 50%;
+          background: #ddd;
+          border-radius: 50%;
+          left: -2px;
+          margin-left: 2px;
+          margin-top: -3px;
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+    p + ul {
+      margin-top: -15px;
     }
   }
-  p {
-    font-size: 16px;
-    line-height: 2em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-  ul {
-    li {
-      position: relative;
-      color: #333;
-      padding-left: 14px;
-      font-size: 16px;
-      &:before {
-        content: " ";
-        position: absolute;
-        top: 50%;
-        background: #ddd;
-        border-radius: 50%;
-        left: -2px;
-        margin-left: 2px;
-        margin-top: -3px;
-        width: 6px;
-        height: 6px;
+  .article-header {
+    margin-bottom: 50px;
+    .post-title {
+      font-size: 36px;
+      margin: 0 0 12px 0px;
+    }
+    .article-meta {
+      color: #999;
+      font-size: 12px;
+      margin-top: 8px;
+      margin-bottom: 30px;
+      a {
+        color: #999;
       }
     }
   }
-  p + ul {
-    margin-top: -15px;
-  }
-  .article-title {
-    text-align: center;
-    font-size: 24px;
-  }
-  .article-meta {
-    color: #999;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 8px;
-    margin-bottom: 30px;
-    a {
-      color: #999;
-    }
-  }
-  .avatar {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    display: block;
-    img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      vertical-align: middle;
-    }
-  }
 }
-
-
 @media screen and (min-width: 768px) {
   .content-post {
     width: 760px;
@@ -95,11 +88,6 @@
 @media screen and (max-width: 767px) {
   .content-post {
     width: 100%;
-    .avatar {
-      top: 20px;
-      left: 50%;
-      margin-left: -20px;
-    }
     .article-inner,
     .article-title {
       padding-left: 10px;

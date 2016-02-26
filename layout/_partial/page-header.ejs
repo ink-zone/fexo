@@ -1,17 +1,7 @@
 <div class="page-header">
   <div class="breadcrumb"><i class="icon-location"></i><span><%= location %></span></div>
-  <div class="archive-nav">
-    <div class="home-entry">盒子</div>
-    <ul class="list-entry">
-      <% theme.page_nav.forEach(function(item, i){ %>
-        <% for(var j in item) { %>
-          <li class="item-entry">
-            <a href="<%= item[j] %>"><%= j %></a>
-          </li>
-        <%} %>
-      <% }) %>
-    </ul>
-  </div>
+
+  <%- partial('toolbox') %>
   <div class="box-blog-info">
     <a class="avatar" href="/">
       <img src="/images/avatar.jpg" alt="" />

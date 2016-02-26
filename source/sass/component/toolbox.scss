@@ -1,0 +1,108 @@
+.toolbox {
+  position: relative;
+  width: 40px;
+  &:hover {
+    .list-entry {
+      display: block;
+      li {
+        a {
+          animation-fill-mode: both;
+          animation-duration: 0.8s;
+        }
+      }
+      li:nth-child(1) {
+        a {
+          // animation-name: zoomIn;
+          animation-name: fadeIn;
+        }
+      }
+      li:nth-child(2) {
+        a {
+          // animation-name: zoomIn;
+          animation-name: fadeIn;
+          animation-delay: 0.1s;
+        }
+      }
+      li:nth-child(3) {
+        a {
+          // animation-name: zoomIn;
+          animation-name: fadeIn;
+          animation-delay: 0.2s;
+        }
+      }
+      li:nth-child(4) {
+        a {
+          // animation-name: zoomIn;
+          animation-name: fadeIn;
+          animation-delay: 0.3s;
+        }
+      }
+      li:nth-child(5) {
+        a {
+          // animation-name: zoomIn;
+          animation-name: fadeIn;
+          animation-delay: 0.4s;
+        }
+      }
+      li:nth-child(6) {
+        a {
+          // animation-name: zoomIn;
+          animation-name: fadeIn;
+          animation-delay: 0.5s;
+        }
+      }
+      li:nth-child(7) {
+        a {
+          // animation-name: zoomIn;
+          animation-name: fadeIn;
+          animation-delay: 0.6s;
+        }
+      }
+    }
+  }
+  .home-entry {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 40px;
+    color: #555;
+    margin-bottom: 20px;
+    background: #f0f0f0;
+    margin-left: -20px;
+    transition-propety: background-color;
+    transition-duration: 0.5s;
+    &:hover {
+      cursor: pointer;
+      background: #dfdfdf;
+    }
+  }
+  .list-entry {
+    display: none;
+    position: absolute;
+    top: -17px;
+    left: 30px;
+    width: 500px;
+    li {
+      display: inline-block;
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 13px;
+        text-align: center;
+        line-height: 40px;
+        color: #555;
+        margin-bottom: 20px;
+        background: #f0f0f0;
+        transition-propety: background-color;
+        transition-duration: 0.5s;
+        &:hover {
+          background: #dfdfdf;
+        }
+      }
+    }
+  }
+}
