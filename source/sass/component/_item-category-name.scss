@@ -1,10 +1,10 @@
 .item-category-name {
+  position: relative;
   margin-top: 40px;
   padding-left: 20px;
-  position: relative;
   .category-count {
-    font-size: 16px;
     font-family: 'calligraffittiregular';
+    font-size: 16px;
     font-weight: bold;
   }
 }

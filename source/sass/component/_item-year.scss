@@ -1,13 +1,12 @@
 .item-year {
+  position: relative;
   margin-top: 40px;
   padding-left: 20px;
-  position: relative;
   a.text-year {
+    font-family: 'calligraffittiregular';
     font-size: 20px;
     font-weight: bold;
-    color: #222;
-    font-family: 'calligraffittiregular';
     font-weight: bold;
+    color: #222;
   }
-
 }

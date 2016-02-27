@@ -2,97 +2,100 @@
   position: relative;
   width: 60px;
   height: 40px;
-  background: transparent;
   border-radius: 20px;
+  background: transparent;
   &:hover {
     width: 200px;
     .list-toolbox {
       display: block;
       li {
         a {
+          animation-duration: .8s;
+
           animation-fill-mode: both;
-          animation-duration: 0.8s;
         }
       }
       li:nth-child(1) a {
-          // animation-name: zoomIn;
-          animation-name: fadeIn;
+        // animation-name: zoomIn;
+        animation-name: fadeIn;
       }
       li:nth-child(2) a {
-          // animation-name: zoomIn;
-          animation-name: fadeIn;
-          animation-delay: 0.1s;
+        // animation-name: zoomIn;
+        animation-name: fadeIn;
+        animation-delay: .1s;
       }
       li:nth-child(3) a {
-          // animation-name: zoomIn;
-          animation-name: fadeIn;
-          animation-delay: 0.2s;
+        // animation-name: zoomIn;
+        animation-name: fadeIn;
+        animation-delay: .2s;
       }
       li:nth-child(4) a {
-          // animation-name: zoomIn;
-          animation-name: fadeIn;
-          animation-delay: 0.3s;
+        // animation-name: zoomIn;
+        animation-name: fadeIn;
+        animation-delay: .3s;
       }
       li:nth-child(5) a {
-          // animation-name: zoomIn;
-          animation-name: fadeIn;
-          animation-delay: 0.4s;
+        // animation-name: zoomIn;
+        animation-name: fadeIn;
+        animation-delay: .4s;
       }
-      li:nth-child(6) a{
-          // animation-name: zoomIn;
-          animation-name: fadeIn;
-          animation-delay: 0.5s;
+      li:nth-child(6) a {
+        // animation-name: zoomIn;
+        animation-name: fadeIn;
+        animation-delay: .5s;
       }
-      li:nth-child(7) a{
-          // animation-name: zoomIn;
-          animation-name: fadeIn;
-          animation-delay: 0.6s;
+      li:nth-child(7) a {
+        // animation-name: zoomIn;
+        animation-name: fadeIn;
+        animation-delay: .6s;
       }
-      li:nth-child(8) a{
-          // animation-name: zoomIn;
-          animation-name: fadeIn;
-          animation-delay: 0.7s;
+      li:nth-child(8) a {
+        // animation-name: zoomIn;
+        animation-name: fadeIn;
+        animation-delay: .7s;
       }
     }
   }
   .toolbox-entry {
+    font-size: 13px;
+    line-height: 40px;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    font-size: 13px;
-    text-align: center;
-    line-height: 40px;
-    color: #555;
     margin-bottom: 20px;
+    transition-duration: .5s;
+    text-align: center;
+    color: #555;
+    border-radius: 50%;
     background: #f0f0f0;
+
     transition-propety: background-color;
-    transition-duration: 0.5s;
     &:hover {
       cursor: pointer;
       background: #dfdfdf;
     }
   }
   .list-toolbox {
-    display: none;
     position: absolute;
     top: -17px;
     left: 46px;
+    display: none;
     width: 500px;
     .item-toolbox {
       display: inline-block;
       a {
+        font-size: 13px;
+        line-height: 40px;
         display: inline-block;
         width: 40px;
         height: 40px;
-        border-radius: 50%;
-        font-size: 13px;
-        text-align: center;
-        line-height: 40px;
-        color: #555;
         margin-bottom: 20px;
+        transition-duration: .5s;
+        text-align: center;
+        color: #555;
+        border-radius: 50%;
         background: #f0f0f0;
+
         transition-propety: background-color;
-        transition-duration: 0.5s;
         &:hover {
           background: #dfdfdf;
         }

@@ -1,31 +1,32 @@
 .item-post {
-  padding-left: 20px;
   position: relative;
+  padding-left: 20px;
   &:before {
-    content: " ";
     position: absolute;
     top: 50%;
-    background: #ddd;
-    border-radius: 50%;
     left: -2px;
-    margin-left: -4px;
-    margin-top: -4px;
     width: 8px;
     height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    content: ' ';
+    border-radius: 50%;
+    background: #ddd;
   }
   .post-date {
-    display: inline-block;
     font-size: 12px;
+    display: inline-block;
     color: #888;
   }
   .post-title {
-    display: inline-block;
-    position: relative;
     font-size: 16px;
     font-weight: normal;
+    position: relative;
+    display: inline-block;
+    transition-duration: .5s;
     color: #333;
+
     transition-propety: background-color;
-    transition-duration: 0.5s;
     &:hover {
       color: $link-hover-color;
     }

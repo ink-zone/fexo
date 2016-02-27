@@ -1,35 +1,35 @@
 .tag-box {
-  margin-left: -$tag-title-height/2;
-  margin-bottom: -$tag-title-height/2;
   position: relative;
+  margin-bottom: -$tag-title-height/2;
+  margin-left: -$tag-title-height/2;
   .tag-title {
+    font-size: 13px;
+    line-height: $tag-title-height;
     position: absolute;
     top: 50%;
-    margin-top: -$tag-title-height/2;
-    height: $tag-title-height;
     width: $tag-title-height;
-    line-height: $tag-title-height;
-    border-radius: 50%;
-    color: #555;
-    background: #f0f0f0;
-    font-size: 13px;
+    height: $tag-title-height;
+    margin-top: -$tag-title-height/2;
     text-align: center;
+    color: #555;
+    border-radius: 50%;
+    background: #f0f0f0;
   }
   .tag-list {
     margin-left: 50px;
     .tag-item {
-      color: #999;
-      margin: 5px 3px;
       font-size: 12px;
+      line-height: $tag-item-height;
       display: inline-block;
       height: $tag-item-height;
-      line-height: $tag-item-height;
-      border-radius: $tag-item-height/2;
+      margin: 5px 3px;
       padding: 0 12px;
+      color: #999;
+      border-radius: $tag-item-height/2;
       background: #f6f6f6;
       &:hover {
-        background: #f0f0f0;
         color: #333;
+        background: #f0f0f0;
       }
       .tag-size {
         font-family: 'calligraffittiregular';
@@ -38,4 +38,3 @@
     }
   }
 }
-

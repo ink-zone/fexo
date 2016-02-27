@@ -1,31 +1,31 @@
 .item-title {
+  position: relative;
   margin-top: 40px;
   padding-left: 20px;
-  position: relative;
   &:before {
     position: absolute;
-    left: -2px;
     top: 50%;
+    left: -2px;
     width: 10px;
     height: 10px;
-    content: " ";
-    border-radius: 50%;
-    margin-left: -5px;
     margin-top: -9px;
+    margin-left: -5px;
+    content: ' ';
+    border-radius: 50%;
   }
   &.item-title-0:before {
-    background: #1ABC9C;
+    background: #1abc9c;
   }
   &.item-title-1:before {
-    background: #3498DB;
+    background: #3498db;
   }
   &.item-title-2:before {
-    background: #9B59B6;
+    background: #9b59b6;
   }
   &.item-title-3:before {
-    background: #E67E22;
+    background: #e67e22;
   }
   &.item-title-4:before {
-    background: #E74C3C;
+    background: #e74c3c;
   }
 }

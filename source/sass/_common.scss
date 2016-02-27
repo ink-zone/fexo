@@ -1,6 +1,6 @@
 .content {
-  margin: 40px auto;
   width: 500px;
+  margin: 40px auto;
   border-left: 4px solid #f9f9f9;
 }
 .content.content-archive,
@@ -18,10 +18,10 @@
 @media screen and (max-width: 767px) {
   .content-archive {
     overflow-x: hidden;
+    width: 100%;
     margin-top: 30px;
     padding-right: 10px;
     padding-left: 12px;
-    width: 100%;
     .archive-body {
       border-left: 4px solid #f9f9f9;
     }

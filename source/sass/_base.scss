@@ -1,12 +1,13 @@
 html,
 body {
-  font-family: "Roboto", Verdana, sans-serif;
-  background: #fff;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', Verdana, sans-serif;
   min-height: 100%;
+  background: #fff;
+
+  -webkit-font-smoothing: antialiased;
 }
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -15,9 +16,9 @@ a {
   }
 }
 ul {
-  list-style: none;
-  padding: 0;
   line-height: 1.8em;
+  padding: 0;
+  list-style: none;
 }
 .text-center {
   text-align: center;

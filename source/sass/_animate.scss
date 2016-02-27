@@ -60,19 +60,19 @@
 
 @keyframes scaleIn {
   0% {
-    opacity: 0;
     transform: scale(0);
+    opacity: 0;
   }
   100% {
-    opacity: 1;
     transform: scale(0);
+    opacity: 1;
   }
 }
 
 @keyframes zoomIn {
   0% {
-    opacity: 0;
     transform: scale3d(0, 0, 0);
+    opacity: 0;
   }
   50% {
     opacity: 1;
@@ -87,4 +87,3 @@
     opacity: 1;
   }
 }
-

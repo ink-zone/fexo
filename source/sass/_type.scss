@@ -27,8 +27,8 @@
   p {
     font-size: 16px;
     line-height: 2em;
-    color: #333;
     margin-bottom: 20px;
+    color: #333;
   }
   img {
     width: 100%;
@@ -36,21 +36,21 @@
   }
   ul {
     li {
-      position: relative;
-      color: #333;
-      padding-left: 14px;
       font-size: 16px;
+      position: relative;
+      padding-left: 14px;
+      color: #333;
       &:before {
-        content: " ";
         position: absolute;
         top: 50%;
-        background: #ddd;
-        border-radius: 50%;
         left: -2px;
-        margin-left: 2px;
-        margin-top: -3px;
         width: 6px;
         height: 6px;
+        margin-top: -3px;
+        margin-left: 2px;
+        content: ' ';
+        border-radius: 50%;
+        background: #ddd;
       }
     }
   }

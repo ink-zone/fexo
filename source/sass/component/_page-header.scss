@@ -1,17 +1,18 @@
 .page-header {
-  margin-bottom: 30px;
   position: relative;
+  margin-bottom: 30px;
   background: #fff;
   .breadcrumb {
-    color: #d0d0d0;
     font-size: 16px;
     margin-bottom: 10px;
     margin-left: -20px;
+    color: #d0d0d0;
     i {
       font-size: 26px;
       color: #dfdfdf;
     }
-    i, span {
+    i,
+    span {
       vertical-align: middle;
     }
   }
@@ -25,21 +26,21 @@
     img {
       width: 60px;
       height: 60px;
-      border-radius: 50%;
       vertical-align: middle;
+      border-radius: 50%;
     }
     .info {
       .name {
         font-family: 'calligraffittiregular';
-        font-weight: bold;
-        color: #000;
         font-size: 24px;
-        margin: 0;
+        font-weight: bold;
         width: 100px;
+        margin: 0;
+        color: #000;
       }
       .slogan {
-        color: #999;
         display: inline-block;
+        color: #999;
       }
     }
   }
@@ -53,8 +54,8 @@
       display: inline-block;
     }
     .box-blog-info {
-      margin-left: -30px;
       display: block;
+      margin-left: -30px;
     }
   }
 }
@@ -74,8 +75,8 @@
         img {
           width: 60px;
           height: 60px;
-          border-radius: 50%;
           vertical-align: middle;
+          border-radius: 50%;
         }
       }
       .info {

@@ -7,13 +7,13 @@
     margin-bottom: 50px;
     .post-title {
       font-size: 36px;
-      margin: 0 0 12px 0px;
+      margin: 0 0 12px 0;
     }
     .article-meta {
-      color: #999;
       font-size: 12px;
       margin-top: 8px;
       margin-bottom: 30px;
+      color: #999;
       a {
         color: #999;
       }
@@ -30,8 +30,8 @@
     width: 100%;
     .article-inner,
     .article-title {
-      padding-left: 10px;
       padding-right: 10px;
+      padding-left: 10px;
     }
     .disqus-comments,
     .duoshuo-comments {

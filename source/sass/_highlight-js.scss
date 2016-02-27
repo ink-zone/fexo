@@ -1,45 +1,45 @@
 code {
-  background-color: #f7f7f7;
-  border-radius: 4px;
   padding: 4px 9px;
   vertical-align: middle;
+  border-radius: 4px;
+  background-color: #f7f7f7;
 }
 /** Highlight.js Styles (Syntax Highlighting) */
 figure.highlight {
-  padding: 16px;
-  border-radius: 6px;
-  margin: 0;
-  display: block;
-  background-color: #f7f7f7;
-  overflow-x: auto;
-  margin-bottom: 15px;
-  color: #444;
   font-size: 14px;
+  display: block;
+  overflow-x: auto;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 16px;
+  color: #444;
+  border-radius: 6px;
+  background-color: #f7f7f7;
 }
 .highlight .gutter pre {
-  font-family: "Roboto", Verdana, sans-serif;
-  border: 0;
-  text-align: right;
-  padding-right: 10px;
-  background-color: transparent;
+  font-family: 'Roboto', Verdana, sans-serif;
   display: none;
+  padding-right: 10px;
+  text-align: right;
+  border: 0;
+  background-color: transparent;
 }
 .highlight .code {
   width: 100%;
 }
 .highlight figcaption {
-  font-size: 0.8em;
+  font-size: .8em;
   color: #999;
 }
 .highlight figcaption a {
   float: right;
 }
 .highlight table {
-  margin: 0;
   width: 100%g;
+  margin: 0;
 }
 .highlight pre {
-  font-family: "Roboto", Verdana, sans-serif;
+  font-family: 'Roboto', Verdana, sans-serif;
   margin: 0;
   background-color: transparent;
 }
@@ -92,7 +92,7 @@ figure.highlight {
 }
 .highlight .tag,
 .highlight .regexp {
-  color: #333333;
+  color: #333;
 }
 .highlight .title,
 .highlight .attr,
