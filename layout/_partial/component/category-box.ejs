@@ -1,0 +1,11 @@
+<section class="category-box">
+  <div class="category-title">分类</div>
+  <div class="category-list">
+    <% site.categories.sort('name').each(function (category, i) { %>
+      <a class="category-item" href="#<%= category.name %>">
+        <span class="category-name"><%= category.name%></span>
+        <span class="category-size">( <%= category.length %> )</span>
+      </a>
+    <% }); %>
+  </div>
+</section>
