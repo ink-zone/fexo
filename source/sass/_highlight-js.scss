@@ -9,12 +9,15 @@ figure.highlight {
   font-size: 14px;
   display: block;
   overflow-x: auto;
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
   padding: 16px;
-  color: #444;
+  color: $code-color;
   border-radius: 6px;
   background-color: #f7f7f7;
+}
+.highlight pre {
+  font-family: 'Roboto', Verdana, sans-serif;
+  line-height: 1.5em;
 }
 .highlight .gutter pre {
   font-family: 'Roboto', Verdana, sans-serif;

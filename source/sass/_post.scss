@@ -1,13 +1,22 @@
-.content-post {
-  margin: 90px auto;
+.post-header {
+  width: $post-width - 40px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-left: 4px solid #f0f0f0;
   .toolbox {
-    margin-bottom: 6px;
+    margin-left: -20px;
+    background-attachment: #fff;
   }
+}
+.content-post {
+  margin: 50px auto;
   .article-header {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     .post-title {
-      font-size: 36px;
-      margin: 0 0 12px 0;
+      font-size: 32px;
+      margin: 0 0 12px;
+      color:$title-color;
+      font-weight: normal;
     }
     .article-meta {
       font-size: 12px;
@@ -22,7 +31,7 @@
 }
 @media screen and (min-width: 768px) {
   .content-post {
-    width: 760px;
+    width: $post-width;
   }
 }
 @media screen and (max-width: 767px) {
