@@ -1,0 +1,12 @@
+<div class="content content-link">
+  <%- partial('_partial/component/page-header', {location: '关于'}) %>
+
+  <ul class="link-list">
+    <% theme.link.forEach(function(item, i){ %>
+      <li class="link-item link-item-<%= i % 5 %>">
+        <a target="_blank" class="link-url" href="<%= item.url || ''%>"><%= item.name || ''%></a>
+      </li>
+    <% }) %>
+  </ul>
+
+</div>

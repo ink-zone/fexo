@@ -30,29 +30,3 @@
   </ul>
 
 </div>
-
-<%
-  function getPostListsDom(categories) {
-    var newCategories = [];
-
-    categories.each(function (category, i) {
-      var categoryInfo = {id: i % 5, isCategoryNam: true, categoryName: category.name, count: category.posts.length};
-      newCategories.push(categoryInfo);
-
-      category.posts.forEach(function(post) {
-        newCategories.push(post);
-      });
-    });
-
-    var dom = '<ul class="list-post">';
-
-    newCategories.forEach(function (post, i) {
-      var patialPath = post.isCategoryNam ? '_partial/component/item-category-name' : '_partial/component/item-post';
-      dom += partial(patialPath, {post: post});
-    });
-
-    dom += '</ul>';
-    return dom;
-  }
-
-%>

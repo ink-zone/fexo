@@ -28,10 +28,27 @@ page_nav:
   - 首页: /
   - 博客: /archives/
   - 分类: /category/
-  - 标签: /tags/
+  - 标签: /tag/
+  - 友链: /link/
   - 关于: /about/
   - RSS: /atom.xml
 
+link:
+  - name: 织网
+    info: 身体和灵魂，总有一个在路上
+    url: http://zheng-ji.info/
+  - name: Dongyado
+    info: 生命不止，折腾不息
+    url: http://dongyado.com/
+  - name: OrangeCoder
+    info: xxx
+    url: http://orangecoder.com/
+  - name: EverET
+    info: xxx
+    url: http://everet.org/about-me/
+  - name: 题叶
+    info: xxx
+    url: http://tiye.me/
 
 
 

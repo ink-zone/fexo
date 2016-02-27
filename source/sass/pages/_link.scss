@@ -1,0 +1,41 @@
+.content.content-link {
+  .link-list {
+    margin-left: -2px;
+    .link-item {
+      position: relative;
+      padding: 2px 0 2px 12px;
+      a {
+        color: #444;
+        &:hover {
+          color: $site-color;
+        }
+      }
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        margin-top: -4px;
+        margin-left: -4px;
+        content: ' ';
+        border-radius: 50%;
+      }
+      &.link-item-0:before {
+        background: #1abc9c;
+      }
+      &.link-item-1:before {
+        background: #3498db;
+      }
+      &.link-item-2:before {
+        background: #9b59b6;
+      }
+      &.link-item-3:before {
+        background: #e67e22;
+      }
+      &.link-item-4:before {
+        background: #e74c3c;
+      }
+    }
+  }
+}
