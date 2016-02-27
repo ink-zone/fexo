@@ -1,25 +1,25 @@
 <div class="content content-tag">
-  <%- partial('_partial/page-header', {location: '标签'}) %>
-  <%- partial('_partial/tag-box') %>
+  <%- partial('_partial/component/page-header', {location: '标签'}) %>
+  <%- partial('_partial/component/tag-box') %>
   <%- getPostListsDom(site.tags.sort('name'))%>
 </div>
 
 <%
   function getPostListsDom(tags) {
     var postList = [];
-    tags.each(function(tag, i) { 
+    tags.each(function(tag, i) {
       var tagInfo = {id: i % 5, isTag: true, tagName: tag.name, count: tag.length};
       postList.push(tagInfo);
 
-      site.tags.findOne({name: tag.name}).posts.each(function(post) { 
+      site.tags.findOne({name: tag.name}).posts.each(function(post) {
         postList.push(post);
-      }) 
-    }); 
+      })
+    });
 
     var dom = '<ul class="list-post">';
 
     postList.forEach(function (post, i) {
-      var patialPath = post.isTag ? '_partial/post/item-tag' : '_partial/post/item-post';
+      var patialPath = post.isTag ? '_partial/component/item-tag' : '_partial/component/item-post';
       dom += partial(patialPath, {post: post});
     });
 
@@ -27,4 +27,3 @@
     return dom;
   }
 %>
-

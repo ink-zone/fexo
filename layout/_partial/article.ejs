@@ -11,7 +11,7 @@
 
       <span> | </span>
 
-      <%- partial('post/category') %>
+      <%- partial('component/category') %>
     </div>
   </header>
 
@@ -29,10 +29,6 @@
         <%- post.content %>
       <% } %>
     </div>
-
-    <% if (!(post.excerpt && index)){ %>
-      <%- partial('post/gallery') %>
-    <% } %>
 
   </div>
 </article>

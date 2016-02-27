@@ -1,12 +1,12 @@
 <div class="content content-archive">
-  <%- partial('_partial/page-header', {location: '博客'}) %>
+  <%- partial('_partial/component/page-header', {location: '博客'}) %>
 
   <div class="post-list-box archive-body">
     <%- getPostListsDom(page.posts) %>
   </div>
 
   <div class="archive-footer">
-    <%- partial('_partial/pagination') %>
+    <%- partial('_partial/component/pagination') %>
   </div>
 </div>
 
@@ -90,7 +90,7 @@ function getPostListsDom(posts) {
   posts = handlePosts(postsArr);
 
   posts.forEach(function (post) {
-    var patialPath = post.isYear ? '_partial/post/item-year' : '_partial/post/item-post';
+    var patialPath = post.isYear ? '_partial/component/item-year' : '_partial/component/item-post';
     dom += partial(patialPath, {post: post});
   });
 

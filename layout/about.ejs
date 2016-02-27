@@ -1,5 +1,5 @@
 <div class="content content-category">
-  <%- partial('_partial/page-header', {location: '分类'}) %>
+  <%- partial('_partial/component/page-header', {location: '分类'}) %>
   <%- getPostListsDom(site.categories.sort('name')) %>
 </div>
 
@@ -19,7 +19,7 @@
     var dom = '<ul class="list-post">';
 
     newCategories.forEach(function (post, i) {
-      var patialPath = post.isCategoryNam ? '_partial/post/item-category-name' : '_partial/post/item-post';
+      var patialPath = post.isCategoryNam ? '_partial/component/item-category-name' : '_partial/component/item-post';
       dom += partial(patialPath, {post: post});
     });
 
