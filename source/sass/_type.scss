@@ -35,14 +35,14 @@
     color: $title-color;
   }
   p {
-    font-size: 16px;
+    font-size: $article-font-size;
     line-height: 2em;
     margin-bottom: 20px;
     color: $article-color;
   }
   ol,
   ul {
-    font-size: 16px;
+    font-size: $article-font-size;
     color: $article-color;
   }
   img {

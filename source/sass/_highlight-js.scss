@@ -6,7 +6,7 @@ code {
 }
 /** Highlight.js Styles (Syntax Highlighting) */
 figure.highlight {
-  font-size: 14px;
+  font-size: $code-font-size;
   display: block;
   overflow-x: auto;
   margin: 0 0 15px;
