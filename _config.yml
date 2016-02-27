@@ -31,3 +31,21 @@ page_nav:
   - 标签: /tags/
   - 关于: /about/
   - RSS: /atom.xml
+
+about:
+  - me:
+    name: forsigner 
+    icon: icon-home
+  - intro:
+    text: "Find the bug of the world"
+  - Github:
+      name: forsigner
+      icon: icon-github
+      url: https://github.com/forsigner
+  - 知乎:
+      name: forsigner
+      icon: icon-zhihu
+      url: https://github.com/forsigner
+  - location:
+    name: Zhuhai
+

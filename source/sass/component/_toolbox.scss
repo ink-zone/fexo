@@ -1,8 +1,12 @@
 .toolbox {
   position: relative;
-  width: 40px;
+  width: 60px;
+  height: 40px;
+  background: transparent;
+  border-radius: 20px;
   &:hover {
-    .list-entry {
+    width: 200px;
+    .list-toolbox {
       display: block;
       li {
         a {
@@ -10,57 +14,48 @@
           animation-duration: 0.8s;
         }
       }
-      li:nth-child(1) {
-        a {
+      li:nth-child(1) a {
           // animation-name: zoomIn;
           animation-name: fadeIn;
-        }
       }
-      li:nth-child(2) {
-        a {
+      li:nth-child(2) a {
           // animation-name: zoomIn;
           animation-name: fadeIn;
           animation-delay: 0.1s;
-        }
       }
-      li:nth-child(3) {
-        a {
+      li:nth-child(3) a {
           // animation-name: zoomIn;
           animation-name: fadeIn;
           animation-delay: 0.2s;
-        }
       }
-      li:nth-child(4) {
-        a {
+      li:nth-child(4) a {
           // animation-name: zoomIn;
           animation-name: fadeIn;
           animation-delay: 0.3s;
-        }
       }
-      li:nth-child(5) {
-        a {
+      li:nth-child(5) a {
           // animation-name: zoomIn;
           animation-name: fadeIn;
           animation-delay: 0.4s;
-        }
       }
-      li:nth-child(6) {
-        a {
+      li:nth-child(6) a{
           // animation-name: zoomIn;
           animation-name: fadeIn;
           animation-delay: 0.5s;
-        }
       }
-      li:nth-child(7) {
-        a {
+      li:nth-child(7) a{
           // animation-name: zoomIn;
           animation-name: fadeIn;
           animation-delay: 0.6s;
-        }
+      }
+      li:nth-child(8) a{
+          // animation-name: zoomIn;
+          animation-name: fadeIn;
+          animation-delay: 0.7s;
       }
     }
   }
-  .home-entry {
+  .toolbox-entry {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -70,7 +65,6 @@
     color: #555;
     margin-bottom: 20px;
     background: #f0f0f0;
-    margin-left: -20px;
     transition-propety: background-color;
     transition-duration: 0.5s;
     &:hover {
@@ -78,13 +72,13 @@
       background: #dfdfdf;
     }
   }
-  .list-entry {
+  .list-toolbox {
     display: none;
     position: absolute;
     top: -17px;
-    left: 30px;
+    left: 46px;
     width: 500px;
-    li {
+    .item-toolbox {
       display: inline-block;
       a {
         display: inline-block;

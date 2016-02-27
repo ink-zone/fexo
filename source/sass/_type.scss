@@ -1,0 +1,60 @@
+.article-inner {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 25px 0 15px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  a {
+    color: #02b875;
+    &:hover {
+      color: darken(#02b875, 10%);
+    }
+  }
+  p {
+    font-size: 16px;
+    line-height: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  ul {
+    li {
+      position: relative;
+      color: #333;
+      padding-left: 14px;
+      font-size: 16px;
+      &:before {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        background: #ddd;
+        border-radius: 50%;
+        left: -2px;
+        margin-left: 2px;
+        margin-top: -3px;
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+  p + ul {
+    margin-top: -15px;
+  }
+}

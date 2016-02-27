@@ -5,21 +5,21 @@
 
 <%
   function getPostListsDom(categories) {
-    var postList = [];
+    var newCategories = [];
 
     categories.each(function (category, i) {
-      var categoryInfo = {id: i % 5, isCategoryName: true, categoryName: category.name, count: category.posts.length};
-      postList.push(categoryInfo);
+      var categoryInfo = {id: i % 5, isCategoryNam: true, categoryName: category.name, count: category.posts.length};
+      newCategories.push(categoryInfo);
 
       category.posts.forEach(function(post) {
-        postList.push(post);
+        newCategories.push(post);
       });
     });
 
     var dom = '<ul class="list-post">';
 
-    postList.forEach(function (post, i) {
-      var patialPath = post.isCategoryName ? '_partial/post/item-category-name' : '_partial/post/item-post';
+    newCategories.forEach(function (post, i) {
+      var patialPath = post.isCategoryNam ? '_partial/post/item-category-name' : '_partial/post/item-post';
       dom += partial(patialPath, {post: post});
     });
 

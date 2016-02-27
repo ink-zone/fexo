@@ -1,0 +1,7 @@
+<section class="tag-box">
+  <div class="list-tag">
+    <% site.tags.sort('name').each(function(tag) { %>
+      <a class="item-tag" href="#<%= tag.name %>"><%= tag.name %></a>
+    <% }); %>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+<div class="content content-tag">
+  <%- partial('_partial/page-header', {location: '标签'}) %>
+  <%- partial('_partial/tag-box') %>
+  <%- getPostListsDom(site.tags.sort('name'))%>
+</div>
+
+<%
+  function getPostListsDom(tags) {
+    var postList = [];
+    tags.each(function(tag, i) { 
+      var tagInfo = {id: i % 5, isTag: true, tagName: tag.name, count: tag.length};
+      postList.push(tagInfo);
+
+      site.tags.findOne({name: tag.name}).posts.each(function(post) { 
+        postList.push(post);
+      }) 
+    }); 
+
+    var dom = '<ul class="list-post">';
+
+    postList.forEach(function (post, i) {
+      var patialPath = post.isTag ? '_partial/post/item-tag' : '_partial/post/item-post';
+      dom += partial(patialPath, {post: post});
+    });
+
+    dom += '</ul>';
+    return dom;
+  }
+%>
+
