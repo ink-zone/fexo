@@ -1,6 +1,34 @@
-<div class="content content-category">
-  <%- partial('_partial/component/page-header', {location: '分类'}) %>
-  <%- getPostListsDom(site.categories.sort('name')) %>
+<div class="content content-about">
+  <%- partial('_partial/component/page-header', {location: '关于'}) %>
+
+  <ul class="about-list">
+    <% theme.about.forEach(function(item, i){ %>
+      <li class="about-item">
+        <% if(item.icon) {%>
+          <i class="icon <%= item.icon%> dot dot-<%= i % 5%>"></i>
+        <% } else { %>
+          <i class="dot dot-<%= i % 5%> "></i>
+        <% }%>
+
+        <% if(typeof item.text_value === 'object') {%>
+          <% item.text_value.forEach(function(item) {%>
+            <div class="text"><%= item%></div>
+          <% });%>
+        <% } else { %>
+          <div class="text">
+            <span><%= item.text_key || ''%></span>
+            <% if(item.text_key) {%>
+              <a target="_blank" class="text-value-url" href="<%= item.text_value_url || ''%>"><%= item.text_value || ''%></a>
+            <% } else { %>
+              <span><%= item.text_value || ''%></span>
+            <% }%>
+          </div>
+        <% }%>
+
+      </li>
+    <% }) %>
+  </ul>
+
 </div>
 
 <%
