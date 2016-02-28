@@ -1,6 +1,6 @@
-<div class="post-header">
+<div class="post-header<%= theme.post.header_align ? ' ' + theme.post.header_align : '' %>">
    <%- partial('_partial/component/toolbox') %>
 </div>
-<div class="content-post">
+<div class="content-post<%= theme.post.header_align ? ' ' + theme.post.header_align : '' %>">
    <%- partial('_partial/article', {post: page, index: false}) %>
 </div>

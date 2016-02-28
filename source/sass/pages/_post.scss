@@ -1,15 +1,26 @@
 .post-header {
-  width: $post-width - 40px;
-  margin: 0 auto;
   padding-top: 20px;
-  border-left: 4px solid #f0f0f0;
+  margin: 0 auto;
+  &.left {
+    width: $post-width - 40px;
+    border-left: 4px solid #f0f0f0;
+  }
+  &.center {
+    width: 4px;
+    background: #f0f0f0;
+  }
   .toolbox {
-    margin-left: -20px;
-    background-attachment: #fff;
+    margin-left: -18px;
+    background: #fff;
   }
 }
 .content-post {
   margin: 50px auto;
+  &.center {
+    .article-header {
+      text-align: center;
+    }
+  }
   .article-header {
     margin-bottom: 40px;
     .post-title {
