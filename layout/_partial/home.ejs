@@ -1,0 +1,26 @@
+<div class="content-home text-center">
+  <a class="avatar" href="/">
+    <img src="/images/avatar.jpg" alt="" />
+  </a>
+  <h1 class="name">
+    <%= theme.blog_name %>
+  </h1>
+  <div class="slogan">
+    <%= theme.slogan %>
+  </div>
+  <hr>
+
+  <ul class="text-center nav">
+    <% theme.home_nav.forEach(function(item, i){ %>
+      <li class="item">
+        <% if(item.target === '_blank') { %>
+          <a href="<%= item.url %>" target="_blank"><%= item.name %></a>
+        <% } else { %>
+          <a href="<%= item.url %>"><%= item.name %></a>
+        <% } %>
+        <span>|</span>
+      </li>
+    <% }) %>
+  </ul>
+
+</div>

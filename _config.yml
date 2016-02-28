@@ -17,6 +17,8 @@ disqus_shortname: forsigner
 
 show_count: true
 
+init_page_content: HOME_NAV  # HOME_NAV | POST
+
 home_nav:
   - name: Blog
     url: /archives
