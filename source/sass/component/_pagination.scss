@@ -1,6 +1,3 @@
-$pagination-item-size: 28px;
-$pagination-color: #444;
-$pagination-bg-color: #ddd;
 .pagination {
   .page-nav {
     .page-number {
@@ -33,6 +30,8 @@ $pagination-bg-color: #ddd;
       text-align: center;
       color: $pagination-color;
       border-radius: 50%;
+      transition-duration: .5s;
+      transition-propety: background-color;
       &:hover {
         color: $pagination-color;
         background: $pagination-bg-color;
