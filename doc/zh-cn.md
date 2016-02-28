@@ -1,7 +1,23 @@
 # 文档
 
-- [启用评论](#启用评论)
-- [启用统计](#启用统计)
+### 安装
+- [安装](#安装)
+- [启用](#启用)
+- [升级](#升级)
+- [配置主题](#配置主题)
+  - [设置基本信息](#设置基本信息)
+  - [设置头像](#设置头像)
+  - [设置favicon](#设置favicon)
+  - [设置关键词](#设置关键词)
+  - [设置首页内容](#设置首页内容)
+  - [设置首页导航](#设置首页导航)
+  - [设置页面导航](#设置页面导航)
+  - [设置文章标题对齐方式](#设置文章标题对齐方式)
+  - [启用分类页面](#启用分类页面)
+  - [启用标签页面](#启用标签页面)
+  - [启用友链页面](#启用友链页面)
+  - [启用统计](#启用统计)
+  - [启用评论](#启用评论)
 
 
 ### 安装
@@ -44,6 +60,12 @@ avatar: /images/avatar.jpg
 avatar: https://avatars0.githubusercontent.com/u/2668081?v=3&s=460
 ```
 
+##### 设置favicon
+
+``` yml
+favicon: /favicon.ico
+```
+
 ##### 设置关键词
 
 关键词主要作用是优化SEO
@@ -78,7 +100,7 @@ home_nav:
 
 ```
 
-# 设置页面导航 (盒子)
+##### 设置页面导航
 
 ```yml
 page_nav:
@@ -102,10 +124,10 @@ post:
 1. 在博客根目录执行 `hexo new page category`
 2. 修改`my-blog/source/category/index.md`里面的内容:
 
-```
+```yml
 ---
-title: "category"
-layout: "category"
+title: category
+layout: category
 comments: false
 ---
 ```
@@ -115,10 +137,10 @@ comments: false
 1. 在博客根目录执行 `hexo new page tag`
 2. 修改`my-blog/source/tag/index.md`里面的内容:
 
-```
+```yml
 ---
-title: "tag"
-layout: "tag"
+title: tag
+layout: tag
 comments: false
 ---
 ```
@@ -128,10 +150,10 @@ comments: false
 1. 在博客根目录执行 `hexo new page link`
 2. 修改`my-blog/source/link/index.md`里面的内容:
 
-```
+```yml
 ---
-title: "link"
-layout: "link"
+title: link
+layout: link
 comments: false
 ---
 ```
@@ -141,15 +163,15 @@ comments: false
 1. 在博客根目录执行 `hexo new page about`
 2. 修改`my-blog/source/about/index.md`里面的内容:
 
-```
+```yml
 ---
-title: "about"
-layout: "about"
+title: about
+layout: about
 comments: false
 ---
 ```
 
-##### 启用统计 #####
+##### 启用统计
 
 ```yml
 google_analytics:
