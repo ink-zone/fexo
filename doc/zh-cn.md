@@ -158,7 +158,7 @@ comments: false
 ---
 ```
 
-##### 启用友链页面
+##### 启用关于页面
 
 1. 在博客根目录执行 `hexo new page about`
 2. 修改`my-blog/source/about/index.md`里面的内容:

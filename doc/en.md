@@ -1,15 +1,36 @@
-# Documentation
+# Fexo Doc
+
+- [Installation](#Installation)
+- [Enable theme](#Enable theme)
+- [Upgrade](#Upgrade)
+- [Theme Configuration](#Theme Configuration)
+  - [Setting blog basic info](#Setting blog basic info)
+  - [Setting avatar](#Setting avatar)
+  - [Setting favicon](#Setting favicon)
+  - [Setting keywords](#Setting keywords)
+  - [Setting initail page content](#Setting initail page content)
+  - [Setting home nav](#Setting home nav)
+  - [Setting page nav](#Setting page nav)
+  - [Setting post header align type](#Setting post header align type)
+  - [Enable category page](#Enable category page)
+  - [Enable tag page](#Enable tag page)
+  - [Enable friend links page](#Enable friend links page)
+  - [Enable about page](#Enable about page)
+  - [Enable stats](#Enable stats)
+  - [Enable comment](#Enable comment)
 
 ### Installation
 
 ```bash
-$ cd my-site
+$ cd my-blog
 $ git clone git@github.com:forsigner/fexo.git themes/fexo
 ```
 
-### Use theme
+### Enable theme
 
-In file `_config.yml` set `theme: fexo`
+1. In file `my-blog/_config.yml` set `theme: fexo`
+2. In dir `fexo`, Rename `_config.template.yml` to `_config.yml`
+
 
 ### Upgrade
 
@@ -18,49 +39,148 @@ $ cd themes/fexo
 $ git pull
 ```
 
-### Set Avatar
+### Theme Configuration
 
-Just replace image `theme/fexo/source/images/avatar.jpg`
+All setting is in file `theme/fexo/_config.yml`.
 
-### Enable category page
+##### Setting blog basic info
 
-To enable category page :
-
-1. Run `hexo new page category`. A new folder named category will be created in source/
-2. Replace source/category/index.md content with :
+```yml
+blog_name: Forsigner
+slogan: Find the bug of the world
 
 ```
+
+##### Setting avatar
+
+``` yml
+# relative url
+avatar: /images/avatar.jpg
+# or absolute url
+avatar: https://avatars0.githubusercontent.com/u/2668081?v=3&s=460
+```
+
+##### Setting favicon
+
+``` yml
+favicon: /favicon.ico
+```
+
+##### Setting keywords
+
+Keywords is for SEO.
+
+```yml
+keywords: forsigner,frontend,design,nodejs,JavaScript
+```
+
+##### Setting initail page content
+
+Show post list directly in home page or note.
+
+```yml
+init_page_content: HOME_NAV  # HOME_NAV | POST
+```
+
+##### Setting home nav
+
+```yml
+home_nav:
+  - name: Blog
+    url: /archives
+  - name: Github
+    url: https://github.com/forsigner
+    target: _blank
+  - name: Douban
+    url: http://www.douban.com/people/forsigner/
+    target: _blank
+  - name: Twitter
+    url: https://twitter.com/forsigner
+    target: _blank
+
+```
+
+##### Setting page nav
+
+```yml
+page_nav:
+  - 博客: /archives/
+  - 分类: /category/
+  - 标签: /tag/
+  - 友链: /link/
+  - 关于: /about/
+  - RSS: /atom.xml
+```
+
+##### Setting post header align type
+
+```yml
+post:
+  header_align: center # left|center
+```
+
+##### Enable category page
+
+1. Run `hexo new page category`
+2. Replace `source/category/index.md` content with :
+
+```yml
 ---
-title: "all-categories"
-layout: "all-categories"
+title: category
+layout: category
 comments: false
 ---
 ```
 
-New page will be reach at : /all-categories. On this page, users will be able to search and filter categories.
+##### Enable tag page
 
-
-
-### Configuration
+1. Run `hexo new page tag`
+2. Replace `source/tag/index.md` content with :
 
 ```yml
-# Blog info
-blog_name: Forsigner
-slogan: Find the bug of the world
+---
+title: tag
+layout: tag
+comments: false
+---
+```
 
-# Miscellaneous
+##### Enable friend links page
+
+1. Run `hexo new page link`
+2. Replace `source/link/index.md` content with :
+
+```yml
+---
+title: link
+layout: link
+comments: false
+---
+```
+
+##### Enable about page
+
+1. Run `hexo new page about`
+2. Replace `source/about/index.md` content with :
+
+```yml
+---
+title: about
+layout: about
+comments: false
+---
+```
+
+##### Enable stats
+
+```yml
 google_analytics:
-baidu_analytics: 57e94d016e201fba3603a8srewrwxxxxa
+baidu_analytics: 57e94d016sfsf1fba3xxxx8a2b0263af0
+```
 
-favicon:
+##### Enable comment
 
-# social
+```yml
 disqus_shortname: forsigner
 # duoshuo_shortname: forsigner
-
-home_nav:
-  - Blog: /archives
-  - Github: https://github.com/forsigner
-  - Douban: http://www.douban.com/people/forsigner/
-  - Twitter: https://twitter.com/forsigner
 ```
