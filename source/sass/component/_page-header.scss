@@ -3,17 +3,19 @@
   margin-bottom: 30px;
   background: #fff;
   .breadcrumb {
+    width: 100px;
     font-size: 16px;
     margin-bottom: 10px;
-    margin-left: -20px;
+    margin-left: -52px;
     color: #d0d0d0;
+    text-align: center;
+    .location {
+      margin-left: 0;
+      font-size: 13px;
+    }
     i {
       font-size: 26px;
       color: #dfdfdf;
-    }
-    i,
-    span {
-      vertical-align: middle;
     }
   }
   .box-blog-info {
