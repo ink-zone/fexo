@@ -2,3 +2,5 @@
 node_modules
 tmp
 .tags*
+*~
+_config.yml
