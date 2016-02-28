@@ -1,14 +1,9 @@
-# Fexo
+#Fexo
 
-A minimalist design theme for Hexo.
-<!-- 一个极简主义设计的 Hexo 主题 -->
-
-[Demo](http://forsigner.com/) | [文档](doc/zh-cn.md.md) | [文檔](doc/zh-tw.md) | [Documentation](doc/en.md)
+A minimalist design theme for hexo.
 
 ![screenshot-1](https://raw.githubusercontent.com/forsigner/forsigner.github.io/master/images/screenshot-1.png)
 ![screenshot-2](https://raw.githubusercontent.com/forsigner/forsigner.github.io/master/images/screenshot-2.png)
-
-
 
 ### Installation
 
