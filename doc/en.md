@@ -31,8 +31,7 @@ $ git clone git@github.com:forsigner/fexo.git themes/fexo
 
 ### Enable theme
 
-1. In file `my-blog/_config.yml` set `theme: fexo`
-2. In dir `fexo`, Rename `_config.template.yml` to `_config.yml`
+In file `my-blog/_config.yml` set `theme: fexo`
 
 
 ### Upgrade

@@ -32,10 +32,7 @@ $ git clone git@github.com:forsigner/fexo.git themes/fexo
 
 ### 启用
 
-1. 打开博客根目录的 `_config.yml` 设为 `theme: fexo`
-2. 打开目录theme/fexo, 把 `_config.template.yml` 重命名为 `_config.yml`
-
-PS: `_config.yml`是被 gitignore掉的，这样升级主题后就不会覆盖自己的`_config.yml`。
+打开博客根目录的 `_config.yml` 设为 `theme: fexo`
 
 ### 升级
 
