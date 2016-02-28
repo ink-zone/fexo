@@ -30,11 +30,12 @@
   <% } %>
 
   <%- open_graph() %>
-  
+
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
 
+  <% console.log(theme.favicon); %>
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
