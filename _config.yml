@@ -26,15 +26,6 @@ home_nav:
     url: https://twitter.com/forsigner
     target: _blank
 
-
-# 面包屑
-breadcrumb:
-  isShow: true # true|fase
-
-# 盒子
-toolbox:
-  isShow: true # true|fase
-
 # config page nav
 page_nav:
   - 博客: /archives/
@@ -45,6 +36,14 @@ page_nav:
   - RSS: /atom.xml
 
 page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT
+
+# 面包屑
+breadcrumb:
+  isShow: true # true|fase
+
+# 盒子
+toolbox:
+  isShow: true # true|fase
 
 post:
   header_align: CENTER # LEFT|CENTER

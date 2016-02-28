@@ -12,6 +12,8 @@
   - [Setting home nav](#Setting home nav)
   - [Setting page nav](#Setting page nav)
   - [Setting page nav style](#Setting page nav style)
+  - [Setting breadcrumb](#Setting breadcrumb)
+  - [Setting toolbox](#Setting toolbox)
   - [Setting post header align type](#Setting post header align type)
   - [Enable category page](#Enable category page)
   - [Enable tag page](#Enable tag page)
@@ -117,6 +119,20 @@ page_nav:
 
 ```yml
 page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT
+```
+
+##### Setting breadcrumb
+
+```yml
+breadcrumb:
+  isShow: true # true|fase
+```
+
+##### Setting toolbox
+
+```yml
+toolbox:
+  isShow: true # true|fase
 ```
 
 ##### Setting post header align type
