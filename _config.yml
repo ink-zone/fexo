@@ -35,8 +35,10 @@ page_nav:
   - 关于: /about/
   - RSS: /atom.xml
 
+page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT
+
 post:
-  header_align: center # left|center
+  header_align: CENTER # LEFT|CENTER
 
 link:
   - name: 织网

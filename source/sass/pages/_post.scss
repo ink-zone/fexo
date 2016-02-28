@@ -1,11 +1,11 @@
 .post-header {
   padding-top: 20px;
   margin: 0 auto;
-  &.left {
+  &.LEFT {
     width: $post-width - 40px;
     border-left: 4px solid #f0f0f0;
   }
-  &.center {
+  &.CENTER {
     width: 4px;
     background: #f0f0f0;
   }
