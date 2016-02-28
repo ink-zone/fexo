@@ -26,7 +26,16 @@ home_nav:
     url: https://twitter.com/forsigner
     target: _blank
 
-# config page nav (盒子)
+
+# 面包屑
+breadcrumb:
+  isShow: true # true|fase
+
+# 盒子
+toolbox:
+  isShow: true # true|fase
+
+# config page nav
 page_nav:
   - 博客: /archives/
   - 分类: /category/

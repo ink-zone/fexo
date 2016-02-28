@@ -1,10 +1,18 @@
 <div class="page-header">
-  <div class="breadcrumb">
-    <div class="location"><%= location %></div>
-    <i class="icon-location"></i>
-  </div>
 
-  <%- partial('toolbox') %>
+  <% console.log(theme.breadcrumb);%>
+
+  <% if(theme.breadcrumb && theme.breadcrumb.isShow == true) { %>
+    <div class="breadcrumb">
+      <div class="location"><%= location %></div>
+      <i class="icon-location"></i>
+    </div>
+  <% } %>
+
+  <% if(theme.toolbox && theme.toolbox.isShow == true) { %>
+    <%- partial('toolbox') %>
+  <% } %>
+
   <div class="box-blog-info">
     <a class="avatar" href="/">
       <img src="<%= theme.avatar %>" alt="" />
