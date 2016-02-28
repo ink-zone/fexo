@@ -4,7 +4,10 @@
   <ul class="link-list">
     <% theme.link.forEach(function(item, i){ %>
       <li class="link-item link-item-<%= i % 5 %>">
-        <a target="_blank" class="link-url" href="<%= item.url || ''%>"><%= item.name || ''%></a>
+        <a target="_blank" class="link-url" href="<%= item.url || ''%>">
+          <img class="avatar" src="<%= item.avatar%>" alt="<%= item.name || ''%>">
+          <span class="name"><%= item.name || ''%></span>
+        </a>
       </li>
     <% }) %>
   </ul>
