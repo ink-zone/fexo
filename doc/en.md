@@ -11,6 +11,7 @@
   - [Setting initail page content](#Setting initail page content)
   - [Setting home nav](#Setting home nav)
   - [Setting page nav](#Setting page nav)
+  - [Setting page nav style](#Setting page nav style)
   - [Setting post header align type](#Setting post header align type)
   - [Enable category page](#Enable category page)
   - [Enable tag page](#Enable tag page)
@@ -104,12 +105,18 @@ home_nav:
 
 ```yml
 page_nav:
-  - 博客: /archives/
-  - 分类: /category/
-  - 标签: /tag/
-  - 友链: /link/
-  - 关于: /about/
+  - Blog: /archives/
+  - Category: /category/
+  - Tag: /tag/
+  - Links: /link/
+  - About: /about/
   - RSS: /atom.xml
+```
+
+##### Setting page nav style
+
+```yml
+page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT
 ```
 
 ##### Setting post header align type
