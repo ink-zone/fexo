@@ -1,9 +1,4 @@
-#Fexo
-
-A minimalist design theme for hexo.
-
-![screenshot-1](https://raw.githubusercontent.com/forsigner/forsigner.github.io/master/images/screenshot-1.png)
-![screenshot-2](https://raw.githubusercontent.com/forsigner/forsigner.github.io/master/images/screenshot-2.png)
+# Documentation
 
 ### Installation
 
@@ -69,16 +64,3 @@ home_nav:
   - Douban: http://www.douban.com/people/forsigner/
   - Twitter: https://twitter.com/forsigner
 ```
-
-### Browser compatibility
-
-- IE8+
-- Firefox
-- Chrome
-- Safari
-- Opera
-
-
-### License
-
-  [MIT](LICENSE)
