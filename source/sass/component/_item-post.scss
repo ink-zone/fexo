@@ -25,6 +25,11 @@
     display: inline-block;
     transition-duration: .5s;
     color: #333;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    max-width: 430px;
+    white-space: nowrap;
+    overflow: hidden;
 
     transition-propety: background-color;
     &:hover {
