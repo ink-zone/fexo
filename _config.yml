@@ -47,6 +47,7 @@ toolbox:
 
 post:
   header_align: CENTER # LEFT|CENTER
+  showToc: true # true|false
 
 link:
   - name: 织网

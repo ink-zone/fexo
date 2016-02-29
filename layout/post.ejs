@@ -1,6 +1,15 @@
 <div class="post-header<%= theme.post.header_align ? ' ' + theme.post.header_align : '' %>">
    <%- partial('_partial/component/toolbox') %>
 </div>
+
+<!-- todo -->
+<% if(theme.post.showToc && toc(page.content).length == -1) { %>
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <%- toc(page.content, {list_number: false}) %>
+  </div>
+<% } %>
+
 <div class="content-post<%= theme.post.header_align ? ' ' + theme.post.header_align : '' %>">
    <%- partial('_partial/article', {post: page, index: false}) %>
 </div>

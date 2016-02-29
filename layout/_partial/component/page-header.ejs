@@ -1,7 +1,5 @@
 <div class="page-header">
 
-  <% console.log(theme.breadcrumb);%>
-
   <% if(theme.breadcrumb && theme.breadcrumb.isShow == true) { %>
     <div class="breadcrumb">
       <div class="location"><%= location %></div>
@@ -9,9 +7,7 @@
     </div>
   <% } %>
 
-  <% if(theme.toolbox && theme.toolbox.isShow == true) { %>
-    <%- partial('toolbox') %>
-  <% } %>
+  <%- partial('toolbox') %>
 
   <div class="box-blog-info">
     <a class="avatar" href="/">

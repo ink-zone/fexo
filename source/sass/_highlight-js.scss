@@ -6,12 +6,12 @@ code {
 }
 /** Highlight.js Styles (Syntax Highlighting) */
 figure.highlight {
-  font-size: $code-font-size;
   display: block;
   overflow-x: auto;
   margin: 0 0 15px;
   padding: 16px;
   color: $code-color;
+  font-size: $code-font-size;
   border-radius: 6px;
   background-color: #f7f7f7;
 }
@@ -37,8 +37,16 @@ figure.highlight {
   float: right;
 }
 .highlight table {
-  width: 100%g;
+  width: 100%;
   margin: 0;
+  border: 0;
+  td,
+  th {
+    border: 0;
+    color: $code-color;
+    font-size: $code-font-size;
+    padding: 0;
+  }
 }
 .highlight pre {
   font-family: 'Roboto', Verdana, sans-serif;
