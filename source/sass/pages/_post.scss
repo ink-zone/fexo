@@ -6,6 +6,7 @@
     border-left: 4px solid #f0f0f0;
   }
   &.CENTER {
+    text-align: center;
     width: 4px;
     background: #f0f0f0;
   }
@@ -16,7 +17,7 @@
 }
 .content-post {
   margin: 50px auto;
-  &.center {
+  &.CENTER {
     .article-header {
       text-align: center;
     }
