@@ -39,8 +39,12 @@
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
 
-
   <%- css('css/styles') %>
+
+  <% if (theme.personal_style){ %>
+    <%- css(theme.personal_style) %>
+  <% } %>
+
   <%- partial('google-analytics') %>
   <%- partial('baidu-analytics') %>
 </head>

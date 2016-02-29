@@ -102,3 +102,7 @@ baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 # Comment service
 disqus_shortname: forsigner
 # duoshuo_shortname: forsigner
+
+# Custom CSS style
+personal_style: /css/forsigner.css
+
