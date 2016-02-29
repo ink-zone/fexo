@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 30px;
+
+  > thead > tr > th,
+  > thead > tr > td {
+    border-bottom-width: 2px;
+  }
+  td,
+  th {
+    line-height: 1.5;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    color: $article-color;
+    border: 1px solid #dfdfdf;
+    font-size: $article-font-size;
+  }
+}
