@@ -1,0 +1,31 @@
+.toc-article {
+  position: absolute;
+  left: 50%;
+  margin-left: $post-width / 2 + 20px;
+  top: 430px;
+  font-size: 13px;
+  ol{
+    line-height: 1.8em;
+    padding-left: 10px;
+    list-style: none;
+  }
+  > li {
+    margin: 4px 0;
+  }
+  .toc-title {
+    font-size: 16px;
+  }
+  .toc {
+    padding-left: 0;
+  }
+
+  a {
+    color: #888;
+    &:hover {
+      color: darken(#888, 10%);
+
+    }
+  }
+
+
+}
