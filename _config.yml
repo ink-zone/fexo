@@ -13,6 +13,8 @@ keywords: forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,fr
 
 init_page_content: HOME_NAV  # HOME_NAV | POST
 
+home_page_animate: true # true or false
+
 home_nav:
   - name: Blog
     url: /archives
@@ -105,4 +107,3 @@ disqus_shortname: forsigner
 
 # Custom CSS style
 # personal_style: /css/forsigner.css
-
