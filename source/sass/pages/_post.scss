@@ -1,6 +1,7 @@
+
 .post-header {
-  padding-top: 20px;
   margin: 0 auto;
+  padding-top: 20px;
   &.LEFT {
     width: $post-width - 40px;
     border-left: 4px solid #f0f0f0;
@@ -25,9 +26,9 @@
     margin-bottom: 40px;
     .post-title {
       font-size: 32px;
-      margin: 0 0 12px;
-      color:$title-color;
       font-weight: normal;
+      margin: 0 0 12px;
+      color: $title-color;
     }
     .article-meta {
       font-size: 12px;
@@ -71,4 +72,3 @@
     width: 95%;
   }
 }
-

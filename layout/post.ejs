@@ -2,12 +2,8 @@
    <%- partial('_partial/component/toolbox') %>
 </div>
 
-<% if(theme.post.showToc && toc(page.content).length !== 0) { %>
-  <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
-    <%- toc(page.content, {list_number: false}) %>
-  </div>
-<% } %>
+ <%- partial('_partial/component/toc') %>
+ <%- partial('_partial/component/back-top') %>
 
 <div class="content-post<%= theme.post.header_align ? ' ' + theme.post.header_align : '' %>">
    <%- partial('_partial/article', {post: page, index: false}) %>

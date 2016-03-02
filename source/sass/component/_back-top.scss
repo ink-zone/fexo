@@ -1,0 +1,36 @@
+a.back-top {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  background: #f0f0f0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 34px;
+  text-align: center;
+  transition-duration: .5s;
+  transition-propety: background-color;
+  i {
+    color: #999;
+    font-size: 26px;
+  }
+
+  &:hover {
+    background: #dfdfdf;
+    i {
+      color: #666;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .back-top {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .back-top {
+    display: none;
+  }
+}
