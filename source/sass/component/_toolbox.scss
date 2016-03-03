@@ -70,9 +70,23 @@
     background: #f0f0f0;
 
     transition-propety: background-color;
+    .toolbox-entry-text {
+      display: inline-block;
+    }
+    .icon-home {
+      display: none;
+      font-size: 22px;
+      color: #999;
+    }
     &:hover {
       cursor: pointer;
       background: #dfdfdf;
+      .toolbox-entry-text {
+        display: none;
+      }
+      .icon-home {
+        display: inline-block;
+      }
     }
   }
   .list-toolbox {
