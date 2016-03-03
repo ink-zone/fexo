@@ -31,7 +31,7 @@ home_nav:
 page_nav:
   - name: 博客
     url: /archives/
-    target_blank: false #不在新页面打开
+    target_blank: false # 不在新页面打开
   - name: 分类
     url: /category/
     target_blank: 
@@ -46,9 +46,10 @@ page_nav:
     target_blank: false
   - name: RSS
     url: /atom.xml
-    target_blank: true
+    target_blank: true # 在新页面打开
 
 page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT
+
 
 # 面包屑
 breadcrumb:
@@ -61,6 +62,7 @@ toolbox:
 post:
   header_align: CENTER # LEFT|CENTER
   showToc: true # true|false
+  showComments: true
 
 link:
   - name: 织网

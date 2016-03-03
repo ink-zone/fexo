@@ -1,7 +1,12 @@
 <%- partial('_partial/head') %>
 <body>
   <%- body %>
-  <%- partial('_partial/disqus') %>
-  <%- partial('_partial/duoshuo') %>
+
+  <% if (theme.post.showComments && page.layout === 'post'){ %>
+    <%- partial('_partial/component/comments', {className: 'comments-post'}) %>
+  <% } else if (page.comments) { %>
+    <%- partial('_partial/component/comments', {className: 'comments-' + page.layout}) %>
+  <% } %>
+
 </body>
 </html>
