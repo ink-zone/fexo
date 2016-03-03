@@ -29,12 +29,24 @@ home_nav:
 
 # config page nav
 page_nav:
-  - 博客: /archives/
-  - 分类: /category/
-  - 标签: /tag/
-  - 友链: /link/
-  - 关于: /about/
-  - RSS: /atom.xml
+  - name: 博客
+    url: /archives/
+    target_blank: false #不在新页面打开
+  - name: 分类
+    url: /category/
+    target_blank: 
+  - name: 标签
+    url: /tag/
+    target_blank: false
+  - name: 友链
+    url: /link/
+    target_blank: false
+  - name: 关于
+    url: /about/
+    target_blank: false
+  - name: RSS
+    url: /atom.xml
+    target_blank: true
 
 page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT
 

@@ -6,11 +6,15 @@
     </a>
     <ul class="list-toolbox">
       <% theme.page_nav.forEach(function(item, i){ %>
-        <% for(var j in item) { %>
-          <li class="item-toolbox">
-            <a class="<%= theme.page_nav_style ? theme.page_nav_style : 'ROUND_RECT' %>" href="<%= item[j] %>"><%= j %></a>
-          </li>
-        <%} %>
+        <li class="item-toolbox">
+          <a 
+            class="<%= theme.page_nav_style ? theme.page_nav_style : 'ROUND_RECT' %>" 
+            href="<%= item.url %>"
+            target="<%= item.target_blank ? '_blank' : '_self' %>"
+            >
+            <%= item.name %>
+          </a>
+        </li>
       <% }) %>
     </ul>
   </div>
