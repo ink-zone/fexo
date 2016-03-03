@@ -1,0 +1,125 @@
+.hint {
+  position: relative;
+  display: inline-block;
+}
+
+.hint:before,
+.hint:after {
+  position: absolute;
+  z-index: 1000000;
+  transition: .5s ease;
+  pointer-events: none;
+  opacity: 0;
+}
+
+
+.hint:hover:before,
+.hint:hover:after {
+  opacity: 1;
+}
+
+.hint:before {
+  position: absolute;
+  position: absolute;
+  content: '';
+  border: 6px solid transparent;
+  background: transparent;
+}
+
+.hint:after {
+  font-size: 12px;
+  line-height: $hint-height;
+  height: $hint-height;
+  padding: 0 10px;
+  content: '点击回首页';
+  white-space: nowrap;
+  color: #555;
+  border-radius: 4px;
+  background: #f0f0f0;
+}
+
+
+/* top */
+
+.hint--top:after {
+  bottom: 100%;
+  left: 50%;
+  margin: 0 0 -6px -10px;
+}
+
+.hint--top:hover:before {
+  margin-bottom: -10px;
+}
+
+.hint--top:hover:after {
+  margin-bottom: 2px;
+}
+
+/* default: bottom */
+
+.hint--bottom:before {
+  top: 100%;
+  left: 50%;
+  margin: -14px 0 0 0;
+  border-bottom-color: rgba(0, 0, 0, .8);
+}
+
+.hint--bottom:after {
+  top: 100%;
+  left: 50%;
+  margin: -2px 0 0 -10px;
+}
+
+.hint--bottom:hover:before {
+  margin-top: -6px;
+}
+
+.hint--bottom:hover:after {
+  margin-top: 6px;
+}
+
+/* right */
+
+.hint--right:before {
+  bottom: 50%;
+  left: 100%;
+  margin: 0 0 -4px -8px;
+  border-right-color: rgba(0,0,0,.8);
+}
+
+.hint--right:after {
+  bottom: 50%;
+  left: 100%;
+  margin: 0 0 -13px 4px;
+}
+
+.hint--right:hover:before {
+  margin: 0 0 -4px -0;
+}
+
+.hint--right:hover:after {
+  margin: 0 0 -13px 12px;
+}
+
+/* left */
+
+.hint--left:before {
+  right: 100%;
+  bottom: 50%;
+  margin: 0 -8px -3px 0;
+  border-left-color: #f0f0f0;
+}
+
+.hint--left:after {
+  right: 100%;
+  bottom: 50%;
+  margin: 0 4px -13px 0;
+}
+
+.hint--left:hover:before {
+  margin: 0 0 -3px 0;
+}
+
+.hint--left:hover:after {
+  margin: 0 12px -13px 0;
+}

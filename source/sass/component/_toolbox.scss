@@ -59,6 +59,7 @@
   .toolbox-entry {
     font-size: 13px;
     line-height: 40px;
+    display: block;
     width: 40px;
     height: 40px;
     margin-bottom: 20px;
@@ -86,13 +87,14 @@
         font-size: 13px;
         line-height: 40px;
         display: inline-block;
+        height: 40px;
         margin-bottom: 20px;
         transition-duration: .5s;
         text-align: center;
         color: #555;
-        background: #f0f0f0;
-        height: 40px;
         border-radius: 20px;
+        background: #f0f0f0;
+
         transition-propety: background-color;
         &.CIRCLE {
           width: 40px;
