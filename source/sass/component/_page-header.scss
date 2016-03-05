@@ -30,6 +30,8 @@
       height: 60px;
       vertical-align: middle;
       border-radius: 50%;
+      object-fit: cover;
+      overflow: hidden;
     }
     .info {
       .name {
