@@ -1,7 +1,8 @@
 <%- partial('_partial/head') %>
 <body>
 
-  <% if (page.layout === 'post') { %>
+  <% console.log(page) %>
+  <% if (page.base !== '') { %>
     <a href="#modal-one" class="toolbox-mobile">盒子</a>
   <% } %>
 
