@@ -1,0 +1,24 @@
+.toolbox-mobile {
+  font-size: 13px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+  transition-duration: .5s;
+  text-align: center;
+  color: #555;
+  border-radius: 50%;
+  background: #f0f0f0;
+  position: fixed;
+  right: 12px;
+  top: 12px;
+  z-index: 10;
+
+}
+
+@media screen and (min-width: 768px) {
+  .toolbox-mobile {
+    display: none;
+  }
+}

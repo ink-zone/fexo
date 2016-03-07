@@ -1,6 +1,13 @@
 <%- partial('_partial/head') %>
 <body>
+
+  <% if (page.layout === 'post') { %>
+    <a href="#modal-one" class="toolbox-mobile">盒子</a>
+  <% } %>
+
   <%- body %>
+
+  <%- partial('_partial/component/modal') %>
 
   <% if (theme.post.showComments && page.layout === 'post'){ %>
     <%- partial('_partial/component/comments', {className: 'comments-post'}) %>

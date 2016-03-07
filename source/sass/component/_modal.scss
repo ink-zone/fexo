@@ -1,0 +1,131 @@
+// Variables
+// ----------------------
+
+$gray: #333;
+$gray-light: #aaa;
+$gray-lighter: #eee;
+$space: 40px;
+$blue: #428bca;
+//$blue-dark: darken($blue, 5%);
+$blue-dark: $blue;
+
+
+//
+// Btn
+// ----------------------
+
+
+//
+// Modal
+// ----------------------
+
+.modal {
+  // This is modal bg
+  &:before {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    content: '';
+    background: rgba(0,0,0,.6);
+  }
+
+  &:target {
+    // Active animate in modal
+    &:before {
+      display: block;
+    }
+    .modal-dialog {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+// Modal Dialog
+// ----------------------
+
+.modal-dialog {
+  position: fixed;
+  z-index: 11;
+  bottom: 0;
+  width: 100%;
+  height: 160px;
+  transition: .3s ease-out;
+  transform: translate3d(0, 100%, 0);
+  border: $gray solid 1px;
+  background: #fefefe;
+}
+
+.modal-body {
+  height: 100px;
+  display: table;
+  text-align: center;
+  width: 100%;
+  .list-toolbox {
+    text-align: center;
+    display: table-cell;
+    vertical-align:middle;
+    .item-toolbox {
+      display: inline-block;
+      a {
+        font-size: 13px;
+        line-height: 40px;
+        display: inline-block;
+        height: 40px;
+        margin: 5px 2px;
+        transition-duration: .5s;
+        text-align: center;
+        color: #555;
+        border-radius: 20px;
+        background: #f0f0f0;
+
+        transition-propety: background-color;
+        &.CIRCLE {
+          width: 40px;
+        }
+        &.ROUND_RECT {
+          padding: 0 20px;
+        }
+        &:hover {
+          background: #dfdfdf;
+        }
+      }
+    }
+  }
+}
+
+
+.modal-header {
+  font-size: 13px;
+  text-align: center;
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  .btn-close {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+    font-size: 13px;
+    line-height: 40px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition-duration: .5s;
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+    border-radius: 20px;
+    background: #f0f0f0;
+
+    &:hover {
+      color: darken($gray-light, 10%);
+    }
+  }
+}
+
+/*ADDED TO STOP SCROLLING TO TOP*/
+#close {
+  display: none;
+}
