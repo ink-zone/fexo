@@ -1,25 +1,42 @@
 .content.content-link {
   .link-list {
     .link-item {
-      margin-left: -32px;
       position: relative;
-      padding: 4px 0 4px 12px;
+      margin-left: -23px;
+      padding: 8px 0;
       a {
+        display: block;
         color: #444;
-        &:hover {
-          color: $site-color;
-          .avatar {
-            opacity: 0.8;
-          }
-        }
         .avatar,
-        .name {
+        .wrap-info {
+          display: inline-block;
+          width: 1px;
           vertical-align: middle;
         }
         .avatar {
-          width: 32px;
-          height: 32px;
+          width: 44px;
+          height: 44px;
           border-radius: 50%;
+          &:hover {
+            opacity: .8;
+          }
+        }
+        .wrap-info {
+          width: 300px;
+          .name {
+            font-weight: bold;
+            line-height: 0;
+            padding-bottom: 11px;
+            &:hover {
+              color: $site-color;
+            }
+          }
+          .info {
+            font-size: 13px;
+            line-height: 0;
+            padding-top: 11px;
+            color: #999;
+          }
         }
       }
     }

@@ -6,7 +6,10 @@
       <li class="link-item link-item-<%= i % 5 %>">
         <a target="_blank" class="link-url" href="<%= item.url || ''%>">
           <img class="avatar" src="<%= item.avatar%>" alt="<%= item.name || ''%>">
-          <span class="name"><%= item.name || ''%></span>
+          <div class="wrap-info">
+            <div class="name"><%= item.name || ''%></div>
+            <div class="info"><%= item.info || ''%></div>
+          </div>
         </a>
       </li>
     <% }) %>

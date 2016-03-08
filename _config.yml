@@ -62,7 +62,7 @@ toolbox:
 # set backtop show or hide
 backtop:
   home: false
-  archives: false
+  archive: false
   category: true
   tag: true
   post: true
@@ -85,15 +85,15 @@ link:
     url: http://dongyado.com/
     avatar: https://avatars0.githubusercontent.com/u/6274940?v=3&s=460
   - name: OrangeCoder
-    info: xxx
+    info: android ffmpeg nodejs gradle
     url: http://orangecoder.com/
     avatar: https://avatars0.githubusercontent.com/u/2263785?v=3&s=460
   - name: EverET
-    info: xxx
+    info: 好记性不如烂笔头
     url: http://everet.org/about-me/
     avatar: https://avatars1.githubusercontent.com/u/1559563?v=3&s=460
   - name: 题叶
-    info: xxx
+    info: FP, GUI, Writing
     url: http://tiye.me/
     avatar: https://avatars2.githubusercontent.com/u/449224?v=3&s=460
 
