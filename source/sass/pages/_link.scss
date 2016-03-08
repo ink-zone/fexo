@@ -21,24 +21,19 @@
           }
         }
         .wrap-info {
+          //word-wrap: break-word;
+          //word-break: normal;
           line-height: 1.3em;
-          br {
-            height: 0;
-            line-height: 0;
-          }
           .name {
-            display: inline-block;
             font-weight: bold;
-            line-height: 0;
             &:hover {
               color: $site-color;
             }
           }
           .info {
-            display: inline-block;
             font-size: 13px;
-            line-height: 0;
             color: #999;
+            min-width: 240px;
           }
         }
       }
