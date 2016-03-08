@@ -4,6 +4,8 @@
   <%- getPostListsDom(site.tags.sort('name'))%>
 </div>
 
+<%- partial('_partial/component/back-top', {showBacktop: theme.backtop.tag}) %>
+
 <%
   function getPostListsDom(tags) {
     var postList = [];

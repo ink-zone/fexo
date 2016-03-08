@@ -4,6 +4,8 @@
   <%- getPostListsDom(site.categories.sort('name')) %>
 </div>
 
+<%- partial('_partial/component/back-top', {showBacktop: theme.backtop.category}) %>
+
 <%
   function getPostListsDom(categories) {
     var postList = [];

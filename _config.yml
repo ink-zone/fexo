@@ -34,7 +34,7 @@ page_nav:
     target_blank: false # 不在新页面打开
   - name: 分类
     url: /category/
-    target_blank: 
+    target_blank: false
   - name: 标签
     url: /tag/
     target_blank: false
@@ -58,6 +58,17 @@ breadcrumb:
 # 盒子
 toolbox:
   isShow: true # true|fase
+
+# set backtop show or hide
+backtop:
+  home: false
+  archives: false
+  category: true
+  tag: true
+  post: true
+  link: false
+  about: false
+
 
 post:
   header_align: CENTER # LEFT|CENTER

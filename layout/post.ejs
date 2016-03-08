@@ -3,8 +3,9 @@
 </div>
 
 <%- partial('_partial/component/toc') %>
-<%- partial('_partial/component/back-top') %>
 
 <div class="content-post<%= theme.post.header_align ? ' ' + theme.post.header_align : '' %>">
    <%- partial('_partial/article', {post: page, index: false}) %>
 </div>
+
+<%- partial('_partial/component/back-top', {showBacktop: theme.backtop.post}) %>
