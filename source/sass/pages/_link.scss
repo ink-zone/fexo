@@ -10,7 +10,6 @@
         .avatar,
         .wrap-info {
           display: inline-block;
-          width: 1px;
           vertical-align: middle;
         }
         .avatar {
@@ -22,22 +21,62 @@
           }
         }
         .wrap-info {
-          width: 300px;
+          line-height: 1.3em;
+          br {
+            height: 0;
+            line-height: 0;
+          }
           .name {
+            display: inline-block;
             font-weight: bold;
             line-height: 0;
-            padding-bottom: 11px;
             &:hover {
               color: $site-color;
             }
           }
           .info {
+            display: inline-block;
             font-size: 13px;
             line-height: 0;
-            padding-top: 11px;
             color: #999;
           }
         }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .content.content-link {
+    hr {
+      display: none;
+      height: 0;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .content.content-link {
+    width: 100%;
+    .link-list {
+      .link-item {
+        position: relative;
+        margin-left: 0;
+        padding: 8px 0 8px 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .content.content-link {
+    width: 100%;
+
+    .link-list {
+      .link-item {
+        position: relative;
+        margin-left: 0;
+        padding: 8px 0 8px 10px;
       }
     }
   }

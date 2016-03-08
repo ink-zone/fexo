@@ -1,6 +1,8 @@
 <div class="content content-link">
   <%- partial('_partial/component/page-header', {location: '友链'}) %>
 
+  <hr>
+
   <ul class="link-list">
     <% theme.link.forEach(function(item, i){ %>
       <li class="link-item link-item-<%= i % 5 %>">
@@ -8,6 +10,7 @@
           <img class="avatar" src="<%= item.avatar%>" alt="<%= item.name || ''%>">
           <div class="wrap-info">
             <div class="name"><%= item.name || ''%></div>
+            <br/>
             <div class="info"><%= item.info || ''%></div>
           </div>
         </a>

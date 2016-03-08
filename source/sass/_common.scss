@@ -19,6 +19,14 @@
   margin-top: 40px;
 }
 
+hr {
+  max-width: 400px;
+  height: 1px;
+  margin-top: -1px;
+  border: none;
+  background-color: #bbb;
+  background-image: -webkit-linear-gradient(0deg, #fff, #bbb, #fff);
+}
 
 @media screen and (min-width: 768px) {
 }

@@ -42,7 +42,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .content-post {
+  .content.content-post {
     width: $post-width;
   }
 }
@@ -50,7 +50,7 @@
   .post-header {
     display: none;
   }
-  .content-post {
+  .content.content-post {
     width: 100%;
     .article-content,
     .post-title {
@@ -64,7 +64,7 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .content-post {
+  .content.content-post {
     width: 95%;
   }
 }
