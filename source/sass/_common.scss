@@ -31,7 +31,10 @@ hr {
 @media screen and (min-width: 768px) {
 }
 @media screen and (max-width: 767px) {
-  .content-archive {
+  .content.content-about,
+  .content.content-category,
+  .content.content-tag,
+  .content.content-archive {
     overflow-x: hidden;
     width: 100%;
     margin-top: 30px;
@@ -40,5 +43,14 @@ hr {
     .archive-body {
       border-left: 4px solid #f9f9f9;
     }
+  }
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .content.content-tag,
+  .content.content-post,
+  .content.content-category {
+    width: 95%;
   }
 }

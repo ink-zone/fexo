@@ -1,5 +1,4 @@
 .content.content-about {
-  width: $about-width;
   .about-list {
     margin-left: -2px;
     .about-item {
@@ -52,6 +51,21 @@
     }
     &.dot-4 {
       background: #e74c3c;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content.content-about {
+    width: $about-width;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .content.content-about {
+    .about-list {
+      margin-left: 0;
     }
   }
 }
