@@ -15,7 +15,8 @@
     background: #fff;
   }
 }
-.content-post {
+.content.content-post {
+  border-left: none;
   margin: 50px auto;
   &.CENTER {
     .article-header {
