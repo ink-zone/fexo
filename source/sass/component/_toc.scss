@@ -2,8 +2,12 @@
   position: absolute;
   left: 50%;
   margin-left: $post-width / 2 + 20px;
-  top: 430px;
+  top: 230px;
   font-size: 13px;
+  &.fixed {
+    position: fixed;
+    top: 30px;
+  }
 
   ol {
     line-height: 1.8em;
@@ -43,4 +47,3 @@
     display: none;
   }
 }
-
