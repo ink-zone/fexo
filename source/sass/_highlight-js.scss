@@ -14,9 +14,11 @@ figure.highlight {
   font-size: $code-font-size;
   border-radius: 6px;
   background-color: #f7f7f7;
+  overflow-y: hidden
 }
 .highlight pre {
   line-height: 1.5em;
+  overflow-y: hidden
 }
 .highlight .gutter pre {
   padding-right: 30px;
