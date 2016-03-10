@@ -111,10 +111,12 @@ about:
     text_value: "@forsigner"
     text_value_url: https://github.com/forsigner
   - type: weibo
+    icon: icon-weibo
     text_key: 微博
     text_value: "@forsigner"
     text_value_url: http://weibo.com/u/1847075964
   - type: mail
+    icon: icon-mail
     text_key: Gmail
     text_value: "forsigner@gmail.com"
   - type: location

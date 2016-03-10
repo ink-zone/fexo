@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../fonts/fontello.eot?68430588');
-  src: url('../fonts/fontello.eot?68430588#iefix') format('embedded-opentype'),
-       url('../fonts/fontello.woff?68430588') format('woff'),
-       url('../fonts/fontello.ttf?68430588') format('truetype'),
-       url('../fonts/fontello.svg?68430588#fontello') format('svg');
+  src: url('/fonts/fontello.eot?75945002');
+  src: url('/fonts/fontello.eot?75945002#iefix') format('embedded-opentype'),
+       url('/fonts/fontello.woff2?75945002') format('woff2'),
+       url('/fonts/fontello.woff?75945002') format('woff'),
+       url('/fonts/fontello.ttf?75945002') format('truetype'),
+       url('/fonts/fontello.svg?75945002#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?68430588#fontello') format('svg');
+    src: url('/fonts/fontello.svg?75945002#fontello') format('svg');
   }
 }
 */
@@ -54,25 +55,38 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-weibo:before { content: '\e800'; } /* '' */
-.icon-wechat:before { content: '\e801'; } /* '' */
-.icon-qq:before { content: '\e802'; } /* '' */
-.icon-angle-up:before { content: '\e803'; } /* '' */
-.icon-angle-right:before { content: '\e804'; } /* '' */
-.icon-location:before { content: '\e805'; } /* '' */
-.icon-rss:before { content: '\e806'; } /* '' */
-.icon-box:before { content: '\e807'; } /* '' */
-.icon-archive:before { content: '\e808'; } /* '' */
-.icon-text:before { content: '\e809'; } /* '' */
-.icon-list:before { content: '\e80a'; } /* '' */
-.icon-info-with-circle:before { content: '\e80b'; } /* '' */
-.icon-home:before { content: '\e80c'; } /* '' */
-.icon-angle-left:before { content: '\e80d'; } /* '' */
-.icon-home-1:before { content: '\e80e'; } /* '' */
-.icon-user:before { content: '\e80f'; } /* '' */
-.icon-calendar:before { content: '\e810'; } /* '' */
-.icon-github:before { content: '\e811'; } /* '' */
-.icon-tag:before { content: '\e813'; } /* '' */
-.icon-info:before { content: '\e815'; } /* '' */
-.icon-info-circled-1:before { content: '\e816'; } /* '' */
-.icon-rss-2:before { content: '\e817'; } /* '' */
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-weibo:before { content: '\e801'; } /* '' */
+.icon-rss-2:before { content: '\e802'; } /* '' */
+.icon-info-circled-1:before { content: '\e803'; } /* '' */
+.icon-wechat:before { content: '\e804'; } /* '' */
+.icon-qq:before { content: '\e805'; } /* '' */
+.icon-angle-up:before { content: '\e806'; } /* '' */
+.icon-angle-right:before { content: '\e807'; } /* '' */
+.icon-location:before { content: '\e808'; } /* '' */
+.icon-rss:before { content: '\e809'; } /* '' */
+.icon-box:before { content: '\e80a'; } /* '' */
+.icon-archive:before { content: '\e80b'; } /* '' */
+.icon-text:before { content: '\e80c'; } /* '' */
+.icon-list:before { content: '\e80d'; } /* '' */
+.icon-info-with-circle:before { content: '\e80e'; } /* '' */
+.icon-home:before { content: '\e80f'; } /* '' */
+.icon-angle-left:before { content: '\e810'; } /* '' */
+.icon-home-1:before { content: '\e811'; } /* '' */
+.icon-user:before { content: '\e812'; } /* '' */
+.icon-calendar:before { content: '\e813'; } /* '' */
+.icon-hou:before { content: '\e814'; } /* '' */
+.icon-ji:before { content: '\e815'; } /* '' */
+.icon-ma:before { content: '\e816'; } /* '' */
+.icon-shu:before { content: '\e817'; } /* '' */
+.icon-tu:before { content: '\e818'; } /* '' */
+.icon-gou:before { content: '\e819'; } /* '' */
+.icon-hu:before { content: '\e81a'; } /* '' */
+.icon-uF005C:before { content: '\e81b'; } /* '' */
+.icon-niu:before { content: '\e81c'; } /* '' */
+.icon-she:before { content: '\e81d'; } /* '' */
+.icon-yang:before { content: '\e81e'; } /* '' */
+.icon-zhu:before { content: '\e81f'; } /* '' */
+.icon-github:before { content: '\e820'; } /* '' */
+.icon-tag:before { content: '\e821'; } /* '' */
+.icon-info:before { content: '\e822'; } /* '' */
