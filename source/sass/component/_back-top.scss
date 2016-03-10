@@ -10,12 +10,17 @@ a.back-top {
   text-align: center;
   transition-duration: .5s;
   transition-propety: background-color;
+  display: none;
+  &.show {
+    display: block;
+  }
   i {
     color: #999;
     font-size: 26px;
   }
 
   &:hover {
+    cursor: pointer;
     background: #dfdfdf;
     i {
       color: #666;
