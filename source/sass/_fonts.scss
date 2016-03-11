@@ -12,3 +12,38 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: "Lobster-Regular";
+    src: url("/fonts/Lobster-Regular.eot"); /* IE9 */
+    src: url("/fonts/Lobster-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/fonts/Lobster-Regular.woff") format("woff"), /* chrome, firefox */
+    url("/fonts/Lobster-Regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("/fonts/Lobster-Regular.svg#Lobster-Regular") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "PoiretOne-Regular";
+    src: url("/fonts/PoiretOne-Regular.eot"); /* IE9 */
+    src: url("/fonts/PoiretOne-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/fonts/PoiretOne-Regular.woff") format("woff"), /* chrome, firefox */
+    url("/fonts/PoiretOne-Regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("/fonts/PoiretOne-Regular.svg#PoiretOne-Regular") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "JosefinSans-Thin";
+    src: url("/fonts/JosefinSans-Thin.eot"); /* IE9 */
+    src: url("/fonts/JosefinSans-Thin.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/fonts/JosefinSans-Thin.woff") format("woff"), /* chrome, firefox */
+    url("/fonts/JosefinSans-Thin.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("/fonts/JosefinSans-Thin.svg#JosefinSans-Thin") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
