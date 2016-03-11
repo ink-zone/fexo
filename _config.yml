@@ -9,9 +9,13 @@ avatar: /images/avatar.jpg
 favicon: /favicon.ico
 
 # custom font-family 暂时只支持这3种英文字体
-# blog_name_font_familiy: calligraffittiregular
+blog_name_font_familiy: calligraffittiregular
 # blog_name_font_familiy: Lobster-Regular
-blog_name_font_familiy: PoiretOne-Regular
+# blog_name_font_familiy: PoiretOne-Regular
+
+fonts_css_path:
+  - /css/calligraffittiregular.css
+  - /css/second-font.css
 
 
 # For seo
