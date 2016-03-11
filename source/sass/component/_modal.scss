@@ -21,7 +21,7 @@ $blue-dark: $blue;
 
 .modal {
   // This is modal bg
-  &:before {
+  .cover {
     position: fixed;
     z-index: 10;
     top: 0;
@@ -29,13 +29,12 @@ $blue-dark: $blue;
     bottom: 0;
     left: 0;
     display: none;
-    content: '';
     background: rgba(0,0,0,.6);
   }
 
   &:target {
     // Active animate in modal
-    &:before {
+    .cover {
       display: block;
     }
     .modal-dialog {
