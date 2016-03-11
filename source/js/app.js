@@ -20,10 +20,11 @@
     }
   });
 
-
-  bind($backTop, 'click', function () {
-    scroll('0', 400);
-  });
+  if ($toc) {
+    bind($backTop, 'click', function () {
+      scroll('0', 400);
+    });
+  }
 
   ///////////////////
   function scroll(scrollTo, time) {
