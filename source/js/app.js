@@ -7,6 +7,9 @@
   var $backTop = document.getElementById('backTop');
   var scrollTop = 0;
 
+  document.addEventListener('DOMContentLoaded', function() {
+      FastClick.attach(document.body);
+  }, false);
 
   // toc and backTop
   bind(window, 'scroll', function () {
