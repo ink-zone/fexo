@@ -27,11 +27,11 @@ ul {
   line-height: 1.8em;
   padding: 0;
   list-style: none;
+  li {
+    list-style: none;
+  }
 }
 
-li {
-  list-style: none;
-}
 .text-center {
   text-align: center;
 }
