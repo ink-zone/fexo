@@ -1,0 +1,21 @@
+<div class="content content-project">
+  <%- partial('_partial/component/page-header', {location: '关于'}) %>
+
+  <ul class="project-list">
+    <% theme.project.forEach(function(item, i){ %>
+      <li class="project-item">
+
+        <i class="dot dot-<%= i % 5%> "></i>
+
+        <div class="text">
+          <a class="project-url" href="<%= item.url || ''%>" target="_blank"><%= item.name || ''%></a>
+          <span class="intro">- <%= item.intro || ''%></span>
+        </div>
+
+      </li>
+    <% }) %>
+  </ul>
+
+</div>
+
+<%- partial('_partial/component/back-top', {showBacktop: theme.backtop.project}) %>

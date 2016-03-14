@@ -5,6 +5,7 @@
 }
 .content.content-archive,
 .content.content-about,
+.content.content-project,
 .content.content-link,
 .content.content-category,
 .content.content-tag {
@@ -33,6 +34,7 @@ hr {
 @media screen and (max-width: 767px) {
   .content.content-post,
   .content.content-about,
+  .content.content-project,
   .content.content-category,
   .content.content-tag,
   .content.content-archive {
