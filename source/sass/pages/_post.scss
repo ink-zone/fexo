@@ -15,6 +15,11 @@
   .toolbox {
     margin-left: -18px;
     background: #fff;
+    transition-duration: .5s;
+    transition-propety: transform;
+    &:hover {
+      transform: translate(0, 10px)
+    }
   }
 }
 
