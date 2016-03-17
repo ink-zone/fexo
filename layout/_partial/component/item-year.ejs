@@ -1,3 +1,28 @@
   <li class="item-year item item-title item-title-<%= post.year % 5 %>">
-    <a href="<%- url_for(config.archive_dir + '/' + post.year) %>" class="text-year"><%= post.year %></a>
+    <a href="<%- url_for(config.archive_dir + '/' + post.year) %>" class="text-year">
+      <%= post.year %>
+      <i class="<%- getAnimalIcon(post.year) %>"></i>
+      <%
+        function getAnimalIcon(year) {
+          var index = parseInt(year) % 12;
+          console.log(year);
+          console.log(index);
+          var icon = {
+            0: 'icon-hou',
+            1: 'icon-ji',
+            2: 'icon-gou',
+            3: 'icon-zhu',
+            4: 'icon-shu',
+            5: 'icon-niu',
+            6: 'icon-hu',
+            7: 'icon-tu',
+            8: 'icon-long',
+            9: 'icon-she',
+            10: 'icon-ma',
+            11: 'icon-yang',
+          }
+          return icon[index]
+        }
+      %>
+    </a>
   </li>
