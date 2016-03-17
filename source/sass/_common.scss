@@ -3,6 +3,7 @@
   margin: 40px auto 80px;
   border-left: 4px solid #f9f9f9;
 }
+
 .content.content-archive,
 .content.content-about,
 .content.content-project,
@@ -29,8 +30,8 @@ hr {
   background-image: -webkit-linear-gradient(0deg, #fff, #bbb, #fff);
 }
 
-@media screen and (min-width: 768px) {
-}
+@media screen and (min-width: 768px) {}
+
 @media screen and (max-width: 767px) {
   .content.content-post,
   .content.content-about,
@@ -43,15 +44,30 @@ hr {
     margin-top: 30px;
     padding-right: 10px;
     padding-left: 12px;
-    .archive-body {
-      border-left: 4px solid #f9f9f9;
-    }
+
   }
+
   .content.content-post {
     padding: 0;
   }
-}
 
+  .content.content-category,
+  .content.content-tag {
+    .list-post {
+      border-left: none;
+
+      .item-title:before,
+      .item-post:before {
+        display: none;
+      }
+
+      .item-title,
+      .item-post {
+        padding-left: 0;
+      }
+    }
+  }
+}
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .content.content-tag,
@@ -60,3 +76,4 @@ hr {
     width: 95%;
   }
 }
+

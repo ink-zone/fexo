@@ -1,47 +1,57 @@
-
 .post-header {
   margin: 0 auto;
   padding-top: 20px;
+
   &.LEFT {
     width: $post-width - 40px;
     border-left: 4px solid #f0f0f0;
   }
+
   &.CENTER {
     width: 4px;
     background: #f0f0f0;
   }
+
   .toolbox {
     margin-left: -18px;
     background: #fff;
   }
 }
+
 .content.content-post {
   border-left: none;
   margin: 50px auto;
+
   &.CENTER {
     .article-header {
       text-align: center;
     }
   }
+
   .article-header {
     margin-bottom: 40px;
+
     .post-title {
       font-size: 32px;
       font-weight: normal;
       margin: 0 0 12px;
       color: $title-color;
     }
+
     .article-meta {
       font-size: 12px;
       margin-top: 8px;
       margin-bottom: 30px;
       color: #999;
+
       a {
         color: #999;
       }
+
       > span > * {
-        vertical-align: middle;  
+        vertical-align: middle;
       }
+
       i {
         display: inline-block;
         margin: 0 0 0 4px;
@@ -50,23 +60,43 @@
     }
   }
 }
+
 @media screen and (min-width: 768px) {
   .content.content-post {
     width: $post-width;
   }
 }
+
 @media screen and (max-width: 767px) {
   .post-header {
     display: none;
   }
+
   .content.content-post {
     .article-content,
     .post-title {
       padding-right: 10px;
       padding-left: 10px;
     }
+
     .article-header .post-title {
       font-size: 24px;
+    }
+  }
+
+  .content.content-archive {
+    .archive-body {
+      border-left: none;
+
+      .item-title:before,
+      .item-post:before {
+        display: none;
+      }
+
+      .item-year,
+      .item-post {
+        padding-left: 0;
+      }
     }
   }
 }
@@ -76,3 +106,4 @@
     width: 95%;
   }
 }
+
