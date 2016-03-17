@@ -3,13 +3,17 @@
     <h1 class="post-title"><%= post.title || '(no title)' %></h1>
 
     <div class="article-meta">
-      <span><%= date(post.date, null) %></span>
+      <span>
+        <i class="icon-calendar"></i>
+        <span><%= date(post.date, null) %></span>
+      </span>
 
-      <span> | </span>
-
-      <% if (config.author){ %><span class="article-author"><%= config.author %></span><% } %>
-
-      <span> | </span>
+      <% if (config.author){ %>
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span><%= config.author %></span>
+        </span>
+      <% } %>
 
       <%- partial('component/category') %>
     </div>

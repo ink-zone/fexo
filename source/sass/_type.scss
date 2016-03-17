@@ -55,21 +55,20 @@
       padding-left: 14px;
       &:before {
         position: absolute;
-        top: 11px;
+        top: 12px;
         left: -2px;
-        width: 6px;
-        height: 6px;
+        width: 4px;
+        height: 4px;
         margin-left: 2px;
         content: ' ';
         border-radius: 50%;
-        background: #ccc;
+        background: #bbb;
       }
     }
   }
   p + ul {
     margin-top: -10px;
   }
-
   ul + p {
     margin-top: 25px;
   }
