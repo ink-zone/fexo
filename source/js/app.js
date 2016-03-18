@@ -63,9 +63,9 @@
       item.content = item.content.replace(/<[^>]*>/g, '');
 
       keywords.forEach(function (word) {
-
-        var indexTitle = item.title.indexOf(word);
-        var indexContent = item.content.indexOf(word);
+        var reg = new RegExp(word, 'i');
+        var indexTitle = item.title.search(reg);
+        var indexContent = item.content.search(reg);
 
         if (indexTitle > -1 || indexContent > -1) {
           isMatch = true;
@@ -107,7 +107,8 @@
     var isMatch = false;
     var index = 0;
     matchKeyWords.forEach(function (word) {
-      index = content.indexOf(word);
+      var reg = new RegExp(word, 'i');
+      index = content.search(reg);
       if (index < 0) {
         return;
       }
