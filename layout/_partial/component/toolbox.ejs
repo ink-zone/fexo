@@ -2,13 +2,14 @@
   <div class="toolbox">
     <a class="toolbox-entry" href="/">
       <span class="toolbox-entry-text">盒子</span>
+      <i class="icon-angle-down"></i>
       <i class="icon-home"></i>
     </a>
     <ul class="list-toolbox">
       <% theme.page_nav.forEach(function(item, i){ %>
         <li class="item-toolbox">
-          <a 
-            class="<%= theme.page_nav_style ? theme.page_nav_style : 'ROUND_RECT' %>" 
+          <a
+            class="<%= theme.page_nav_style ? theme.page_nav_style : 'ROUND_RECT' %>"
             href="<%= item.url %>"
             target="<%= item.target_blank ? '_blank' : '_self' %>"
             >

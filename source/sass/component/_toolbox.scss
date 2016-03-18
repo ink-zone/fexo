@@ -6,6 +6,14 @@
   background: transparent;
   &:hover {
     width: 200px;
+    .toolbox-entry {
+      .icon-angle-down {
+        display: none;
+      }
+      .toolbox-entry-text {
+        display: inline-block;
+      }
+    }
     .list-toolbox {
       display: block;
       li {
@@ -57,6 +65,7 @@
     }
   }
   .toolbox-entry {
+    position: relative;
     font-size: 13px;
     line-height: 40px;
     display: block;
@@ -70,6 +79,9 @@
     background: #f0f0f0;
 
     transition-propety: background-color;
+    .icon-angle-down  {
+      display: none;
+    }
     .toolbox-entry-text {
       display: inline-block;
     }
@@ -81,6 +93,7 @@
     &:hover {
       cursor: pointer;
       background: #dfdfdf;
+      .icon-angle-down,
       .toolbox-entry-text {
         display: none;
       }
