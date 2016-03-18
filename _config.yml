@@ -14,9 +14,13 @@ blog_name_font_familiy: calligraffittiregular
 # blog_name_font_familiy: Lobster-Regular
 # blog_name_font_familiy: PoiretOne-Regular
 
-fonts_css_path:
-  - /css/calligraffittiregular.css
-  - /css/second-font.css
+# Custom CSS style
+personal_style: /css/forsigner.css
+
+home:
+  # background_image: /images/bg.jpg
+  background_scheme: light # dark、light
+
 
 
 # For seo
@@ -142,13 +146,6 @@ baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 # Comment service
 disqus_shortname: forsigner
 # duoshuo_shortname: forsigner
-
-# Custom CSS style
-# personal_style: /css/forsigner.css
-
-home:
-  # background_image: /images/bg.jpg
-  background_scheme:  # dark、light
 
 project:
   - type: personal
