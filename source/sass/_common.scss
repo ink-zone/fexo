@@ -6,6 +6,7 @@
 
 .content.content-archive,
 .content.content-about,
+.content.content-search,
 .content.content-project,
 .content.content-link,
 .content.content-category,
@@ -35,6 +36,7 @@ hr {
 @media screen and (max-width: 767px) {
   .content.content-post,
   .content.content-about,
+  .content.content-search,
   .content.content-project,
   .content.content-category,
   .content.content-tag,
@@ -76,4 +78,3 @@ hr {
     width: 95%;
   }
 }
-

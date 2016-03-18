@@ -35,7 +35,34 @@
     });
   }
 
+  request('GET', '/search.json', function (data) {
+    console.log(data);
+  });
+
   ///////////////////
+
+  function request(type, url, opts, callback) {
+    var xhr = new XMLHttpRequest();
+    if (typeof opts === 'function') {
+      callback = opts;
+      opts = null;
+    }
+
+    xhr.open(type, url);
+    var fd = new FormData();
+    if (type === 'POST' && opts) {
+      for (var key in opts) {
+        fd.append(key, JSON.stringify(opts[key]));
+      }
+    }
+
+    xhr.onload = function () {
+      callback(JSON.parse(xhr.response));
+    };
+
+    xhr.send(opts ? fd : null);
+  }
+
   function scroll(scrollTo, time) {
     var i = 0;
     var step = 5; // run every 5ms
