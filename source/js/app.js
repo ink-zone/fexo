@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   var $html = document.documentElement;
@@ -7,8 +7,14 @@
   var $backTop = document.getElementById('backTop');
   var scrollTop = 0;
 
-  document.addEventListener('DOMContentLoaded', function() {
-      FastClick.attach(document.body);
+  (function init() {
+    if ($backTop) {
+      $body.scrollTop > 10 ? addClass($backTop, 'show') : removeClass($backTop, 'show');
+    }
+  }());
+
+  document.addEventListener('DOMContentLoaded', function () {
+    FastClick.attach(document.body);
   }, false);
 
   // toc and backTop
@@ -31,29 +37,26 @@
 
   ///////////////////
   function scroll(scrollTo, time) {
-      var scrollFrom = parseInt(document.body.scrollTop),
-          i = 0,
-          runEvery = 5; // run every 5ms
+    var i = 0;
+    var step = 5; // run every 5ms
+    var times = time / step; //次数
 
-      scrollTo = parseInt(scrollTo);
-      time /= runEvery;
+    var id = setInterval(function () {
+      i++;
 
-      var interval = setInterval(function () {
-          i++;
+      document.body.scrollTop = (scrollTo - scrollTop) / times * i + scrollTop;
 
-          document.body.scrollTop = (scrollTo - scrollFrom) / time * i + scrollFrom;
-
-          if (i >= time) {
-              clearInterval(interval);
-          }
-      }, runEvery);
+      if (i >= time) {
+        clearInterval(id);
+      }
+    }, step);
   }
 
   function bind(element, name, listener) {
     element.addEventListener(name, listener, false);
   }
 
- function addClass(element, className) {
+  function addClass(element, className) {
     var classes = element.className ? element.className.split(' ') : [];
     if (classes.indexOf(className) < 0) {
       classes.push(className);
