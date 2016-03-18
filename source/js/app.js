@@ -36,7 +36,21 @@
   }
 
   request('GET', '/search.json', function (data) {
+    var content = '';
     console.log(data);
+    var $listSearch = document.getElementById('list-search');
+    data.forEach(function (item) {
+      var postContent = item.content.replace(/<[^>]*>/g, '').substr(0, 120);
+      item = '<li class="item">' +
+              '<a href="' + item.url + '"" target="_blank">' +
+                '<h3 class="title">' + item.title + '</h3>' +
+              '</a>' +
+              '<p class="post-content">' + postContent + '</h3>' +
+             '</li>';
+      content += item;
+    });
+
+    $listSearch.innerHTML = content;
   });
 
   ///////////////////
