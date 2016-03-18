@@ -1,3 +1,9 @@
+html.bg {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .content-home {
   position: absolute;
   top: 50%;
@@ -41,7 +47,7 @@
         text-align: center;
         text-decoration: none;
         color: #000;
-        transition-duration: .5s;
+        transition-duration: 0.5s;
         transition-propety: background-color;
         &:hover {
           color: $link-hover-color;
@@ -92,3 +98,28 @@
     }
   }
 }
+html.dark {
+  hr {
+    display: none;
+  }
+  .content-home {
+    .name {
+      color: #fff;
+    }
+    .slogan {
+      color: #fff;
+    }
+    .nav {
+      color: #fff;
+      .item {
+        a {
+          color: #fff;
+          &:hover {
+            color: $link-hover-color;
+          }
+        }
+      }
+    }
+  }
+}
+html.light {}

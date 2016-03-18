@@ -1,5 +1,28 @@
 <!DOCTYPE html>
-<html>
+
+<%- getHtmlTag(theme) %>
+
+<%
+  function getHtmlTag(theme) {
+    var html;
+    var scheme;
+    if (theme.home.background_image) {
+      scheme = {
+        light: '<html class="light bg" style="background-image: url(' + theme.home.background_image + ');">',
+        dark: '<html class="dark bg" style="background-image: url(' + theme.home.background_image + ');">',
+      }
+    } else {
+      scheme = {
+        light: '<html class="light">',
+        dark:  '<html class="dark">'
+      }
+    }
+
+    html = scheme[theme.home.background_scheme]
+    return html;
+  }
+%>
+
 <head>
   <meta charset="utf-8">
   <%

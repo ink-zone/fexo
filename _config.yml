@@ -146,6 +146,9 @@ disqus_shortname: forsigner
 # Custom CSS style
 # personal_style: /css/forsigner.css
 
+home:
+  # background_image: /images/bg.jpg
+  background_scheme:  # dark、light
 
 project:
   - type: personal
