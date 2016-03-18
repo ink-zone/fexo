@@ -63,6 +63,9 @@ page_nav:
   - name: RSS
     url: /atom.xml
     target_blank: true # 在新页面打开
+  - name: 搜索
+    url: /search/
+    target_blank: false # 在新页面打开
 
 page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT
 

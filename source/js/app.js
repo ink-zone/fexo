@@ -45,23 +45,7 @@
           return;
         }
 
-        var results = [];
-        data.forEach(function (item) {
-          var isMatch = false;
-          var matchKeyWords = [];
-          keywords.forEach(function (word) {
-            if (item.content.indexOf(word) > -1) {
-              isMatch = true;
-              matchKeyWords.push(word);
-            }
-          });
-
-          if (isMatch) {
-            item.matchKeyWords = matchKeyWords;
-            results.push(item);
-          }
-        });
-
+        var results = filterPosts(data, keywords);
         var $listSearch = document.getElementById('list-search');
         $listSearch.innerHTML = createInnerHTML(results);
       });
@@ -70,6 +54,33 @@
   }
 
   ///////////////////
+  function filterPosts(data, keywords) {
+    var results = [];
+
+    data.forEach(function (item) {
+      var isMatch = false;
+      var matchKeyWords = [];
+      item.content = item.content.replace(/<[^>]*>/g, '');
+
+      keywords.forEach(function (word) {
+
+        var indexTitle = item.title.indexOf(word);
+        var indexContent = item.content.indexOf(word);
+
+        if (indexTitle > -1 || indexContent > -1) {
+          isMatch = true;
+          matchKeyWords.push(word);
+        }
+      });
+
+      if (isMatch) {
+        item.matchKeyWords = matchKeyWords;
+        results.push(item);
+      }
+    });
+
+    return results;
+  }
 
   function createInnerHTML(results) {
     var content = '';
