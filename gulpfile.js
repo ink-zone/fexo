@@ -28,7 +28,7 @@ gulp.task('rev', function(argument) {
   gulp.src('./layout/_partial/style.ejs')
     .pipe(reveasy({
       base: path.join(process.cwd(), 'source'),
-      fileTypes: ['css']
+      fileTypes: ['css', 'js']
     }))
     .pipe(gulp.dest('./layout/_partial'))
 })
