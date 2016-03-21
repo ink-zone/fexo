@@ -4,6 +4,7 @@
   margin-left: $post-width / 2 + 20px;
   top: 230px;
   font-size: 13px;
+
   &.fixed {
     position: fixed;
     top: 30px;
@@ -26,6 +27,10 @@
   .toc {
     padding-left: 0;
   }
+  
+  a.toc-link.active {
+    color: #111;
+  }
 
   a {
     color: #888;
@@ -47,3 +52,4 @@
     display: none;
   }
 }
+
