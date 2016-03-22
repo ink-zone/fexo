@@ -90,7 +90,7 @@ backtop:
 
 
 post:
-  header_align: CENTER # LEFT|CENTER
+  header_align: LEFT # LEFT|CENTER
   showToc: true # true|false
   showComments: true
 
