@@ -26,7 +26,14 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['./source/js/fastclick.js', './source/js/zenscroll.js', './source/js/app.js'])
+  var files = [
+    './source/js/fastclick.js',
+    './source/js/zenscroll.js',
+    './source/js/util.js',
+    './source/js/app.js'
+  ];
+
+  return gulp.src(files)
     .pipe(concat('bundle.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./source/js'));

@@ -10,29 +10,30 @@
 
   (function init() {
     if ($backTop) {
-      $body.scrollTop > 10 ? addClass($backTop, 'show') : removeClass($backTop, 'show');
+      $body.scrollTop > 10 ? Util.addClass($backTop, 'show') : Util.removeClass($backTop, 'show');
     }
   }());
 
   document.addEventListener('DOMContentLoaded', function () {
     FastClick.attach(document.body);
   }, false);
+
   window.noZensmooth = true;
 
   // toc and backTop
-  bind(window, 'scroll', function () {
+  Util.bind(window, 'scroll', function () {
     scrollTop = $body.scrollTop;
     if ($toc) {
-      scrollTop > 200 ? addClass($toc, 'fixed') : removeClass($toc, 'fixed');
+      scrollTop > 200 ? Util.addClass($toc, 'fixed') : Util.removeClass($toc, 'fixed');
     }
 
     if ($backTop) {
-      scrollTop > 10 ? addClass($backTop, 'show') : removeClass($backTop, 'show');
+      scrollTop > 10 ? Util.addClass($backTop, 'show') : Util.removeClass($backTop, 'show');
     }
   });
 
   if ($backTop) {
-    bind($backTop, 'click', function () {
+    Util.bind($backTop, 'click', function () {
       zenscroll.to($body)
     });
   }
@@ -45,12 +46,12 @@
 
     activeTocLink(links);
 
-    bind(window, 'scroll', function () {
+    Util.bind(window, 'scroll', function () {
       activeTocLink(links);
     });
 
     links.forEach(function (element) {
-      bind(element, 'click', function (e) {
+      Util.bind(element, 'click', function (e) {
         var $target = document.getElementById(this.hash.substring(1));
         zenscroll.to($target)
         e.preventDefault();
@@ -59,9 +60,9 @@
   }
 
   if (location.pathname === '/search/') {
-    request('GET', '/search.json', function (data) {
+    Util.request('GET', '/search.json', function (data) {
       var $inputSearch = document.getElementById('input-search');
-      bind($inputSearch, 'keyup', function () {
+      Util.bind($inputSearch, 'keyup', function () {
         var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
 
         if (this.value.trim().length <= 0) {
@@ -80,10 +81,10 @@
 
   function activeTocLink(links) {
     links.forEach(function (element) {
-      removeClass(element, 'active');
+      Util.removeClass(element, 'active');
 
       if (element.hash === location.hash) {
-        addClass(element, 'active');
+        Util.addClass(element, 'active');
       }
     });
   }
@@ -171,53 +172,6 @@
     });
 
     return text;
-  }
-
-  function request(type, url, opts, callback) {
-    var xhr = new XMLHttpRequest();
-    if (typeof opts === 'function') {
-      callback = opts;
-      opts = null;
-    }
-
-    xhr.open(type, url);
-    var fd = new FormData();
-    if (type === 'POST' && opts) {
-      for (var key in opts) {
-        fd.append(key, JSON.stringify(opts[key]));
-      }
-    }
-
-    xhr.onload = function () {
-      callback(JSON.parse(xhr.response));
-    };
-
-    xhr.send(opts ? fd : null);
-  }
-
-  function bind(element, name, listener) {
-    element.addEventListener(name, listener, false);
-  }
-
-  function addClass(element, className) {
-    var classes = element.className ? element.className.split(' ') : [];
-    if (classes.indexOf(className) < 0) {
-      classes.push(className);
-    }
-
-    element.className = classes.join(' ');
-    return element;
-  }
-
-  function removeClass(element, className) {
-    var classes = element.className ? element.className.split(' ') : [];
-    var index = classes.indexOf(className);
-    if (index > -1) {
-      classes.splice(index, 1);
-    }
-
-    element.className = classes.join(' ');
-    return element;
   }
 
 }());
