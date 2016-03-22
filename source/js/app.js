@@ -39,7 +39,6 @@
   }
 
   if ($toc) {
-
     var $toc = document.getElementById('toc');
     var $tocLinks = document.querySelectorAll('.toc-link');
     var links = Array.prototype.slice.call($tocLinks);
