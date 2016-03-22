@@ -17,7 +17,7 @@
 
       <%- partial('component/category') %>
 
-      <% if (theme.disqus_shortname){ %>
+      <% if (theme.disqus_shortname && theme.url){ %>
         <span>
           <i class="icon-comment"></i>
           <a href="<%= theme.url + url_for(page.path) + '#disqus_thread' %>"></a>
