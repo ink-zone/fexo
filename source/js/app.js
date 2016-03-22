@@ -1,4 +1,5 @@
-(function() {
+
+(function () {
   'use strict';
 
   var $html = document.documentElement;
@@ -13,13 +14,13 @@
     }
   }());
 
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     FastClick.attach(document.body);
   }, false);
-
+  window.noZensmooth = true;
 
   // toc and backTop
-  bind(window, 'scroll', function() {
+  bind(window, 'scroll', function () {
     scrollTop = $body.scrollTop;
     if ($toc) {
       scrollTop > 200 ? addClass($toc, 'fixed') : removeClass($toc, 'fixed');
@@ -31,8 +32,8 @@
   });
 
   if ($backTop) {
-    bind($backTop, 'click', function() {
-      scroll('0', 400);
+    bind($backTop, 'click', function () {
+      zenscroll.to($body)
     });
   }
 
@@ -42,51 +43,25 @@
     var $tocLinks = document.querySelectorAll('.toc-link');
     var links = Array.prototype.slice.call($tocLinks);
 
-    function getCoords(elem) { // crossbrowser version
-      var box = elem.getBoundingClientRect();
-
-      var body = document.body;
-      var docEl = document.documentElement;
-
-      var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
-      var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
-
-      var clientTop = docEl.clientTop || body.clientTop || 0;
-      var clientLeft = docEl.clientLeft || body.clientLeft || 0;
-
-      var top = box.top + scrollTop - clientTop;
-      var left = box.left + scrollLeft - clientLeft;
-
-      return {
-        top: top,
-        left: Math.round(left)
-      };
-    }
-
     activeTocLink(links);
 
-    bind(window, 'scroll', function() {
+    bind(window, 'scroll', function () {
       activeTocLink(links);
     });
 
-    links.forEach(function(element) {
-      bind(element, 'click', function(e) {
-        // var $target = document.getElementById(this.hash.substring(1));
-        // var p = getCoords($target);
-
-        // console.log(p.top);
-        // scroll(parseInt(p.top), 500);
-        // document.body.scrollTop = p.top;
-        // e.preventDefault();
-        return;
+    links.forEach(function (element) {
+      bind(element, 'click', function (e) {
+        var $target = document.getElementById(this.hash.substring(1));
+        zenscroll.to($target)
+        e.preventDefault();
       });
     });
   }
 
   if (location.pathname === '/search/') {
-    request('GET', '/search.json', function(data) {
+    request('GET', '/search.json', function (data) {
       var $inputSearch = document.getElementById('input-search');
-      bind($inputSearch, 'keyup', function() {
+      bind($inputSearch, 'keyup', function () {
         var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
 
         if (this.value.trim().length <= 0) {
@@ -104,11 +79,11 @@
   ///////////////////
 
   function activeTocLink(links) {
-    links.forEach(function(element) {
+    links.forEach(function (element) {
       removeClass(element, 'active');
 
       if (element.hash === location.hash) {
-        addClass(element, 'active')
+        addClass(element, 'active');
       }
     });
   }
@@ -116,12 +91,12 @@
   function filterPosts(data, keywords) {
     var results = [];
 
-    data.forEach(function(item) {
+    data.forEach(function (item) {
       var isMatch = false;
       var matchKeyWords = [];
       item.content = item.content.replace(/<[^>]*>/g, '');
 
-      keywords.forEach(function(word) {
+      keywords.forEach(function (word) {
         var reg = new RegExp(word, 'i');
         var indexTitle = item.title.search(reg);
         var indexContent = item.content.search(reg);
@@ -143,7 +118,7 @@
 
   function createInnerHTML(results) {
     var content = '';
-    results.forEach(function(item) {
+    results.forEach(function (item) {
       var postContent;
       postContent = highlightText(item.content, item.matchKeyWords);
       postContent = getPreviewContent(postContent, item.matchKeyWords);
@@ -165,7 +140,7 @@
   function getPreviewContent(content, matchKeyWords) {
     var isMatch = false;
     var index = 0;
-    matchKeyWords.forEach(function(word) {
+    matchKeyWords.forEach(function (word) {
       var reg = new RegExp(word, 'i');
       index = content.search(reg);
       if (index < 0) {
@@ -190,7 +165,7 @@
 
   function highlightText(text, matchKeyWords) {
     text = text.replace(/<[^>]*>/g, '');
-    matchKeyWords.forEach(function(word) {
+    matchKeyWords.forEach(function (word) {
       var reg = new RegExp('(' + word + ')', 'ig');
       text = text.replace(reg, '<span class="color-hightlight">$1</span>');
     });
@@ -213,27 +188,11 @@
       }
     }
 
-    xhr.onload = function() {
+    xhr.onload = function () {
       callback(JSON.parse(xhr.response));
     };
 
     xhr.send(opts ? fd : null);
-  }
-
-  function scroll(scrollTo, time) {
-    var i = 0;
-    var step = 5; // run every 5ms
-    var times = time / step; //次数
-
-    var id = setInterval(function() {
-      i++;
-
-      document.body.scrollTop = (scrollTo - scrollTop) / times * i + scrollTop;
-
-      if (i >= time) {
-        clearInterval(id);
-      }
-    }, step);
   }
 
   function bind(element, name, listener) {
