@@ -11,7 +11,8 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
 gulp.task('default', ['sass', 'scripts'], function() {
-  gulp.watch('./source/sass/**/*.scss', ['sass', 'scripts']);
+  gulp.watch('./source/sass/**/*.scss', ['sass']);
+  gulp.watch('./source/sass/**/*.js', ['scripts']);
 });
 
 gulp.task('sass', function() {

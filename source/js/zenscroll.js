@@ -50,7 +50,7 @@
 
   var createScroller = function (scrollContainer, defaultDuration, edgeOffset) {
 
-    defaultDuration = defaultDuration || 999 //ms
+    defaultDuration = defaultDuration || 500 //ms
     if (!edgeOffset || edgeOffset !== 0) {
       // When scrolling, this amount of distance is kept from the edges of the scrollContainer:
       edgeOffset = 9 //px
@@ -122,7 +122,7 @@
             } else {
               setTimeout(stopScroll, 99) // with cooldown time
             }
-          }, 9)
+          }, 5)
         })()
       }
     }
