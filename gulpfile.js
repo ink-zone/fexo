@@ -12,7 +12,7 @@ var uglify = require('gulp-uglify');
 
 gulp.task('default', ['sass', 'scripts'], function() {
   gulp.watch('./source/sass/**/*.scss', ['sass']);
-  gulp.watch('./source/sass/**/*.js', ['scripts']);
+  gulp.watch('./source/js/**/*.js', ['scripts']);
 });
 
 gulp.task('sass', function() {

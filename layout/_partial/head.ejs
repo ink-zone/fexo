@@ -1,27 +1,10 @@
 <!DOCTYPE html>
 
-<%- getHtmlTag(theme) %>
-
-<%
-  function getHtmlTag(theme) {
-    var html;
-    var scheme;
-    if (theme.home.background_image) {
-      scheme = {
-        light: '<html class="light bg" style="background-image: url(' + theme.home.background_image + ');">',
-        dark: '<html class="dark bg" style="background-image: url(' + theme.home.background_image + ');">',
-      }
-    } else {
-      scheme = {
-        light: '<html class="light">',
-        dark:  '<html class="dark">'
-      }
-    }
-
-    html = scheme[theme.home.background_scheme]
-    return html;
-  }
-%>
+<% if (theme.home_background_scheme === 'light') {%>
+  <html class="light">
+<% } else { %>
+  <html class="dark">
+<% } %>
 
 <head>
   <meta charset="utf-8">
@@ -61,12 +44,13 @@
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
+  
+  <%- partial('style') %>
 
   <% if (theme.personal_style){ %>
     <%- css(theme.personal_style) %>
   <% } %>
 
-  <%- partial('style') %>
   <%- partial('google-analytics') %>
   <%- partial('baidu-analytics') %>
 </head>
