@@ -52,7 +52,6 @@ page_nav:
 
 page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT
 
-
 # 面包屑
 breadcrumb:
   isShow: true # true|fase
@@ -107,7 +106,7 @@ disqus_shortname: forsigner
 
 
 # =========================================================
-# 页面设置
+# 页面内容设置
 # =========================================================
 about:
   - type: me
@@ -155,8 +154,6 @@ link:
     info: FP, GUI, Writing
     url: http://tiye.me/
     avatar: https://avatars2.githubusercontent.com/u/449224?v=3&s=460
-
-
 
 project:
   - type: personal

@@ -25,7 +25,7 @@
   Util.bind(window, 'scroll', function() {
     scrollTop = $body.scrollTop;
     if ($toc) {
-      scrollTop > 200 ? Util.addClass($toc, 'fixed') : Util.removeClass($toc, 'fixed');
+      scrollTop > 180 ? Util.addClass($toc, 'fixed') : Util.removeClass($toc, 'fixed');
     }
 
     if ($backTop) {

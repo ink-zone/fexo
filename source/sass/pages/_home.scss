@@ -98,9 +98,19 @@ html.bg {
     }
   }
 }
+hr {
+  max-width: 400px;
+  height: 1px;
+  margin-top: -1px;
+  border: none;
+  background-image: linear-gradient(0deg, transparent, #dcdcdc, transparent);
+  background-image: -webkit-linear-gradient(0deg, transparent, #dcdcdc, transparent);
+}
+
 html.dark {
   hr {
-    display: none;
+    //display: none;
+    display: block;
   }
   .content-home {
     .name {
