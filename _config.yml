@@ -61,6 +61,14 @@ toolbox:
   isShow: true # true|fase
   text: 盒子
 
+search_slogan:
+  isShow: true # true|fase
+  text: Can you find the bug of world ~
+
+link_slogan:
+  isShow: true # true|fase
+  text: 交换友链可以邮件 forsigner@gmail.com
+
 # set backtop show or hide
 backtop:
   home: false
@@ -70,7 +78,6 @@ backtop:
   post: true
   link: false
   about: false
-
 
 post:
   header_align: CENTER # LEFT|CENTER

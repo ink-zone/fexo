@@ -8,7 +8,9 @@
   </div>
 
   <ul id="list-search" class="list-search">
-    <li class="tip">Can you find the bug of world ~</li>
+    <% if(theme.search_slogan.isShow) { %>
+      <li class="tip"><%= theme.search_slogan.text%></li>
+    <% } %>
   </ul>
 
 </div>

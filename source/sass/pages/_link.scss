@@ -39,6 +39,25 @@
       }
     }
   }
+  .tip {
+    margin: 20px 0 0 -15px;
+    color: #ddd;
+    i, span {
+      vertical-align: middle;
+    }
+    .icon-mail {
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+      border-radius: 50%;
+      color: #fff;
+      background: #f0f0f0;
+      font-size: 12px;
+      display: inline-block;
+      padding-left: 1px;
+    }
+  }
 }
 
 
