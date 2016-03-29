@@ -59,6 +59,7 @@ breadcrumb:
 # 盒子
 toolbox:
   isShow: true # true|fase
+  text: 盒子
 
 # set backtop show or hide
 backtop:

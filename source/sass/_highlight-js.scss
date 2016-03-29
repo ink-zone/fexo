@@ -19,7 +19,9 @@ figure.highlight {
 }
 .highlight pre {
   line-height: 1.5em;
-  overflow-y: hidden
+  overflow-y: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 .highlight .gutter pre {
   padding-right: 30px;
