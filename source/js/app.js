@@ -13,6 +13,10 @@
       $body.scrollTop > 10 ? Util.addClass($backTop, 'show') : Util.removeClass($backTop, 'show');
     }
 
+    if ($toc) {
+      $body.scrollTop > 180 ? Util.addClass($toc, 'fixed') : Util.removeClass($toc, 'fixed');
+    }
+
   }());
 
   document.addEventListener('DOMContentLoaded', function() {
@@ -20,6 +24,12 @@
   }, false);
 
   window.noZensmooth = true;
+
+  // scroll spy
+  scrollSpy.init({
+    nodeList: document.querySelectorAll('.toc-link'),
+    scrollTarget: window
+  });
 
   // toc and backTop
   Util.bind(window, 'scroll', function() {
@@ -43,12 +53,6 @@
     var $toc = document.getElementById('toc');
     var $tocLinks = document.querySelectorAll('.toc-link');
     var links = Array.prototype.slice.call($tocLinks);
-
-    activeTocLink(links);
-
-    Util.bind(window, 'scroll', function() {
-      activeTocLink(links);
-    });
 
     links.forEach(function(element) {
       Util.bind(element, 'click', function(e) {
@@ -78,16 +82,6 @@
   }
 
   ///////////////////
-
-  function activeTocLink(links) {
-    links.forEach(function(element) {
-      Util.removeClass(element, 'active');
-
-      if (element.hash === location.hash) {
-        Util.addClass(element, 'active');
-      }
-    });
-  }
 
   function filterPosts(data, keywords) {
     var results = [];

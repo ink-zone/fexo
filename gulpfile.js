@@ -29,6 +29,7 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
   var files = [
     './source/js/fastclick.js',
+    './source/js/scroll-spy.js',
     './source/js/zenscroll.js',
     './source/js/util.js',
     './source/js/app.js'
