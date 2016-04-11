@@ -6,7 +6,30 @@
   var $body = document.body;
   var $toc = document.getElementById('toc');
   var $backTop = document.getElementById('backTop');
+  var $toolboxMobile = document.getElementById('toolbox-mobile');
+  var $cover = document.getElementById('cover');
+  var $close = document.getElementById('close');
+  var $modalDialog = document.getElementById('modal-dialog');
+
   var scrollTop = 0;
+
+  Util.bind($toolboxMobile, 'click', function() {
+    Util.css($modalDialog, 'transform', 'translate3d(0, 0, 0)')
+    Util.css($cover, 'display', 'block')
+  });
+
+
+  Util.bind($cover, 'click', function() {
+    Util.css($modalDialog, 'transform', 'translate3d(0, 100%, 0)')
+    Util.css($cover, 'display', 'none')
+  });
+
+  Util.bind($close, 'click', function(e) {
+    Util.css($modalDialog, 'transform', 'translate3d(0, 100%, 0)')
+    Util.css($cover, 'display', 'none')
+    e.preventDefault();
+  });
+
 
   (function init() {
     if ($backTop) {

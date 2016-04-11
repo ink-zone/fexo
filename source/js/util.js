@@ -44,6 +44,49 @@ var Util = {
     };
 
     xhr.send(opts ? fd : null);
+  },
+
+  css: function(element, styleNameOrObject, styleValue) {
+    if (typeof styleNameOrObject === 'object') {
+      return setMultiCss(element, styleNameOrObject);
+    } else {
+      if (typeof styleValue === 'undefined') {
+        return getCss(element, styleNameOrObject);
+      } else {
+        return setSingleCss(element, styleNameOrObject, styleValue);
+      }
+    }
   }
 
 };
+
+function getCss(element, styleName) {
+  var styleValue = window.getComputedStyle(element)[styleName];
+  if (parseInt(styleValue, 10) || parseInt(styleValue, 10) === 0) {
+    styleValue = parseInt(styleValue, 10);
+  }
+
+  return styleValue;
+}
+
+function setSingleCss(element, styleName, styleValue) {
+  if (typeof styleValue === 'number') {
+    styleValue = styleValue.toString() + 'px';
+  }
+
+  element.style[styleName] = styleValue;
+  return element;
+}
+
+function setMultiCss(element, obj) {
+  for (var key in obj) {
+    var styleValue = obj[key];
+    if (typeof styleValue === 'number') {
+      styleValue = styleValue.toString() + 'px';
+    }
+
+    element.style[key] = styleValue;
+  }
+
+  return element;
+}
