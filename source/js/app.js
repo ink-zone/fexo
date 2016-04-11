@@ -10,27 +10,7 @@
   var $cover = document.getElementById('cover');
   var $close = document.getElementById('close');
   var $modalDialog = document.getElementById('modal-dialog');
-
   var scrollTop = 0;
-
-  Util.bind($toolboxMobile, 'click', function() {
-    Util.addClass($modalDialog, 'show-dialog')
-    Util.removeClass($modalDialog, 'hide-dialog');
-
-    Util.addClass($cover, 'show')
-    Util.removeClass($cover, 'hide');
-  });
-
-
-  Util.bind($cover, 'click', closeModal);
-  Util.bind($close, 'click', closeModal);
-
-  function closeModal() {
-    Util.addClass($modalDialog, 'hide-dialog')
-    Util.removeClass($modalDialog, 'show-dialog');
-    Util.addClass($cover, 'hide')
-    Util.removeClass($cover, 'show');
-  }
 
 
   (function init() {
@@ -88,6 +68,21 @@
     });
   }
 
+  if ($toolboxMobile) {
+    Util.bind($toolboxMobile, 'click', function() {
+      Util.addClass($modalDialog, 'show-dialog')
+      Util.removeClass($modalDialog, 'hide-dialog');
+
+      Util.addClass($cover, 'show')
+      Util.removeClass($cover, 'hide');
+    });
+
+
+    Util.bind($cover, 'click', closeModal);
+    Util.bind($close, 'click', closeModal);
+  }
+
+
   if (location.pathname === '/search/') {
     Util.request('GET', '/search.json', function(data) {
       var $inputSearch = document.getElementById('input-search');
@@ -105,6 +100,7 @@
 
     });
   }
+
 
   ///////////////////
 
@@ -192,5 +188,14 @@
 
     return text;
   }
+
+
+  function closeModal() {
+    Util.addClass($modalDialog, 'hide-dialog')
+    Util.removeClass($modalDialog, 'show-dialog');
+    Util.addClass($cover, 'hide')
+    Util.removeClass($cover, 'show');
+  }
+
 
 }());

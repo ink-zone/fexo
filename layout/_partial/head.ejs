@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 
 <% if (theme.home_background_scheme === 'light') {%>
-  <html class="light">
+  <%
+    console.log(page.base);
+  %>
+  <html class="light page-<%= page.base.replace(/\//g, '') || 'home' %>">
 <% } else { %>
-  <html class="dark">
+  <html class="dark page-<%= page.base.replace(/\//g, '') || 'home' %>">
 <% } %>
 
 <head>
@@ -44,7 +47,7 @@
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
-  
+
   <%- partial('style') %>
 
   <% if (theme.personal_style){ %>
