@@ -28,14 +28,17 @@ a.back-top {
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .back-top {
-    display: none;
+@media screen and (max-width: 768px) {
+  a.back-top {
+    display: none !important;
   }
 }
 
+@media screen and (max-width: 1023px) {
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .back-top {
-    display: none;
+  a.back-top {
+    display: none !important;
   }
 }
