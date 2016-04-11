@@ -12,6 +12,7 @@
  |
 <a href="http://forsigner.com/2016/03/10/fexo-doc-en/" target="_blank">Doc</a>
 
+![screenshot-1](http://forsigner.com/images/fexo/mobile.png)
 ![screenshot-1](http://forsigner.com/images/screenshot-1.png)
 ![screenshot-2](http://forsigner.com/images/screenshot-2.png)
 
