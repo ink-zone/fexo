@@ -14,21 +14,23 @@
   var scrollTop = 0;
 
   Util.bind($toolboxMobile, 'click', function() {
-    Util.css($modalDialog, 'transform', 'translate3d(0, 0, 0)')
-    Util.css($cover, 'display', 'block')
+    Util.addClass($modalDialog, 'show-dialog')
+    Util.removeClass($modalDialog, 'hide-dialog');
+
+    Util.addClass($cover, 'show')
+    Util.removeClass($cover, 'hide');
   });
 
 
-  Util.bind($cover, 'click', function() {
-    Util.css($modalDialog, 'transform', 'translate3d(0, 100%, 0)')
-    Util.css($cover, 'display', 'none')
-  });
+  Util.bind($cover, 'click', closeModal);
+  Util.bind($close, 'click', closeModal);
 
-  Util.bind($close, 'click', function(e) {
-    Util.css($modalDialog, 'transform', 'translate3d(0, 100%, 0)')
-    Util.css($cover, 'display', 'none')
-    e.preventDefault();
-  });
+  function closeModal() {
+    Util.addClass($modalDialog, 'hide-dialog')
+    Util.removeClass($modalDialog, 'show-dialog');
+    Util.addClass($cover, 'hide')
+    Util.removeClass($cover, 'show');
+  }
 
 
   (function init() {
