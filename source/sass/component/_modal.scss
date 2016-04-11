@@ -28,18 +28,7 @@ $blue-dark: $blue;
     right: 0;
     bottom: 0;
     left: 0;
-    display: none;
     background: rgba(0,0,0,.6);
-  }
-
-  &:target {
-    // Active animate in modal
-    .cover {
-      display: block;
-    }
-    .modal-dialog {
-      transform: translate3d(0, 0, 0);
-    }
   }
 }
 
