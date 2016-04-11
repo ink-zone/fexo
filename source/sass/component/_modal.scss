@@ -43,6 +43,15 @@ $blue-dark: $blue;
   }
 }
 
+hr {
+  max-width: 320px;
+  height: 1px;
+  margin-top: -1px;
+  border: none;
+  background-image: linear-gradient(0deg, transparent, #dcdcdc, transparent);
+  background-image: -webkit-linear-gradient(0deg, transparent, #dcdcdc, transparent);
+}
+
 // Modal Dialog
 // ----------------------
 
@@ -100,7 +109,6 @@ $blue-dark: $blue;
   font-size: 13px;
   text-align: center;
   height: 60px;
-  border-bottom: 1px solid #ddd;
   .btn-close {
   position: relative;
   top: 50%;
@@ -120,5 +128,12 @@ $blue-dark: $blue;
     &:hover {
       color: darken($gray-light, 10%);
     }
+  }
+}
+
+.btn-close,
+.toolbox-mobile {
+  &:hover {
+    cursor: pointer;
   }
 }
