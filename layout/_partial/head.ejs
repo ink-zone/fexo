@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
 <% if (theme.home_background_scheme === 'light') {%>
-  <html class="light page-<%= page.base ? page.base.replace(/\//g, '') : 'home' %>">
+  <html class="light page-<%= page.base ? page.base.replace(/\//g, '') : page.layout ? page.layout : 'home' %>">
 <% } else { %>
-  <html class="dark page-<%= page.base ? page.base.replace(/\//g, '') : 'home' %>">
+  <html class="dark page-<%= page.base ? page.base.replace(/\//g, '') : page.layout ? page.layout : 'home' %>">
 <% } %>
+<% console.log(page); %>
 
 <head>
   <meta charset="utf-8">
