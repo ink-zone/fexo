@@ -30,6 +30,9 @@
   strong {
     color: $title-color;
   }
+  a strong {
+    color: $site-color;
+  }
   p {
     font-size: $article-font-size;
     line-height: 2em;
