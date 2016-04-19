@@ -30,17 +30,17 @@ $blue-dark: $blue;
     left: 0;
     background: rgba(0,0,0,.6);
   }
+  hr {
+    max-width: 320px;
+    height: 1px;
+    margin-top: -1px;
+    margin-bottom: 0;
+    border: none;
+    background-image: linear-gradient(0deg, transparent, #dcdcdc, transparent);
+    background-image: -webkit-linear-gradient(0deg, transparent, #dcdcdc, transparent);
+  }
 }
 
-hr {
-  max-width: 320px;
-  height: 1px;
-  margin-top: -1px;
-  margin-bottom: 0;
-  border: none;
-  background-image: linear-gradient(0deg, transparent, #dcdcdc, transparent);
-  background-image: -webkit-linear-gradient(0deg, transparent, #dcdcdc, transparent);
-}
 
 // Modal Dialog
 // ----------------------
