@@ -1,7 +1,8 @@
 <%- partial('_partial/head') %>
 <body>
 
-  <% if (page.base !== '') { %>
+
+  <% if(theme.toolbox && theme.toolbox.isShow == true && page.base !== '') { %>
     <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
   <% } %>
 
