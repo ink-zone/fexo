@@ -60,32 +60,20 @@
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .content.content-link {
+    width: $link-width;
     hr {
       display: none;
       height: 0;
     }
   }
 }
+
+
 @media screen and (max-width: 767px) {
   .content.content-link {
     width: 100%;
-    .link-list {
-      .link-item {
-        position: relative;
-        margin-left: 0;
-        padding: 8px 0 8px 10px;
-      }
-    }
-  }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .content.content-link {
-    width: 100%;
-
     .link-list {
       .link-item {
         position: relative;
