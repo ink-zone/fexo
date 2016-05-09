@@ -3,7 +3,7 @@
 
 
   <% if(theme.toolbox && theme.toolbox.isShow == true && page.base !== '') { %>
-    <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
+    <span id="toolbox-mobile" class="toolbox-mobile"><%=  theme.toolbox.text %></span>
   <% } %>
 
   <%- body %>
