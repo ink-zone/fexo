@@ -30,7 +30,6 @@ module.exports = function getOffsetRect(elem) {
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
 var scrollSpy = require('./scroll-spy');
-console.log(1111);
 
 (function (factory) {
   if (typeof define === 'function' && define.amd) {
