@@ -1,0 +1,70 @@
+.donation {
+  .inner-donation {
+    position: relative;
+    width: 160px;
+    margin: auto;
+    &:hover {
+      .donation-body {
+        display: inline-block;
+      }
+    }
+  }
+  .btn-donation {
+    display: inline-block;
+    border: 1px solid #dfdfdf;
+    height: 40px;
+    width: 140px;
+    line-height: 40px;
+    border-radius: 40px;
+    padding: 0;
+    color: #aaa;
+    &:hover {
+      border: 1px solid #ddd;
+      color: #999;
+      cursor: pointer;
+    }
+  }
+  .donation-body {
+    display: none;
+    position: absolute;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    background: #fff;
+    width: 460px;
+    height: 270px;
+    margin-top: -277px;
+    margin-left: -300px;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-width: 6px;
+      border-style: solid;
+      box-sizing: border-box;
+      border-top-color: #fff;
+      top: 100%;
+      left: 223px;
+    }
+    .tip {
+      height: 40px;
+      line-height: 40px;
+      color: #999;
+      border-bottom: 1px solid #f3f3f3;
+    }
+    ul {
+      display: inline-block;
+      .item {
+        width: 220px;
+        height: 220px;
+        display: inline-block;
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
