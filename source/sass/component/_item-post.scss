@@ -37,3 +37,27 @@
     }
   }
 }
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .item-post {
+    .post-title {
+      max-width: 330px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 399px) {
+  .item-post {
+    .post-title {
+      max-width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .item-post {
+    .post-title {
+      max-width: 200px;
+    }
+  }
+}
