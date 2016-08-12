@@ -1,5 +1,5 @@
 <section class="tag-box">
-  <div class="tag-title">标签</div>
+  <div class="tag-title"><%= __('tags') %></div>
   <div class="tag-list">
     <% site.tags.sort('name').each(function(tag) { %>
       <a class="tag-item" href="#<%= tag.name %>">

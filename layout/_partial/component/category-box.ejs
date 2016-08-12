@@ -1,5 +1,5 @@
 <section class="category-box">
-  <div class="category-title">分类</div>
+  <div class="category-title"><%= __('categories') %></div>
   <div class="category-list">
     <% site.categories.sort('name').each(function (category, i) { %>
       <a class="category-item" href="#<%= category.name %>">

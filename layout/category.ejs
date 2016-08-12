@@ -1,5 +1,5 @@
 <div class="content content-category">
-  <%- partial('_partial/component/page-header', {location: '分类'}) %>
+  <%- partial('_partial/component/page-header', {location: __('location.categories')}) %>
   <%- partial('_partial/component/category-box') %>
   <%- getPostListsDom(site.categories.sort('name')) %>
 </div>
