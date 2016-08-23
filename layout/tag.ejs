@@ -1,5 +1,5 @@
 <div class="content content-tag">
-  <%- partial('_partial/component/page-header', {location: '标签'}) %>
+  <%- partial('_partial/component/page-header', {location: __('location.tags')}) %>
   <%- partial('_partial/component/tag-box') %>
   <%- getPostListsDom(site.tags.sort('name'))%>
 </div>
