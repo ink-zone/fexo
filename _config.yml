@@ -69,6 +69,7 @@ link_slogan:
   isShow: true # true|fase
   text: 交换友链可以邮件 forsigner@gmail.com
 
+
 # set backtop show or hide
 backtop:
   home: false
@@ -98,6 +99,7 @@ post:
   header_align: CENTER # LEFT|CENTER
   showToc: true # true|false
   showComments: true
+  open_in_new_window: false
 
 # =========================================================
 # 个性化设置
