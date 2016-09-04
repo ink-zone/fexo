@@ -1,7 +1,7 @@
 <% if (page.comments && theme.duoshuo_shortname){ %>
   <section class="duoshuo-comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="" data-title="<%= page.title %>" data-url="<%= url %>"></div>
+    <div class="ds-thread" data-thread-key="<%= url %>" data-title="<%= page.title %>" data-url="<%= url %>"></div>
     <!-- 多说评论框 end -->
   </section>
 <% } %>
