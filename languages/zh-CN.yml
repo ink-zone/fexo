@@ -13,10 +13,10 @@ recent_posts: 最新文章
 close: 关闭
 posts_list: 文章目录
 location:
-	about: 关于
-	blog: 博客
-	categories: 分类
-	links: 友链
-	projects: 项目
-	search: 搜索
-	tags: 标签
+  about: 关于
+  blog: 博客
+  categories: 分类
+  links: 友链
+  projects: 项目
+  search: 搜索
+  tags: 标签

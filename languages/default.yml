@@ -1,22 +1,22 @@
-categories: Categories
-search: Search
-tags: Tags
-tagcloud: Tag Cloud
-tweets: Tweets
-prev: Prev
-next: Next
-comment: Comments
-archive_a: Archives
-archive_b: "Archives: %s"
-page: Page %d
-recent_posts: Recent Posts
-close: Close
-posts_list: Posts List
+categories: 分类
+search: 搜索
+tags: 标签
+tagcloud: 标签云
+tweets: 推文
+prev: 上一页
+next: 下一页
+comment: 留言
+archive_a: 归档
+archive_b: 归档：%s
+page: 第 %d 页
+recent_posts: 最新文章
+close: 关闭
+posts_list: 文章目录
 location:
-  about: About
-  blog: Blog
-  categories: Categories
-  links: Links
-  projects: Projects
-  search: Search
-  tags: Tags
+  about: 关于
+  blog: 博客
+  categories: 分类
+  links: 友链
+  projects: 项目
+  search: 搜索
+  tags: 标签
