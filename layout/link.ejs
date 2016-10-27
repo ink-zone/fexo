@@ -1,12 +1,12 @@
 <div class="content content-link">
-  <%- partial('_partial/component/page-header', {location: __('location.link')}) %>
+  <%- partial('_partial/component/page-header', {location: __('location.links')}) %>
 
   <hr>
 
   <ul class="link-list">
     <% theme.link.forEach(function(item, i){ %>
       <li class="link-item link-item-<%= i % 5 %>">
-        <a target="_blank" class="link-url" href="<%= item.url || ''%>">
+        <a rel="noopener noreferrer" target="_blank" class="link-url" href="<%= item.url || ''%>">
           <img class="avatar" src="<%= item.avatar%>" alt="<%= item.name || ''%>">
           <div class="wrap-info">
             <div class="name"><%= item.name || ''%></div>

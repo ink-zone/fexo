@@ -105,9 +105,10 @@ post:
 # 个性化设置
 # =========================================================
 
-# Custom CSS style
+# Custom CSS style, 推荐把样式文件放在blog源码文件夹，而不是主题里面
 personal_style: /css/personal-style.css
 
+# 这个值取决于你得背景图片是深色还是浅色，深色用dark，浅色用light
 home_background_scheme: light # dark、light
 
 # custom font-family 暂时只支持这3种英文字体，你可以完全自定义字体(看文档)

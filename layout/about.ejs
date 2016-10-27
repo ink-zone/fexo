@@ -18,7 +18,7 @@
           <div class="text">
             <span><%= item.text_key || ''%></span>
             <% if(item.text_key) {%>
-              <a target="_blank" class="text-value-url" href="<%= item.text_value_url || ''%>"><%= item.text_value || ''%></a>
+              <a rel="noopener noreferrer" target="_blank" class="text-value-url" href="<%= item.text_value_url || ''%>"><%= item.text_value || ''%></a>
             <% } else { %>
               <span><%= item.text_value || ''%></span>
             <% }%>

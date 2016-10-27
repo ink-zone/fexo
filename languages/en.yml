@@ -1,0 +1,22 @@
+categories: Categories
+search: Search
+tags: Tags
+tagcloud: Tag Cloud
+tweets: Tweets
+prev: Prev
+next: Next
+comment: Comments
+archive_a: Archives
+archive_b: "Archives: %s"
+page: Page %d
+recent_posts: Recent Posts
+close: Close
+posts_list: Posts List
+location:
+  about: About
+  blog: Blog
+  categories: Categories
+  links: Links
+  projects: Projects
+  search: Search
+  tags: Tags
