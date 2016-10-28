@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Meiryo";
+  src: url("/fonts/Meiryo.eot");
+  /* IE9 */
+  src: url("/fonts/Meiryo.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("/fonts/Meiryo.woff") format("woff"), /* chrome, firefox */
+  url("/fonts/Meiryo.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url("/fonts/Meiryo.svg#Meiryo") format("svg");
+  /* iOS 4.1- */
+  font-style: normal;
+  font-weight: normal;
+}
+html.page-home {
+//  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('http://ockhcbepk.bkt.clouddn.com/bp_ios7.jpg');
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /*background: linear-gradient( #1abc9c, transparent), linear-gradient( 90deg, skyblue, transparent), linear-gradient( -90deg, coral, transparent);*/
+  /*background-blend-mode: screen;*/
+
+  /*background: linear-gradient(to left, #5f2c82, #49a09d);*/
+}

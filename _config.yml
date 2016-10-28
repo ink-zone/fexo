@@ -1,10 +1,10 @@
 # Blog info
-blog_name: Forsigner
-slogan: Find the bug of the world
-url: http://www.forsigner.com
+blog_name: Zerone Blog
+slogan: 一人一江湖
+url: http://www.leonma.cn
 
 # Set avatar (Absolute url and relative url)
-avatar: /images/avatar.jpg
+avatar: /images/zerone427.png
 
 # Set favicon
 favicon: /favicon.ico
@@ -20,10 +20,10 @@ home_nav:
     url: /project/
     target_blank: true #在新页面打开
   - name: Github
-    url: https://github.com/forsigner
+    url: https://github.com/leonme
     target_blank: true
-  - name: Twitter
-    url: https://twitter.com/forsigner
+  - name: Weibo
+    url: http://weibo.com/seuleon
     target_blank: true
 
 # config page nav
@@ -67,7 +67,7 @@ search_slogan:
 
 link_slogan:
   isShow: true # true|fase
-  text: 交换友链可以邮件 forsigner@gmail.com
+  text: 交换友链可以邮件 leonme@126.com
 
 
 # set backtop show or hide
@@ -82,15 +82,15 @@ backtop:
 
 donation:
   show: true
-  btn_text: 支持一下
-  tip: 扫一扫，支持forsigner
+  btn_text: 打赏一下
+  tip: 扫一扫，支持零壹博客
   items:
     - type: 微信
       text: 微信扫一扫
-      imgUrl: /images/qr-wechat.png
+      imgUrl: /images/qr-wechat.jpg
     - type: 支付宝
       text: 支付宝扫一扫
-      imgUrl: /images/qr-alipay.png
+      imgUrl: /images/qr-alipay.jpg
 
 
 
@@ -124,12 +124,14 @@ init_page_content: HOME_NAV  # HOME_NAV | POST
 # =========================================================
 # Stats
 google_analytics:
-baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
-
+#baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
+cnzz_analytics: 
 # Comment service
-disqus_shortname: forsigner
-# duoshuo_shortname: forsigner
+# disqus_shortname: Zerone
+duoshuo_shortname: zerone01
 
+# Push Service
+baidu_push: on
 
 # =========================================================
 # 页面内容设置
@@ -138,26 +140,26 @@ about:
   - type: me
     icon: icon-user
     text_value:
-    - "Scut，1991，Spring."
+    - "Leon，1992，Spring."
     - "喜欢设计，擅长编程，喜欢睡懒觉."
     - "前端开发工程师，常用 HTML / CSS / JavaScript."
   - type: Github
     icon: icon-github
     text_key: Github
-    text_value: "@forsigner"
-    text_value_url: https://github.com/forsigner
+    text_value: "@leonme"
+    text_value_url: https://github.com/leonme
   - type: weibo
     icon: icon-weibo
     text_key: 微博
-    text_value: "@forsigner"
-    text_value_url: http://weibo.com/u/1847075964
+    text_value: "@Zerone"
+    text_value_url: http://weibo.com/seuleon
   - type: mail
     icon: icon-mail
-    text_key: Gmail
-    text_value: "forsigner@gmail.com"
+    text_key: 126
+    text_value: "leonme@126.com"
   - type: location
     icon: icon-location
-    text_value: 珠海
+    text_value: 上海
 
 link:
   - name: 织网
