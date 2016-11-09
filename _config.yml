@@ -1,6 +1,6 @@
 # Blog info
 blog_name: Zerone Blog
-slogan: 一人一江湖
+slogan: 零壹博客
 url: http://www.leonma.cn
 
 # Set avatar (Absolute url and relative url)
@@ -13,16 +13,16 @@ favicon: /favicon.ico
 keywords: forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript
 
 home_nav:
-  - name: Blog
+  - name: 博客
     url: /archives
     target_blank: false #不在新页面打开
-  - name: Project
+  - name: 项目
     url: /project/
     target_blank: true #在新页面打开
   - name: Github
     url: https://github.com/leonme
     target_blank: true
-  - name: Weibo
+  - name: 微博
     url: http://weibo.com/seuleon
     target_blank: true
 
@@ -63,7 +63,7 @@ toolbox:
 
 search_slogan:
   isShow: true # true|fase
-  text: Can you find the bug of world ~
+  text: 零壹博客，壹人壹江湖 ~
 
 link_slogan:
   isShow: true # true|fase
@@ -140,9 +140,9 @@ about:
   - type: me
     icon: icon-user
     text_value:
-    - "Leon，1992，Spring."
-    - "喜欢设计，擅长编程，喜欢睡懒觉."
-    - "前端开发工程师，常用 HTML / CSS / JavaScript."
+    - "Leon，1992，處女座"
+    - "零度叁分木·壹人壹江湖"
+    - "極客，擅Java / NodeJS / HTML / CSS / JavaScript."
   - type: Github
     icon: icon-github
     text_key: Github
@@ -155,7 +155,7 @@ about:
     text_value_url: http://weibo.com/seuleon
   - type: mail
     icon: icon-mail
-    text_key: 126
+    text_key: 邮箱
     text_value: "leonme@126.com"
   - type: location
     icon: icon-location
@@ -189,54 +189,34 @@ link:
 
 project:
   - type: personal
-    name: fexo
-    url: https://github.com/forsigner/fexo
-    intro: A minimalist design theme for hexo
-  # - type: company
-  #   name: Fexo
-  #   url: https://github.com/forsigner/fexo
-  #   intro: A minimalist design theme for hexo
+    name: hexo
+    url: https://github.com/leonme/hexo
+    intro: 使用Hexo框架实现的个人博客源码
   - type: personal
-    name: beside
-    url: https://github.com/forsigner/beside
-    intro: I need you beside me
+    name: threejs
+    url: https://github.com/leonme/threejs
+    intro: 学习three.js的练手项目
   - type: personal
-    name: web-fontmin
-    url: https://github.com/forsigner/web-fontmin
-    intro: 字体子集化，在线提取你需要的字体
+    name: leonme.github.io
+    url: https://github.com/leonme/leonme.github.io
+    intro: Hexo使用Fexo主题部署的博客源码
   - type: personal
-    name: magic-check
-    url: https://github.com/forsigner/magic-check
-    intro: Beautify Radio and Checkbox with pure CSS
+    name: ZeroneBlog
+    url: https://github.com/leonme/ZeroneBLog
+    intro: 零壹博客-个人博客1.0-WordPress
   - type: personal
-    name: nice-bar
-    url: https://github.com/forsigner/nice-bar
-    intro: A nice and lightweight scrollbar
+    name: myFexo
+    url: https://github.com/leonme/fexo
+    intro: 改编版Hexo主题Fexo
   - type: personal
-    name: angular-nice-bar
-    url: https://github.com/forsigner/angular-nice-bar
-    intro: A nice and lightweight scrollbar in Angular
+    name: spider
+    url: https://github.com/leonme/spider2
+    intro: 博客内容网络爬虫
   - type: personal
-    name: fo-popover
-    url: https://github.com/forsigner/fo-popover
-    intro: A nice popover for Angular
+    name: 学长书屋
+    url: https://github.com/leonme/xueZhang
+    intro: 3G移动互联电子商务平台-二手书交易平台
   - type: personal
-    name: fo-tooltip
-    url: A nice tooltip for Angular
-    intro: https://github.com/forsigner/fo-tooltip
-  - type: personal
-    name: fo-modal
-    url: https://github.com/forsigner/fo-modal
-    intro: A nice modal for Angular
-  - type: personal
-    name: mocer
-    url: https://github.com/forsigner/mocer
-    intro: Setup a mock server easily
-  - type: personal
-    name: node-pngdefry
-    url: https://github.com/forsigner/node-pngdefry
-    intro: Repairing iPhone fried PNGs using Node.js
-  - type: personal
-    name: ng-simditor
-    url: https://github.com/forsigner/ng-simditor
-    intro: Angular directive for simditor
+    name: 微信墙
+    url: https://github.com/leonme/WeChatWall.PHP
+    intro: 微信墙的实现
