@@ -24,6 +24,19 @@
         </span>
       <% } %>
 
+      <% if (theme.busuanzi){ %>
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      <% } %>
+
+      <% if (theme.duoshuo_shortname){ %>
+        <i class="icon-comment"></i> 
+        <span class="ds-thread-count" data-thread-key="<%= page.layout %>-<%= page.slug %>"><i class="fa fa-spinner fa-spin"></i></span> 条评论
+      <% } %>
+      
     </div>
   </header>
 
