@@ -128,7 +128,7 @@ baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 
 # Comment service
 disqus_shortname: forsigner
-duoshuo_shortname: forsigner
+# duoshuo_shortname: forsigner
 
 # 不算子,文章访问量统计和显示
 busuanzi: true
