@@ -6,8 +6,9 @@
 
 <div class="content content-post<%= theme.post.header_align ? ' ' + theme.post.header_align : '' %>">
    <%- partial('_partial/article', {post: page, index: false}) %>
-</div>
 
-<%- partial('_partial/component/donation') %>
+   <%- partial('_partial/component/donation') %>
+   <%- partial('_partial/component/prev-net') %>
+</div>
 
 <%- partial('_partial/component/back-top', {showBacktop: theme.backtop.post}) %>

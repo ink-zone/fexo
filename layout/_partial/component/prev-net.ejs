@@ -1,0 +1,23 @@
+<% if (theme.post.show_prev_next) {%>
+  <div class="box-prev-next clearfix">
+    <a class="<%- getStatus(page.prev) %> pull-left" href="<%- url_for(getPrevUrl(page.prev)) %>">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="<%- getStatus(page.next) %> pull-right" href="<%- url_for(getPrevUrl(page.next)) %>">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+<% } %>
+
+<%
+  function getPrevUrl(property) {
+    if(getStatus(property) === 'show') {
+      return property.path;
+    }
+    return ''
+  }
+
+  function getStatus(property) {
+    return !property ? 'hide' : 'show';
+  }
+%>
