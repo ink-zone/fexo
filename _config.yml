@@ -132,8 +132,22 @@ disqus_shortname: forsigner
 # hypercomments_id: 89821
 # gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
 
-# 注意，多说即将关闭，建议选用上面四个评论系统
-# duoshuo_shortname: forsigner
+# gitment comment service
+# gitment:
+#     on: false  # true | false  这里开启
+#     owner: # Your GitHub ID. Required.
+#     repo: # The repository to store your comments. Make sure you're repo's owner. Required.
+#     oauth: # An object contains your client ID and client secret. Required.
+#         client_id: # GitHub client ID. Required.
+#         client_secret: # GitHub client secret. Required.
+#     id: # An optional string to identify your page. Default location.href.
+#     title: # An optional title for your page, used as issue's title. Default document.title.
+#     link: # An optional link for your page, used in issue's body. Default location.href.
+#     desc: # An optional description for your page, used in issue's body. Default ''.
+#     labels: # An optional array of labels your want to add when creating the issue. Default [].
+#     theme: # An optional Gitment theme object. Default gitment.defaultTheme.
+#     perPage: # An optional number to which comments will be paginated. Default 20.
+#     maxCommentHeight: # An optional number to limit comments' max height, over which comments will be folded. Default 250.
 
 # 不算子,文章访问量统计和显示
 busuanzi: true
