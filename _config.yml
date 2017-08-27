@@ -132,6 +132,8 @@ disqus_shortname: forsigner
 hypercomments_id: 
 # duoshuo_shortname: forsigner
 # gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
+# changyan_appid: 
+# changyan_appkey: 
 
 # 不算子,文章访问量统计和显示
 busuanzi: true
