@@ -9,6 +9,15 @@
       }
     }
   }
+  .img-article-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 200px;
+  }
+  img.project-img {
+    display: block;
+    width: 100%;
+  }
   a.project-url {
     color: $site-color;
     &:hover {

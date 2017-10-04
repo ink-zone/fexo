@@ -13,6 +13,16 @@
         </div>
 
       </li>
+      <% if(item.image && item.detail) { %>
+        <div class="img-article-wrapper">
+          <div>
+          <img class="project-img" src="<%= item.image%>" alt="<%= item.image_alt%>"/>
+          </div>
+          <div>
+            <%= item.detail %>
+          </div>
+        </div>
+        <% } %>
     <% }) %>
   </ul>
 
