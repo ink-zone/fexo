@@ -4,7 +4,7 @@
 
 > 一个极简主义设计的 Hexo 主题。
 
-<a href="http://forsigner.com/" target="_blank">Demo</a>
+<a href="https://jiacy.top/" target="_blank">Demo</a>
  |
 <a href="http://forsigner.com/2016/03/10/fexo-doc-zh-cn/" target="_blank">文档</a>
  |
