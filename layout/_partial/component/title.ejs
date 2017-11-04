@@ -1,5 +1,5 @@
 <% if(theme.post.open_in_new_window) { %>
-  <a class="post-title" href="<%- url_for(post.path) %>" rel="noopener noreferrer" target="_blank"><%= post.title || '(no title)' %></a>
+  <a class="post-titleDIY" href="<%- url_for(post.path) %>" rel="noopener noreferrer" target="_blank"><%= post.title || '(no title)' %></a>
 <% } else { %>
-  <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
+  <a class="post-titleDIY" href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
 <% } %>

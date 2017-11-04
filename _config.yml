@@ -1,54 +1,60 @@
 # Blog info
-blog_name: Forsigner
-slogan: Find the bug of the world
-url: http://www.forsigner.com
+blog_name: Jiacy
+slogan: 一个爱折腾的Dreamer，只会写hello world的Coder；懒惰的Sofaman，不服输的Fighter。这是主页，更是梦。
+url: http://www.jiacy.top
 
 # Set avatar (Absolute url and relative url)
 avatar: /images/avatar.jpg
 
 # Set favicon
-favicon: /favicon.ico
+favicon: /earth_favicon.ico
 
 # For seo
-keywords: forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript
+keywords: Jiacy,一个不务正业的大学生、不入流的代码民工、不靠谱的笔记本推荐者、即将失业的准就业青年
 
 home_nav:
   - name: Blog
     url: /archives
     target_blank: false #不在新页面打开
-  - name: Project
-    url: /project/
-    target_blank: true #在新页面打开
+#  - name: Project
+#    url: /project/
+#    target_blank: false
   - name: Github
-    url: https://github.com/forsigner
+    url: https://github.com/jiacy061
     target_blank: true
-  - name: Twitter
-    url: https://twitter.com/forsigner
-    target_blank: true
+  - name: About
+    url: /about/
+    target_blank: false
+  - name: More
+    url: http://www.jiacy.me
+    target_blank: true #在新页面打开
 
 # config page nav
 page_nav:
-  - name: 博客
+  - name: 文章
     url: /archives/
     target_blank: false # 不在新页面打开
   - name: 分类
-    url: /category/
+    url: /categories/
     target_blank: false
   - name: 标签
     url: /tag/
     target_blank: false
-  - name: 友链
+  - name: 项目
+    url: /project/
+    target_blank: false
+  - name: 链接
     url: /link/
     target_blank: false
   - name: 关于
     url: /about/
     target_blank: false
-  - name: RSS
-    url: /atom.xml
-    target_blank: true # 在新页面打开
-  - name: 搜索
-    url: /search/
-    target_blank: false # 在新页面打开
+#  - name: RSS
+#    url: /atom.xml
+#    target_blank: true # 在新页面打开
+#  - name: 搜索
+#    url: /search/
+#    target_blank: false # 在新页面打开
 
 page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT
 
@@ -63,11 +69,11 @@ toolbox:
 
 search_slogan:
   isShow: true # true|fase
-  text: Can you find the bug of world ~
+  text: Do you dream anything?
 
 link_slogan:
   isShow: true # true|fase
-  text: 交换友链可以邮件 forsigner@gmail.com
+  text: 交换友情链接可以邮件 contact@jiacy.me
 
 
 # set backtop show or hide
@@ -83,14 +89,14 @@ backtop:
 donation:
   show: true
   btn_text: 支持一下
-  tip: 扫一扫，支持forsigner
+  tip: 感谢大佬们的支持
   items:
-    - type: 微信
-      text: 微信扫一扫
-      imgUrl: /images/qr-wechat.png
-    - type: 支付宝
-      text: 支付宝扫一扫
-      imgUrl: /images/qr-alipay.png
+    - type: 志愿帮只招人，不收费
+      text: QQ扫一扫
+      imgUrl: /images/QQ-QR.jpg
+#    - type: 不差钱
+#      text: 支付宝扫一扫
+#      imgUrl: /images/qr-alipay.png
 
 
 
@@ -128,7 +134,7 @@ google_analytics:
 baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 
 # Comment service
-disqus_shortname: forsigner
+disqus_shortname: Jiacy
 # hypercomments_id: 89821
 # gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
 
@@ -145,104 +151,63 @@ about:
   - type: me
     icon: icon-user
     text_value:
-    - "Scut，1991，Spring."
-    - "喜欢设计，擅长编程，喜欢睡懒觉."
-    - "前端开发工程师，常用 HTML / CSS / JavaScript."
+    - "Seb,1996."
+    - "不擅长编程，却热爱睡懒觉。"
+    - "一个不务正业的大学生、不入流的代码民工、不靠谱的笔记本推荐者、即将失业的准就业青年。"
+    - "擅长C/C++、Java、Go、Python、HTML等多种语言的hello world！"
+    - "业内首席递茶员、某群认证学渣"
   - type: Github
     icon: icon-github
     text_key: Github
-    text_value: "@forsigner"
-    text_value_url: https://github.com/forsigner
-  - type: weibo
-    icon: icon-weibo
-    text_key: 微博
-    text_value: "@forsigner"
-    text_value_url: http://weibo.com/u/1847075964
+    text_value: "@jiacy061"
+    text_value_url: https://github.com/jiacy061
+#  - type: weibo
+#    icon: icon-weibo
+#    text_key: 微博
+#    text_value: "@Too与子与兔"
+#    text_value_url: http://weibo.com/2421552664
   - type: mail
     icon: icon-mail
-    text_key: Gmail
-    text_value: "forsigner@gmail.com"
+    text_key: Email
+    text_value: "contact@jiacy.me"
+    text_value_url: mailto:contact@jiacy.me
   - type: location
     icon: icon-location
-    text_value: 珠海
+    text_value: 重庆＆武汉
+  - type: edu
+    text_key: Education
+    text_value: Wuhan University, Wuhan, the P.R.C
+    text_value_url: http://www.whu.edu.cn/
+  - type: line1
+    text_key: 　
+  - type: line2
+    text_key: 　
+  - type: copyright
+    text_key: © 2017 ❤ Jiacy
+  - type: power
+    text_key: Power by Hexo | Theme - Fexo
 
 link:
-  - name: 织网
-    info: 身体和灵魂，总有一个在路上
-    url: http://zheng-ji.info/
-    avatar: https://avatars3.githubusercontent.com/u/1414745?v=3&s=100
-  - name: Dongyado
-    info: 生命不止，折腾不息
-    url: http://dongyado.com/
-    avatar: https://avatars0.githubusercontent.com/u/6274940?v=3&s=100
-  - name: OrangeCoder
-    info: android ffmpeg nodejs gradle
-    url: http://orangecoder.com/
-    avatar: https://avatars0.githubusercontent.com/u/2263785?v=3&s=100
-  - name: EverET
-    info: 好记性不如烂笔头
-    url: http://everet.org/about-me/
-    avatar: https://avatars1.githubusercontent.com/u/1559563?v=3&s=100
-  - name: 题叶
-    info: FP, GUI, Writing
-    url: http://tiye.me/
-    avatar: https://avatars2.githubusercontent.com/u/449224?v=3&s=100
-  - name: McChen
-    info: Stay Hungry, Stay Foolish
-    url: http://mcchen.club/
-    avatar: https://avatars0.githubusercontent.com/u/8033333?v=3&s=100
+  - name: Jiacy的美帝服务器
+    info: 科学上网，手动搭梯~
+    url: http://www.jiacy.me/
+    avatar: http://www.jiacy.me/img/favicon.png
+  - name: YJ-Cyber
+    info: 一个Polymath的博客
+    url: https://www.yjcyber.com/
+    avatar: https://www.yjcyber.com/icon/yjcyber.png
 
 
 project:
   - type: personal
-    name: fexo
-    url: https://github.com/forsigner/fexo
-    intro: A minimalist design theme for hexo
-  # - type: company
-  #   name: Fexo
-  #   url: https://github.com/forsigner/fexo
-  #   intro: A minimalist design theme for hexo
+    name: QQ图片防撤回工具
+    url: http://www.jiacy.me/downloads/QQ_ToolsToPreventTheWithdrawal.jar
+    intro: 一款做工很烂的QQ和TIM仅限windows端的图片防撤回工具
   - type: personal
-    name: beside
-    url: https://github.com/forsigner/beside
-    intro: I need you beside me
+    name: 进制转换器
+    url: http://www.jiacy.me/downloads/Conversion-System.apk
+    intro: 一款做工很勉强的Android端的进制转换器
   - type: personal
-    name: web-fontmin
-    url: https://github.com/forsigner/web-fontmin
-    intro: 字体子集化，在线提取你需要的字体
-  - type: personal
-    name: magic-check
-    url: https://github.com/forsigner/magic-check
-    intro: Beautify Radio and Checkbox with pure CSS
-  - type: personal
-    name: nice-bar
-    url: https://github.com/forsigner/nice-bar
-    intro: A nice and lightweight scrollbar
-  - type: personal
-    name: angular-nice-bar
-    url: https://github.com/forsigner/angular-nice-bar
-    intro: A nice and lightweight scrollbar in Angular
-  - type: personal
-    name: fo-popover
-    url: https://github.com/forsigner/fo-popover
-    intro: A nice popover for Angular
-  - type: personal
-    name: fo-tooltip
-    url: A nice tooltip for Angular
-    intro: https://github.com/forsigner/fo-tooltip
-  - type: personal
-    name: fo-modal
-    url: https://github.com/forsigner/fo-modal
-    intro: A nice modal for Angular
-  - type: personal
-    name: mocer
-    url: https://github.com/forsigner/mocer
-    intro: Setup a mock server easily
-  - type: personal
-    name: node-pngdefry
-    url: https://github.com/forsigner/node-pngdefry
-    intro: Repairing iPhone fried PNGs using Node.js
-  - type: personal
-    name: ng-simditor
-    url: https://github.com/forsigner/ng-simditor
-    intro: Angular directive for simditor
+    name: 时间累计记录软件
+    url: http://www.jiacy.me/downloads/Time-Accumulator.apk
+    intro: 一款做工更烂的Android端的时间累计记录软件，勉强用于记录宅图书馆的时间
