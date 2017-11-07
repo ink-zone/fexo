@@ -24,6 +24,7 @@
 ![screenshot-2](http://forsigner.com/images/fexo/fexo-2.png?v1)
 
 新增功能截图：
+
 ![screenshot-3](https://jiacy.top/images/readme_img1.png)
 ![screenshot-4](https://jiacy.top/images/readme_img2.png)
 
