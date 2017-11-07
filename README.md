@@ -1,5 +1,8 @@
 # Fexo
 
+## 这是一份fork基础上修改过的主题，主要是更改了博客页没有文章提要的问题。
+要想使用文章提要，只需要在文章的md文件中的title等标签后，添加一个info: 标签，并加入你期望的提要即可。
+
 > A minimalist design theme for Hexo.
 
 > 一个极简主义设计的 Hexo 主题。
