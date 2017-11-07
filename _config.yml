@@ -134,7 +134,7 @@ google_analytics:
 baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 
 # Comment service
-disqus_shortname: Jiacy
+# disqus_shortname: Jiacy
 # hypercomments_id: 89821
 # gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
 
