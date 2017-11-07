@@ -1,7 +1,11 @@
 # Fexo
 
-## 这是一份fork基础上修改过的主题，主要是更改了博客页没有文章提要的问题。
-要想使用文章提要，只需要在文章的md文件中的title等标签后，添加一个info: 标签，并加入你期望的提要即可。
+## 这是一份fork基础上修改过的主题
+新增功能：
+- 新增文章提要功能：只需要在文章的md文件中的title等标签后，添加一个info: 标签，并加入你期望的提要即可。
+- 新增文章页自定义页脚功能：只需要修改_config.yml文件中的footer后的内容。
+- 新增“来比力”第三方评论：在原来4个第三方评论模版的基础上，新添加了“来比力”，界面美观且未被墙。
+- 新增第三方打赏服务：已连接入第三方打赏平台“云打赏”
 
 > A minimalist design theme for Hexo.
 
@@ -19,6 +23,9 @@
 ![screenshot-1](http://forsigner.com/images/fexo/fexo-1.png?v=1)
 ![screenshot-2](http://forsigner.com/images/fexo/fexo-2.png?v1)
 
+新增功能截图：
+![](https://jiacy.top/images/readme_img1.png)
+![](https://jiacy.top/images/readme_img2.png)
 
 ### Browser compatibility
 
