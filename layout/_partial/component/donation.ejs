@@ -7,8 +7,12 @@
         <ul class="theme.donation.items.length">
         <% theme.donation.items.forEach(function(item, i){ %>
           <li class="item">
-            <div name="dashmain" id="dash-main-id-879895" class="dash-main-4 879895-1"></div>
-            <script type="text/javascript" charset="utf-8" src="https://www.dashangcloud.com/static/ds-2.0.js"></script>
+            <% if( theme.yundashang.isShow ) { %>
+              <div name="dashmain" id="<%= theme.yundashang.id %>" class="dash-main-4 879895-1"></div>
+              <script type="text/javascript" charset="utf-8" src="https://www.dashangcloud.com/static/ds-2.0.js"></script>
+            <% } else { %>
+              <img src="<%= item.imgUrl %>" alt="">
+            <% } %>
           </li>
         <% }) %>
         </ul>
