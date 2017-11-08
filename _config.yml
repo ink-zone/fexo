@@ -145,7 +145,9 @@ baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 #disqus_shortname: Jiacy
 #hypercomments_id: 89821
 #gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
-livere: true
+livere:
+  isShow: true # true | false , 必填项，空缺会出现问题
+  uid: MTAyMC8zMTczMy84Mjk3 # uid可在来比力管理页面-代码管理中找到，是data-uid标签引号内的参数
 
 # 注意，多说即将关闭，建议选用上面四个评论系统
 #duoshuo_shortname: forsigner
