@@ -82,10 +82,6 @@ link_slogan:
   isShow: true # true|false
   text: 交换友情链接可以邮件 contact@jiacy.me
 
-yundashang:
-  isShow: true # 第三方云打赏 true|false
-  id: dash-main-id-879895 # 第三方云打赏id，在云打赏的代码中可以找到
-
 
 # set backtop show or hide
 backtop:
@@ -108,6 +104,10 @@ donation:
 #    - type: 不差钱
 #      text: 支付宝扫一扫
 #      imgUrl: /images/qr-alipay.png
+
+yundashang:
+  isShow: true # 第三方云打赏 true|false
+  id: dash-main-id-879895 # 第三方云打赏id，在云打赏的代码中可以找到
 
 
 
