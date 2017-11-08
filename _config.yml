@@ -65,17 +65,21 @@ page_nav_style: CIRCLE  # CIRCLE|ROUND_RECT
 breadcrumb:
   isShow: true # true|fase
 
+# 文章摘要
+article:
+  isShow: true # true|false
+
 # 盒子
 toolbox:
-  isShow: true # true|fase
+  isShow: true # true|false
   text: 盒子
 
 search_slogan:
-  isShow: true # true|fase
+  isShow: true # true|false
   text: Do you dream anything?
 
 link_slogan:
-  isShow: true # true|fase
+  isShow: true # true|false
   text: 交换友情链接可以邮件 contact@jiacy.me
 
 
