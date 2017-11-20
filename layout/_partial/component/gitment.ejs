@@ -1,0 +1,28 @@
+<% if (theme.gitment.on){ %>
+
+  <div id="gitment-comments"></div>
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <script>
+    (function () {
+      var gitment = new Gitment({
+        owner: '<%= theme.gitment.owner %>',
+        repo: '<%= theme.gitment.repo %>',
+        oauth: {
+          client_id: '<%= theme.gitment.oauth.client_id %>',
+          client_secret: '<%= theme.gitment.oauth.client_secret %>'
+        },
+        <% if (theme.gitment.id) { %>id: '<%= theme.gitment.id %>',<% } %>
+        <% if (theme.gitment.title) { %>title: '<%= theme.gitment.title %>',<% } %>
+        <% if (theme.gitment.link) { %>link: '<%= theme.gitment.link %>',<% } %>
+        <% if (theme.gitment.desc) { %>desc: '<%= theme.gitment.desc %>',<% } %>
+        <% if (theme.gitment.labels) { %>labels: '<%= theme.gitment.labels %>',<% } %>
+        <% if (theme.gitment.theme) { %>theme: '<%= theme.gitment.theme %>',<% } %>
+        <% if (theme.gitment.perPage) { %>perPage: '<%= theme.gitment.perPage %>',<% } %>
+        <% if (theme.gitment.maxCommentHeight) { %>maxCommentHeight: '<%= theme.gitment.maxCommentHeight %>',<% } %>
+      })
+      gitment.render('gitment-comments')
+    })()
+  </script>
+
+<% } %>

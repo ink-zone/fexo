@@ -13,7 +13,7 @@
       var tagInfo = {id: i % 5, isTag: true, tagName: tag.name, count: tag.length};
       postList.push(tagInfo);
 
-      site.tags.findOne({name: tag.name}).posts.each(function(post) {
+      site.tags.findOne({name: tag.name}).posts.sort('date', -1).each(function(post) {
         postList.push(post);
       })
     });

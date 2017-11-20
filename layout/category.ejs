@@ -14,7 +14,7 @@
       var categoryInfo = {id: i % 5, isCategoryName: true, categoryName: category.name, count: category.posts.length};
       postList.push(categoryInfo);
 
-      category.posts.forEach(function(post) {
+      category.posts.sort('date', -1).forEach(function(post) {
         postList.push(post);
       });
     });
