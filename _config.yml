@@ -132,8 +132,22 @@ disqus_shortname: forsigner
 # hypercomments_id: 89821
 # gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
 
+# Valine comment system  https://valine.js.org
+valine:
+  enable: false # 如果使用valine，请设置改之为true
+  appid:  # your leancloud application appid
+  appkey:  # your leancloud application appkey
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: Just go go # comment box placeholder
+  avatar: mm # gravatar style
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
+
 # 注意，多说即将关闭，建议选用上面四个评论系统
 # duoshuo_shortname: forsigner
+
+
 
 # 不算子,文章访问量统计和显示
 busuanzi: true
