@@ -36,6 +36,8 @@
   .icon {
     color: $color;
     font-size: 24px;
+    height: 34px;
+    line-height: 34px;
     &:hover {
       color: darken($color, 5%);
     }
