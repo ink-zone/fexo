@@ -4,9 +4,10 @@
       <span class="btn-donation"><%= theme.donation.btn_text %></span>
       <div class="donation-body">
         <div class="tip text-center"><%= theme.donation.tip %></div>
-        <ul class="theme.donation.items.length">
+        <ul>
         <% theme.donation.items.forEach(function(item, i){ %>
           <li class="item">
+            <span><%= item.text %></span>
             <img src="<%= item.imgUrl %>" alt="">
           </li>
         <% }) %>

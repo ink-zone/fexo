@@ -1,0 +1,12 @@
+<% if (page.comments && theme.changyan_appid && theme.changyan_appkey){ %>
+  <section id="changyan-comments">
+    <div id="SOHUCS" sid="<%= page.title %>"></div>
+    <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+    <script type="text/javascript">
+      window.changyan.api.config({
+        appid: '<%= theme.changyan_appid %>',
+        conf: '<%= theme.changyan_appkey %>'
+      });
+    </script>
+  </section>
+<% } %>
