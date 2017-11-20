@@ -131,6 +131,10 @@ baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 disqus_shortname: forsigner
 # hypercomments_id: 89821
 # gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
+
+#有言用户编号
+#uyan_key:
+
 # changyan_appid: 
 # changyan_appkey: 
 
@@ -150,6 +154,7 @@ disqus_shortname: forsigner
 #     theme: # An optional Gitment theme object. Default gitment.defaultTheme.
 #     perPage: # An optional number to which comments will be paginated. Default 20.
 #     maxCommentHeight: # An optional number to limit comments' max height, over which comments will be folded. Default 250.
+
 
 # 不算子,文章访问量统计和显示
 busuanzi: true
