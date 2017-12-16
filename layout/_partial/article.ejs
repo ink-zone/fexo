@@ -31,11 +31,6 @@
            <i class="fa fa-spinner fa-spin"></i></span>℃
         </span>
       <% } %>
-
-      <% if (theme.duoshuo_shortname){ %>
-        <i class="icon-comment"></i> 
-        <span class="ds-thread-count" data-thread-key="<%= page.layout %>-<%= page.slug %>"><i class="fa fa-spinner fa-spin"></i></span> 条评论
-      <% } %>
       
     </div>
   </header>
@@ -52,4 +47,11 @@
       <%- post.content %>
     <% } %>
   </div>
+
+  <% if (theme.gitalk_shortname && page.comments && theme.url){ %>
+      <%- partial('component/gitalk') %>
+  <% } else { %>
+      <div class="git"></div>
+  <% } %>
+
 </article>
