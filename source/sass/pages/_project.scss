@@ -8,6 +8,30 @@
         padding-left: 20px;
       }
     }
+    .img-article-wrapper {
+      display: grid;
+      grid-gap: 10px;
+      .project-media {
+        grid-area: media;
+      }
+      .project-detail {
+        grid-area: detail;
+      }
+      grid-template-areas: 
+        "media"
+        "detail";
+    }
+    @media (min-width: 500px) {
+      .img-article-wrapper {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+          "media  detail";
+      }
+    }
+  }
+  img.project-img {
+    display: block;
+    width: 100%;
   }
   a.project-url {
     color: $site-color;

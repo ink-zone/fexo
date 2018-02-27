@@ -13,6 +13,28 @@
         </div>
 
       </li>
+
+      <% if (item.image || item.youtube || item.youku && item.detail) { %>
+        <div class="img-article-wrapper">
+          <div class="project-media">
+          <% if (item.youtube) { %>
+            <iframe src="https://www.youtube.com/embed/<%= item.youtube%>?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+          <% } else if (item.youku) { %>
+            <iframe src='http://player.youku.com/embed/<%= item.youku%>' frameborder=0 'allowfullscreen'></iframe>
+          <% } else { %>
+            <img class="project-img" src="<%= item.image%>" alt="<%= item.image_alt%>"/>
+          <% } %>
+          </div>
+          <div class="project-detail">
+            <%- item.detail %>
+          </div>
+        </div>
+      <% } %>
+
+      <% if (item.extra) { %>
+        <%- item.extra %>
+      <% } %>
+
     <% }) %>
   </ul>
 
