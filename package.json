@@ -2,16 +2,15 @@
   "name": "fexo",
   "version": "1.0.0",
   "devDependencies": {
-    "autoprefixer": "^6.3.3",
+    "autoprefixer": "^8.6.3",
     "babel": "^6.5.2",
     "babel-eslint": "^5.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-postcss": "^6.1.0",
-    "gulp-rev-easy": "^1.1.2",
-    "gulp-sass": "^2.2.0",
+    "gulp-rev-easy": "^1.2.3",
+    "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.3",
-    "node-sass": "^4.5.3"
+    "gulp-uglify": "^1.5.3"
   }
 }
