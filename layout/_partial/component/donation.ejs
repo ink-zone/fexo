@@ -7,7 +7,9 @@
         <ul>
         <% theme.donation.items.forEach(function(item, i){ %>
           <li class="item">
-            <span><%= item.text %></span>
+            <% if(item.text!=undefined){ %>
+              <span><%= item.text %></span>
+            <% } %>
             <img src="<%= item.imgUrl %>" alt="">
           </li>
         <% }) %>
