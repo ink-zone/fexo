@@ -168,8 +168,6 @@ valine:
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
 
-# 注意，多说即将关闭，建议选用上面四个评论系统
-# duoshuo_shortname: forsigner
 
 
 
