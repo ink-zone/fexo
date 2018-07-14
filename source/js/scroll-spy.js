@@ -69,7 +69,7 @@ module.exports = {
 function getItems(ary) {
   var items = [];
   for (var i = 0, l = ary.length; i < l; i++) {
-    var id = ary[i].hash.replace(/^#/, '');
+    var id = decodeURI(ary[i].hash.replace(/^#/, ''));
     var $target = document.getElementById(id);
     var offset = getOffsetRect($target);
     var height = window.getComputedStyle(document.getElementById(id))['height'];
