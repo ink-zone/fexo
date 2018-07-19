@@ -15,7 +15,8 @@
 
   (function init() {
     if ($backTop) {
-      $body.scrollTop > 10 ? Util.addClass($backTop, 'show') : Util.removeClass($backTop, 'show');
+      scrollTop = $body.scrollTop || $html.scrollTop;
+      scrollTop > 10 ? Util.addClass($backTop, 'show') : Util.removeClass($backTop, 'show');
     }
 
     if ($toc) {
@@ -24,7 +25,8 @@
       if (tocHeight + 20 > winHeight) {
           return;
       }
-      $body.scrollTop > 180 ? Util.addClass($toc, 'fixed') : Util.removeClass($toc, 'fixed');
+      scrollTop = $body.scrollTop || $html.scrollTop;
+      scrollTop > 180 ? Util.addClass($toc, 'fixed') : Util.removeClass($toc, 'fixed');
     }
 
   }());
@@ -43,7 +45,7 @@
 
   // toc and backTop
   Util.bind(window, 'scroll', function() {
-    scrollTop = $body.scrollTop;
+    scrollTop = $body.scrollTop || $html.scrollTop;
     if ($toc) {
       var tocHeight = parseInt(window.getComputedStyle($toc)['height'], 10);
       var winHeight = document.documentElement.clientHeight;
