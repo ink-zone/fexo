@@ -1,19 +1,21 @@
-<% if (theme.gitalk_shortname){ %>
+<% if (theme.gitalk){ %>
+
 <!-- Gitalk评论插件通用代码 -->
-<div id="git"></div>
+<div id="gitalk-container"></div>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
 const gitalk = new Gitalk({
-  clientID: '277317290454635afa73',
-  clientSecret: '78223c859304da5e8d71bfce136d436c6ff95c37',
-  repo: 'blog-comment',
-  owner: 'forsigner',
-  admin: ['forsigner'],
+  clientID: '<%= theme.gitalk.clientID %>',
+  clientSecret: '<%= theme.gitalk.clientSecret %>',
+  repo: '<%= theme.gitalk.repo %>',
+  owner: '<%= theme.gitalk.owner %>',
+  admin: ['<%= theme.gitalk.admin %>'],
   // facebook-like distraction free mode
   distractionFreeMode: false
 })
-gitalk.render('git')
+gitalk.render('gitalk-container')
 </script>
 <!-- Gitalk代码结束 -->
 

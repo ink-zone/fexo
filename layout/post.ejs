@@ -9,12 +9,6 @@
 
    <%- partial('_partial/component/donation') %>
    <%- partial('_partial/component/prev-net') %>
-
-   <% if (theme.gitalk_shortname && page.comments && theme.url){ %>
-      <%- partial('_partial/component/gitalk') %>
-   <% } else { %>
-      <div class="git"></div>
-   <% } %>
 </div>
 
 <%- partial('_partial/component/back-top', {showBacktop: theme.backtop.post}) %>

@@ -19,7 +19,7 @@ gulp.task("default", ["sass", "scripts"], function() {
 
 gulp.task("sass", function() {
   return gulp
-    .src("./source/sass/*.scss")
+    .src("./source/sass/**/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(postcss(plugins))
