@@ -15,11 +15,13 @@
     border-radius: 50%;
     border: 1px solid #dfdfdf;
     &.pull-left {
+      float: left;
       .icon:before {
         margin-right: 0.28em !important;
       }
     }
     &.pull-right {
+      float: right;
       .icon:before {
         margin-left: 0.28em !important;
       }
