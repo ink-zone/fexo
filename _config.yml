@@ -128,38 +128,46 @@ google_analytics:
 baidu_analytics: 57e94d016e201fba3603a8a2b0263af0
 
 # Comment service
+
 # disqus_shortname: forsigner
 # hypercomments_id: 89821
 # gentie_key: d16a7241e7cd4b389584ed8db2a4e8bc
+
+#有言用户编号
+# uyan_key:
+
+# 畅言, doc: http://changyan.kuaizhan.com/
+changyan:
+  enable: false  # true | false  这里开启
+  changyan_appid:
+  changyan_appkey:
+
+# gitalk评论组件，把下面的配置换成你的，官方文档: https://gitalk.github.io/
 gitalk:
+  enable: true # 如果使用 gitalk，请设置改之为true
   clientID: 277317290454635afa73
   clientSecret: 78223c859304da5e8d71bfce136d436c6ff95c37
   repo: blog-comment
   owner: forsigner
   admin: forsigner
 
-#有言用户编号
-#uyan_key:
-
-# changyan_appid:
-# changyan_appkey:
 
 # gitment comment service
-# gitment:
-#     on: false  # true | false  这里开启
-#     owner: # Your GitHub ID. Required.
-#     repo: # The repository to store your comments. Make sure you're repo's owner. Required.
-#     oauth: # An object contains your client ID and client secret. Required.
-#         client_id: # GitHub client ID. Required.
-#         client_secret: # GitHub client secret. Required.
-#     id: # An optional string to identify your page. Default location.href.
-#     title: # An optional title for your page, used as issue's title. Default document.title.
-#     link: # An optional link for your page, used in issue's body. Default location.href.
-#     desc: # An optional description for your page, used in issue's body. Default ''.
-#     labels: # An optional array of labels your want to add when creating the issue. Default [].
-#     theme: # An optional Gitment theme object. Default gitment.defaultTheme.
-#     perPage: # An optional number to which comments will be paginated. Default 20.
-#     maxCommentHeight: # An optional number to limit comments' max height, over which comments will be folded. Default 250.
+gitment:
+  enable: false  # true | false  这里开启
+  owner:  # Your GitHub ID. Required.
+  repo:  # The repository to store your comments. Make sure you're repo's owner. Required.
+  oauth: # An object contains your client ID and client secret. Required.
+    client_id: # GitHub client ID. Required.
+    client_secret: # GitHub client secret. Required.
+  id: # An optional string to identify your page. Default location.href.
+  title: # An optional title for your page, used as issue's title. Default document.title.
+  link: # An optional link for your page, used in issue's body. Default location.href.
+  desc: # An optional description for your page, used in issue's body. Default ''.
+  labels: # An optional array of labels your want to add when creating the issue. Default [].
+  theme: # An optional Gitment theme object. Default gitment.defaultTheme.
+  perPage: # An optional number to which comments will be paginated. Default 20.
+  maxCommentHeight: # An optional number to limit comments' max height, over which comments will be folded. Default 250.
 
 # Valine comment system  https://valine.js.org
 valine:
@@ -177,7 +185,7 @@ valine:
 
 
 # 不算子,文章访问量统计和显示
-# busuanzi: true
+busuanzi: true
 
 # =========================================================
 # 页面内容设置
