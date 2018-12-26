@@ -13,7 +13,8 @@ const gitalk = new Gitalk({
   owner: '<%= theme.gitalk.owner %>',
   // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
   // 50个字符串则会报错.
-  id: location.pathname.split('/').pop().substring(0, 49),
+  // id: location.pathname.split('/').pop().substring(0, 49),
+  id: location.pathname,
   admin: ['<%= theme.gitalk.admin %>'],
   // facebook-like distraction free mode
   distractionFreeMode: false
