@@ -24,6 +24,10 @@
 - Safari
 - Opera
 
+## Support
+
+Did Fexo help you? Join the open collective at https://opencollective.com/fexo
+
 ### Contributing
 
 All kinds of contributions are welcome.
