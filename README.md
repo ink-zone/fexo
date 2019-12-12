@@ -35,6 +35,36 @@ All pull requests should be done on the dev branch.
 
 欢迎任何改善的贡献，欢迎 Pull request 到 dev 分支。
 
+## Contributors
+
+### Code Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/forsigner/fexo/graphs/contributors"><img src="https://opencollective.com/fexo/contributors.svg?width=890&button=false" /></a>
+
+### Financial Contributors
+
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/fexo/contribute)]
+
+#### Individuals
+
+<a href="https://opencollective.com/fexo"><img src="https://opencollective.com/fexo/individuals.svg?width=890"></a>
+
+#### Organizations
+
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/fexo/contribute)]
+
+<a href="https://opencollective.com/fexo/organization/0/website"><img src="https://opencollective.com/fexo/organization/0/avatar.svg"></a>
+<a href="https://opencollective.com/fexo/organization/1/website"><img src="https://opencollective.com/fexo/organization/1/avatar.svg"></a>
+<a href="https://opencollective.com/fexo/organization/2/website"><img src="https://opencollective.com/fexo/organization/2/avatar.svg"></a>
+<a href="https://opencollective.com/fexo/organization/3/website"><img src="https://opencollective.com/fexo/organization/3/avatar.svg"></a>
+<a href="https://opencollective.com/fexo/organization/4/website"><img src="https://opencollective.com/fexo/organization/4/avatar.svg"></a>
+<a href="https://opencollective.com/fexo/organization/5/website"><img src="https://opencollective.com/fexo/organization/5/avatar.svg"></a>
+<a href="https://opencollective.com/fexo/organization/6/website"><img src="https://opencollective.com/fexo/organization/6/avatar.svg"></a>
+<a href="https://opencollective.com/fexo/organization/7/website"><img src="https://opencollective.com/fexo/organization/7/avatar.svg"></a>
+<a href="https://opencollective.com/fexo/organization/8/website"><img src="https://opencollective.com/fexo/organization/8/avatar.svg"></a>
+<a href="https://opencollective.com/fexo/organization/9/website"><img src="https://opencollective.com/fexo/organization/9/avatar.svg"></a>
+
 ### License
 
 [MIT](LICENSE)
