@@ -6,11 +6,11 @@
 
 <a href="http://forsigner.com/" target="_blank">Demo</a>
 |
-<a href="http://forsigner.com/2016/03/10/fexo-doc-zh-cn/" target="_blank">文档</a>
+<a href="http://forsigner.com/fexo-doc-zh-cn/" target="_blank">文档</a>
 |
-<a href="http://forsigner.com/2016/03/10/fexo-doc-zh-tw/" target="_blank">文檔</a>
+<a href="http://forsigner.com/fexo-doc-zh-tw/" target="_blank">文檔</a>
 |
-<a href="http://forsigner.com/2016/03/10/fexo-doc-en/" target="_blank">Doc</a>
+<a href="http://forsigner.com/fexo-doc-en/" target="_blank">Doc</a>
 
 ![screenshot-1](http://forsigner.com/images/fexo/mobile.png?v=1)
 ![screenshot-1](http://forsigner.com/images/fexo/fexo-1.png?v=1)
